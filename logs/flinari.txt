@@ -1,4 +1,4 @@
-Mi red posee 4 hosts (2 PC y 2 celulares) todos conectados via WI-FI
+Mi red posee 5 hosts (2 PC, 2 celulares y modem) todos conectados via WI-FI
 
 30000tramas06mayo00AM
 
@@ -60,4 +60,14 @@ H(S) = 0.02049
 ('BROADCAST', 2054) : 0.00007, 13.87267
 ('UNICAST', 34958) : 0.00007, 13.87267
 H(S) = 0.01411
+
+30000tramas10mayo03PM
+
+('UNICAST', 2048) : 0.96410, 0.05275
+('UNICAST', 34525) : 0.02617, 5.25613
+('UNICAST', 2054) : 0.00493, 7.66322
+('BROADCAST', 2048) : 0.00350, 8.15843
+('BROADCAST', 2054) : 0.00123, 9.66322
+('UNICAST', 34958) : 0.00007, 13.87267
+H(S) = 0.26759
 
