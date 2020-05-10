@@ -1,3 +1,8 @@
+2 laptops, 2 celulares, 1 tablet, 1 televisor, todo conectado via wifi, fibertel.
+A las 15hs todas las capturas tardaron alrededor de 45 minutos.
+
+8 mayo 15 hs
+
 ('UNICAST', 2048) : 0.89153, 0.16564
 ('BROADCAST', 2048) : 0.03960, 4.65836
 ('UNICAST', 34525) : 0.03340, 4.90401
@@ -5,4 +10,25 @@
 ('UNICAST', 2054) : 0.00470, 7.73312
 ('UNICAST', 33024) : 0.00003, 14.87267
 H(S) = 0.68719
+
+9 mayo 15 hs
+
+('UNICAST', 2048) : 0.99913, 0.00125
+('UNICAST', 2054) : 0.00057, 10.78521
+('UNICAST', 34525) : 0.00020, 12.28771
+('BROADCAST', 2048) : 0.00007, 13.87267
+('BROADCAST', 2054) : 0.00003, 14.87267
+H(S) = 0.01124
+
+10 mayo 15 hs
+
+('UNICAST', 2048) : 0.99467, 0.00771
+('UNICAST', 2054) : 0.00390, 8.00231
+('UNICAST', 34525) : 0.00093, 10.06532
+('BROADCAST', 2048) : 0.00040, 11.28771
+('BROADCAST', 2054) : 0.00010, 13.28771
+H(S) = 0.05412
+
+
+
 
