@@ -154,9 +154,11 @@ fixme: Explicación del código.
 
 Como se mencionó, el código utiliza la biblioteca \textit{Scapy} para capturar paquetes de la red (a la que está conectada la computadora en la que se corre el script) con el objetivo de caracterizarla como una fuente de información de memoria nula, desde ahora S1.
 
-	El mismo capturará 30.000 paquetes de ethernet (fixme: esto es así según lo que leí de la documentación de haslayer), clasificándolos según su direccionamiento (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo que utiliza protocolo. De esta manera un símbolo de esta fuente de información S1, estará determinado por la tupla \textit{<direccionamiento, protocolo>}. El script cuenta la cantidad de apariciones de cada símbolo 
 
-Descripción de cada una de las 4 redes
+	El mismo capturará 30.000 paquetes de ethernet (fixme: esto es así según lo que leí de la documentación de haslayer), clasificándolos según su direccionamiento (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo que utiliza protocolo. De esta manera un símbolo de esta fuente de información S1, estará determinado por la tupla \textit{<direccionamiento, protocolo>}. El script cuenta la cantidad de apariciones de cada símbolo, para posteriormente asignarle la probabilidad a cada uno (entendida como la inversa de la cantidad de apariciones del símbolo fixme: no se si queda claro). Posteriormente se calcula la información que aporta cada símbolo y la entropía de la fuente. 
+	fixme: describir el output del código.
+	
+fixme: Descripción de cada una de las 4 redes
 
 
 \section{Resultados de los experimentos}
