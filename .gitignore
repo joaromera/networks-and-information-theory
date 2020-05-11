@@ -425,3 +425,6 @@ TSWLatexianTemp*
 
 # No subir el PDF. Los merge conflicts son un tiro en las pelotas.
 *.pdf
+
+# mac bs
+.DS_Store
