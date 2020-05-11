@@ -1,0 +1,19 @@
+Mi red posee  hosts (1 PC, 1 celular y 1 modem) todos conectados via WI-FI
+
+30000tramas010mayo03:35PM
+
+('UNICAST', 2048) : 0.99980, 0.00029
+('UNICAST', 2054) : 0.00020, 12.28771
+H(S) = 0.00275
+
+30000tramas10mayo03:43PM -> tardó 1:41 min.
+
+('UNICAST', 2048) : 0.99980, 0.00029
+('UNICAST', 2054) : 0.00020, 12.28771
+H(S) = 0.00275
+
+30000tramas11mayo00:01AM -> tardó 21:58 min
+('UNICAST', 2048) : 0.99733, 0.00385
+('UNICAST', 2054) : 0.00260, 8.58727
+('UNICAST', 34958) : 0.00007, 13.87267
+H(S) = 0.02709
