@@ -153,6 +153,8 @@ máximo 400 palabras
 
 Explicación del código
 
+Capturamos paquetes usando la función sniff de Scapy, toma los mismos de la NIC default. Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast / unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
+
 Descripción de cada una de las 4 redes
 
 
