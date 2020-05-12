@@ -128,69 +128,13 @@
 \tableofcontents
 \newpage
 
-
 %\normalsize
+
+\input{0-introduccion}
 \newpage
-
-\section{Introducción}
-
-El objetivo del presente trabajo es utilizar técnicas provistas por la teoría de la información para estudiar los diversos protocolos de la red de manera analítica. En el mismo, se analizarán las redes hogarenias de los miembros del grupo de trabajo, buscando modelarlas como fuentes de información de memoria nula. Para esto se desarrolló un script que utiliza la biblioteca \textit{Scapy}, que permite capturar e interpretar los paquetes que se transmiten en la red.
-
-
-A continuación se detallan los experimentos que se van a realizar: (fixme: redactar mejor los experimentos cuanto estén definidos).
-
-\begin{itemize}
-\item A las 3 PM, 30.000 tramas
-\item A las 00 am, 30.000 tramas
-\end{itemize}
-
-
-
-\section{Métodos y condiciones de los experimentos}
-
-fixme: máximo 400 palabras
-
-fixme: Explicación del código.
-
-Como se mencionó, el código utiliza la biblioteca \textit{Scapy} para capturar paquetes de la red (a la que está conectada la computadora en la que se corre el script) con el objetivo de caracterizarla como una fuente de información de memoria nula, desde ahora S1.
-
-Capturamos paquetes usando la función sniff de Scapy, toma los mismos de la NIC default. Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast / unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
-
-
-	El mismo capturará 30.000 paquetes de ethernet (fixme: esto es así según lo que leí de la documentación de haslayer), clasificándolos según su direccionamiento (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo que utiliza protocolo. De esta manera un símbolo de esta fuente de información S1, estará determinado por la tupla \textit{<direccionamiento, protocolo>}. El script cuenta la cantidad de apariciones de cada símbolo, para posteriormente asignarle la probabilidad a cada uno (entendida como la inversa de la cantidad de apariciones del símbolo fixme: no se si queda claro). Posteriormente se calcula la información que aporta cada símbolo y la entropía de la fuente. 
-	fixme: describir el output del código.
-	
-fixme: Descripción de cada una de las 4 redes
-
-
-\section{Resultados de los experimentos}
-
-máximo 600 palabras
-
-Porcentaje de tráco Broadcast/Unicast sobre el tráco total.
-Porcentaje de aparición de cada protocolo encontrado.
-Entropía de cada red analizada.
-Cantidad de información de cada símbolo comparado con la entropía de la red.
-
-
-\section{Conclusiones}
-
-máximo 200 palabras
-
-Preguntas sugeridas:
-
-¿Considera que las muestras obtenidas analizadas son representativas del comportamiento general
-de la red?
-¿Hay alguna relación entre la entropía de las redes y alguna característica de las mismas (ej.: tamaño,
-tecnología, etc)?
-¿Considera signicativa la cantidad de tráco broadcast sobre el tráco total?
-¿Cuál es la función de cada uno de los protocolos encontrados?
-¿Cuáles son protocolos de control y cuáles transportan datos de usuario?
-¿En alguna red la entropía de la fuente alcanza la entropía máxima teórica?
-¿Ha encontrado protocolos no esperados? ¿Puede describirlos?
-
-%\section{Bibliografía}
-
+\input{1-experimentos}
+\newpage
+\input{2-resultados}
+\newpage
+\input{3-conclusiones}
 \end{document}
-
-		
