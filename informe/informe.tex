@@ -1,5 +1,5 @@
 % ******************************************************** %
-%               TEMPLATE DE INFORME TDC v0.1               %
+%              TEMPLATE DE INFORME ORGA2 v0.1              %
 % ******************************************************** %
 % ******************************************************** %
 %                                                          %
@@ -12,8 +12,6 @@
 % texlive-latex-extra?                                     %
 % texlive-lang-spanish (en ubuntu 13.10)                   %
 % ******************************************************** %
-
-
 \documentclass[a4paper]{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
@@ -21,53 +19,46 @@
 \usepackage{graphicx}
 %\usepackage{makeidx}
 \usepackage{paralist} %itemize inline
-
+\usepackage{algorithm}  % implementacion ondas en C
+% sudo apt-get install texlive-science
+\usepackage{algorithmic} % implementacion ondas en C
 %\usepackage{float}
-%\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsmath, amsthm, amssymb}
 %\usepackage{amsfonts}
 %\usepackage{sectsty}
 %\usepackage{charter}
 %\usepackage{wrapfig}
 %\usepackage{listings}
 %\lstset{language=C}
-
 % \setcounter{secnumdepth}{2}
+\usepackage{wrapfig}
 \usepackage{underscore}
 \usepackage{caratula}
 \usepackage{url}
+\usepackage{multicol}
 
 
 % ********************************************************* %
 % ~~~~~~~~              Code snippets             ~~~~~~~~~ %
 % ********************************************************* %
-
 \usepackage{color} % para snipets de codigo coloreados
 \usepackage{fancybox}  % para el sbox de los snipets de codigo
-
 \definecolor{litegrey}{gray}{0.94}
-
 \newenvironment{codesnippet}{%
 	\begin{Sbox}\begin{minipage}{\textwidth}\sffamily\small}%
 	{\end{minipage}\end{Sbox}%
 		\begin{center}%
-		\vspace{-0.4cm}\colorbox{litegrey}{\TheSbox}\end{center}\vspace{0.3cm}}
-
-
-
+		\vspace{0cm}\colorbox{litegrey}{\TheSbox}\end{center}\vspace{0cm}}
 % ********************************************************* %
 % ~~~~~~~~         Formato de las páginas         ~~~~~~~~~ %
 % ********************************************************* %
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-
 %\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ - #1}}
-
 \fancyhf{}
-
 \fancyhead[LO]{Sección \rightmark} % \thesection\ 
-\fancyfoot[LO]{\small{Joaco 1, Joaco 2, Juan 3, Facundo Linari}}
+\fancyfoot[LO]{\small{Centeno, Romera, Ghianni}}
 \fancyfoot[RO]{\thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
@@ -80,55 +71,31 @@
 \setlength{\voffset}{-0.7in}
 \setlength{\headwidth}{\textwidth}
 \setlength{\headheight}{13.1pt}
-
 \renewcommand{\baselinestretch}{1.1}  % line spacing
-
-% ******************************************************** %
-% ~~~~~~~~               Miscelánea              ~~~~~~~~~ %
-% ******************************************************** %
-
-\usepackage{xspace}
-\newcommand{\Alpha}{\ensuremath{\mathsf{a}}\xspace}
-\newcommand{\Red  }{\ensuremath{\mathsf{r}}\xspace}
-\newcommand{\Green}{\ensuremath{\mathsf{g}}\xspace}
-\newcommand{\Blue }{\ensuremath{\mathsf{b}}\xspace}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\usepackage{tikz}
-\usepackage{caption}
-\usepackage{graphics}
-\usepackage[breaklinks=true]{hyperref}
-
 % ******************************************************** %
 
 \begin{document}
 
-
 \thispagestyle{empty}
 \materia{Teoría de las Comunicaciones}
-%\submateria{Primer Cuatrimestre de 2020}
-\titulo{Taller 1: Wiretapping}
-%\subtitulo{Departamento de Computación}
-\integrante{Joaquin 1}{XXX/XX}{XXX@gmail.com}
-\integrante{Joaquin 2}{XXX/XX}{XXX@gmail.com}
-\integrante{Juan 3}{XXX/XX}{XXX@gmail.com}
-\integrante{Facundo Linari}{591/16}{facundo.linari@hotmail.com}
+\submateria{Primer Cuatrimestre de 2020}
+\titulo{Taller de Wiretapping}
+\integrante{Joaquin P. Centeno}{699/16}{joaquinpcenteno@gmail.com}
+\integrante{Joaquin Romera }{183/16}{joakromera@gmail.com}
+\integrante{Facundo Linari}{}{}
+\integrante{Juan Junqueras}{}{}
 
 \maketitle
-%\newpage
 
-%\thispagestyle{empty}
-%\vfill
-%\begin{abstract}
-%El presente trabajo detalla como fue implementado un kernel junto a tareas para mostrar su funcionamiento.
-%\end{abstract}
-
-\thispagestyle{empty}
-\vspace{3cm}
-\tableofcontents
 \newpage
 
-%\normalsize
+\thispagestyle{empty}
+\vfill
+\thispagestyle{empty}
+\vspace{3cm}
+
+\tableofcontents
+\newpage
 
 \input{0-introduccion}
 \newpage

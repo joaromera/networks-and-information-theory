@@ -6,10 +6,11 @@ fixme: Explicación del código.
 
 Como se mencionó, el código utiliza la biblioteca \textit{Scapy} para capturar paquetes de la red (a la que está conectada la computadora en la que se corre el script) con el objetivo de caracterizarla como una fuente de información de memoria nula, desde ahora S1.
 
-Capturamos paquetes usando la función sniff de Scapy, toma los mismos de la NIC default. Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast / unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
+Capturamos paquetes usando la función sniff de Scapy, toma los mismos de la NIC default. Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast, unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
 
 
-	El mismo capturará 30.000 paquetes de ethernet (fixme: esto es así según lo que leí de la documentación de haslayer), clasificándolos según su direccionamiento (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo que utiliza protocolo. De esta manera un símbolo de esta fuente de información S1, estará determinado por la tupla \textit{<direccionamiento, protocolo>}. El script cuenta la cantidad de apariciones de cada símbolo, para posteriormente asignarle la probabilidad a cada uno (entendida como la inversa de la cantidad de apariciones del símbolo fixme: no se si queda claro). Posteriormente se calcula la información que aporta cada símbolo y la entropía de la fuente. 
-	fixme: describir el output del código.
-	
+El mismo capturará 30.000 paquetes de ethernet (fixme: esto es así según lo que leí de la documentación de haslayer), clasificándolos según su direccionamiento (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo que utiliza protocolo. De esta manera un símbolo de esta fuente de información S1, estará determinado por la tupla \textit{direccionamiento, protocolo}. El script cuenta la cantidad de apariciones de cada símbolo, para posteriormente asignarle la probabilidad a cada uno (entendida como la inversa de la cantidad de apariciones del símbolo fixme: no se si queda claro). Posteriormente se calcula la información que aporta cada símbolo y la entropía de la fuente. 
+fixme: describir el output del código.
+
 fixme: Descripción de cada una de las 4 redes
+
