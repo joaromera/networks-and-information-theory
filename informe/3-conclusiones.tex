@@ -1,0 +1,82 @@
+\section{Conclusiones}
+
+máximo 200 palabras
+
+Preguntas sugeridas:
+
+¿Considera que las muestras obtenidas analizadas son representativas del comportamiento general
+de la red?
+
+Podemos dejar el script corriendo toda la noche (o cuando nadie use internet), para comparar contra las corridas de script que tardan 5 minutos. De esta forma, si son similares, podemos decir que los datos obtenidos en 5 min son representativos del comportamineto de la red. 
+Facu corrió toda la noche y aunque ganó 2048 (ver que protocolo es), fue la corrida con mayor entropía (se debe a que 2048, tuvo una aparición relativa menor esto nos lleva a pensar que este protocolo se utiliza cuando el usuario está utilizando la red, los otros parecen enviarse aunque nadie use la compu).
+
+en todas las muestras ganó 2048
+
+en horarios de mayor actividad siempre estuvo arriba del 90\% de los paquetes totales
+
+según lo que estuvimos viendo 2048 se envía cuando el usuario usa intenet, el resto se mandan esporádicamente
+
+2048 corresponde a IPv4
+
+J, [11.05.20 22:34]
+eso es otro aspecto a mencionar, durante la noche hay  menor actividad y los experimentos llevaron considerablemnte más tiempo
+
+J, [11.05.20 22:34]
+también me parece que mientras más tiempo duró el experimento mayor es la entropía
+
+J, [11.05.20 22:34]
+no es por el tiempo
+
+J, [11.05.20 22:35]
+mientras más tiempo tardamos en llegar a esas tramas aparece una proporción mayor de los otros protocolos
+
+
+
+
+¿Hay alguna relación entre la entropía de las redes y alguna característica de las mismas (ej.: tamaño,
+tecnología, etc)?
+
+la entropia de la red de juan es mucho menor que las demas. tambien es la red con menor cantidad de hosts
+
+
+¿Considera signicativa la cantidad de tráco broadcast sobre el tráco total?
+
+no, en unico caso donde habia un solo host en la red en un horario de nula actividad el procentaje de trafico broadcast llego al 20\%
+
+
+¿Cuál es la función de cada uno de los protocolos encontrados?
+
+J, [11.05.20 23:00]
+unicast 2048 Internet Protocol version 4 (IPv4)
+unicast 34525   Internet Protocol version 6 (IPv6)
+unicast 2054 Address Resolution Protocol (ARP)
+unicast 34958 IEEE Std 802.1X - Port-based network access control
+unicast 33024 Customer VLAN Tag Type (C-Tag, formerly called the Q-Tag) (initially Wellfleet)
+
+J, [11.05.20 23:01]
+broadcast 2048, 2054
+
+
+¿Cuáles son protocolos de control y cuáles transportan datos de usuario?
+
+
+
+¿En alguna red la entropía de la fuente alcanza la entropía máxima teórica?
+
+J, [11.05.20 23:33]
+[In reply to J]
+si la máxima teórica es cuando todos los símbolos son equiprobables entonces la última trama que subí se acerca algo
+
+J, [11.05.20 23:33]
+la máxima teórica es 2,8
+y la obtenida fue 1,6
+
+¿Ha encontrado protocolos no esperados? ¿Puede describirlos?
+
+el 33024
+
+https://en.wikipedia.org/wiki/IEEE_802.1Q
+
+
+
+%\section{Bibliografía}
