@@ -1,72 +1,34 @@
 \section{Conclusiones}
 
-máximo 200 palabras
+Consideramos que con la experimentación, conseguimos muestras que son una feaciente representación del comportamiento de la red en los horarios en los que fueron corridos los experimentos.
+Es notable que durante los experimentos nocturnos, el tiempo necesario para juntar 30.000 frames fue mucho mayor, debido al menor uso de la red. Para capturas más lentas, se observó una mayor entropía, dado que se capturaron más paquetes de los protocolos menos frecuentes.
 
-Preguntas sugeridas:
+(fixme: Incluir un parrafo caracterizando las redes en general y las características de las mísmas conn su entropía.)
+Tambien es interesante destacar que la red 2, es la que tiene menos hosts y la que menor entropía presenta, quizás no es una muestra suficientemente grande como para sacar conclusiones muy fuertes, pero lleva a pensar que cuanto menor sea la red, menor será la entropía.
 
-¿Considera que las muestras obtenidas analizadas son representativas del comportamiento general
-de la red?
+Por otro lado, con este trabajo podemos observar que la cantidad de tráfico Broadcast es 
+Insignificante respecto a  Unicast (fixme: ver que en todo el informe escribamos broadcast y uni con mayúscula al principio), el único caso en el que la probailidad de los paquetes de broadcast superó el (fixme: agregar cota superior de broadcast inmediatamente menor a 20\% -es decir el otro record de broadcast más alto sin contar este en el que alcanzó el 20\%) es en el que habia un solo host en la red en un horario de nula actividad el, allí el porocentaje de trafico broadcast llego al 20\%. (fixme: se puede agregar una interpretación de esto).
 
-Podemos dejar el script corriendo toda la noche (o cuando nadie use internet), para comparar contra las corridas de script que tardan 5 minutos. De esta forma, si son similares, podemos decir que los datos obtenidos en 5 min son representativos del comportamineto de la red. 
-Facu corrió toda la noche y aunque ganó 2048 (ver que protocolo es), fue la corrida con mayor entropía (se debe a que 2048, tuvo una aparición relativa menor esto nos lleva a pensar que este protocolo se utiliza cuando el usuario está utilizando la red, los otros parecen enviarse aunque nadie use la compu).
+Fixme: estos bullets quizás se pueden agregar (pero no en forma de bullet, sino con desarrollo) a la conclusión:
+-en todas las muestras ganó 2048. IPv4.
+-en horarios de mayor actividad siempre estuvo arriba del 90\% de los paquetes totales
+-según lo que estuvimos viendo 2048 se envía cuando el usuario usa intenet, el resto se mandan esporádicamente
+-eso es otro aspecto a mencionar, durante la noche hay  menor actividad y los experimentos llevaron considerablemnte más tiempo
+-también me parece que mientras más tiempo duró el experimento mayor es la entropía. (parece ser inversamete proporconal al tiempo fixme: usar esto si tenemos lo datos y los gráficos que lo muestren tiempo)
+-mientras más tiempo tardamos en llegar a esas tramas aparece una proporción mayor de los otros protocolos -> Esto es porque en un tiempo largo, aparecen mas cosas de menor probabilidad.
 
-en todas las muestras ganó 2048
+En ningún caso la entropía alcanzada se acercó a la máxima teórica. La diferencia en el horario para cada experimento tampoco arroja resultados consistentes, las redes 1 y 2 aumentaron la entropía alcanzada por la noche, mientras que la 3 y 4 la disminuyeron.
 
-en horarios de mayor actividad siempre estuvo arriba del 90\% de los paquetes totales
+La que más se acercó fue la red 1 durante la noche, superando apenas un tercio de la máxima teórica, luego la red 4 durante el día llegando a un cuarto de su respectiva teórica máxima. (fixme: estaría bueno poner estas tablas en resultados y en conclusiones simplemente hacer referencia a las mismas).
 
-según lo que estuvimos viendo 2048 se envía cuando el usuario usa intenet, el resto se mandan esporádicamente
-
-2048 corresponde a IPv4
-
-eso es otro aspecto a mencionar, durante la noche hay  menor actividad y los experimentos llevaron considerablemnte más tiempo
-
-también me parece que mientras más tiempo duró el experimento mayor es la entropía
-
-no es por el tiempo
-
-mientras más tiempo tardamos en llegar a esas tramas aparece una proporción mayor de los otros protocolos
+fixme: acá va la tabla que está en el goolge docs, debajo de "estaTabla":
 
 
+Un resultado interesante fue la aparición de algunos paquetes inesperados, como por ejemplo Unicast 35130 en la red 3 (exclusivamente), el 33024, que sólo apareció en las redes 3 y red 4.
 
+Según lo que pudimos encontrar, el paquete Unicast 35130 (fixme: intentar explicar que hace y si no lo encontramos, hipotetizar sobre por que no lo encontramos: solo encontré data en http://standards-oui.ieee.org/ethertype/eth.txt. Ni lo encuentro como un posible valor en el código de scapy (https://github.com/secdev/scapy/blob/master/scapy/libs/ethertypes.py en hexa 893A). ). Por otro lado, el paquete 33024 (fixme: explicar paquete https://en.wikipedia.org/wiki/IEEE_802.1Q)
 
-¿Hay alguna relación entre la entropía de las redes y alguna característica de las mismas (ej.: tamaño,
-tecnología, etc)?
-
-la entropia de la red de juan es mucho menor que las demas. tambien es la red con menor cantidad de hosts
-
-
-¿Considera significativa la cantidad de tráfico broadcast sobre el tráfico total?
-
-no, en unico caso donde habia un solo host en la red en un horario de nula actividad el procentaje de trafico broadcast llego al 20\%
-
-
-¿Cuál es la función de cada uno de los protocolos encontrados?
-
-unicast 2048 Internet Protocol version 4 (IPv4)
-unicast 34525   Internet Protocol version 6 (IPv6)
-unicast 2054 Address Resolution Protocol (ARP)
-unicast 34958 IEEE Std 802.1X - Port-based network access control
-unicast 33024 Customer VLAN Tag Type (C-Tag, formerly called the Q-Tag) (initially Wellfleet)
-
-broadcast 2048, 2054
-
-
-¿Cuáles son protocolos de control y cuáles transportan datos de usuario?
-
-
-
-¿En alguna red la entropía de la fuente alcanza la entropía máxima teórica?
-
-si la máxima teórica es cuando todos los símbolos son equiprobables entonces la última trama que subí se acerca algo
-
-la máxima teórica es 2,8
-y la obtenida fue 1,6
-
-¿Ha encontrado protocolos no esperados? ¿Puede describirlos?
-
-el 33024
-
-https://en.wikipedia.org/wiki/IEEE_802.1Q
+(Fixme: ver si se responde a esta pregunta en algún lugar del informe: ¿En alguna red la entropía de la fuente alcanza la entropía máxima teórica?)
 
 
 
