@@ -1,13 +1,14 @@
 \section{Conclusiones}
 
-Consideramos que con la experimentación, conseguimos muestras que son una feaciente representación del comportamiento de la red en los horarios en los que fueron corridos los experimentos.
-Es notable que durante los experimentos nocturnos, el tiempo necesario para juntar 30.000 frames fue mucho mayor, debido al menor uso de la red. Para capturas más lentas, se observó una mayor entropía, dado que se capturaron más paquetes de los protocolos menos frecuentes.
+Consideramos que con la experimentación, conseguimos muestras que son una representación característica del comportamiento de la red en los horarios en los que fueron corridos los experimentos.
+Es notable que durante los experimentos nocturnos, el tiempo necesario para juntar 30.000 frames fue mucho mayor: los experimentos conducidos durante el día consumieron menos de 45 minutos, mientras que los nocturnos necesitaron varias horas para terminar.
+Esto es consecuente con la diferencia de tráfico de las redes en estos horarios -habiendo un menor uso durante la noche-.
+A pesar de la diferencia en el tiempo que requirieron los experimentos, no pudimos observar una tendencia común en la entropía alcanzada: dos de las redes disminuyeron la entropía por la noche, pero las dos restantes aumentaron.
 
-(fixme: Incluir un parrafo caracterizando las redes en general y las características de las mísmas conn su entropía.)
-Tambien es interesante destacar que la red 2, es la que tiene menos hosts y la que menor entropía presenta, quizás no es una muestra suficientemente grande como para sacar conclusiones muy fuertes, pero lleva a pensar que cuanto menor sea la red, menor será la entropía.
+De las cuatro redes estudiadas se destaca que la red 2, de menor cantidad de hosts, fue la que menor entropía registró en todos los experimentos. Si bien las muestras no son lo suficientemente grandes como para sacar conclusiones, podríamos hipotetizar que mientras menor sea la red en cantidad de hosts, menor sea la entropía que alcance.
 
 Por otro lado, con este trabajo podemos observar que la cantidad de tráfico Broadcast es 
-Insignificante respecto a  Unicast (fixme: ver que en todo el informe escribamos broadcast y uni con mayúscula al principio), el único caso en el que la probailidad de los paquetes de broadcast superó el (fixme: agregar cota superior de broadcast inmediatamente menor a 20\% -es decir el otro record de broadcast más alto sin contar este en el que alcanzó el 20\%) es en el que habia un solo host en la red en un horario de nula actividad el, allí el porocentaje de trafico broadcast llego al 20\%. (fixme: se puede agregar una interpretación de esto).
+insignificante respecto a Unicast, el único caso en el que la probabilidad de los paquetes de broadcast superó el (fixme: agregar cota superior de broadcast inmediatamente menor a 20\% -es decir el otro record de broadcast más alto sin contar este en el que alcanzó el 20\%) es en el que habia un solo host en la red en un horario de nula actividad el, allí el porocentaje de trafico broadcast llego al 20\%. (fixme: se puede agregar una interpretación de esto).
 
 Fixme: estos bullets quizás se pueden agregar (pero no en forma de bullet, sino con desarrollo) a la conclusión:
 -en todas las muestras ganó 2048. IPv4.
