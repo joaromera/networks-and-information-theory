@@ -166,11 +166,11 @@ realizadas a las 00:00hs:
 \subsection{Proporcion \textsc{Unicast} y \textsc{Broadcast}}
 \label{sub:proporcion_unicast_y_broadcast}
 
-En la tabla \ref{sub:proporcion_unicast_y_broadcast} se muestra el porcentaje de tráfico Broadcast/Unicast sobre el tráfico total.
+En la tabla \ref{table:proporcion_unicast_y_broadcast} se muestra el porcentaje de tráfico Broadcast/Unicast sobre el tráfico total.
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{|c c c | c c|}
+    \begin{tabular}{|c | c c | c c|}
      \hline
          & Tarde     &         & Noche     &         \\ % re feo pero zafa.
      Red & Unicast & Broadcast & Unicast & Broadcast \\
@@ -180,12 +180,14 @@ En la tabla \ref{sub:proporcion_unicast_y_broadcast} se muestra el porcentaje de
      jcperez & 0.99773 & 0.00227 & 0.99953 & 0.00047 \\
      jromera & 0.92966 & 0.07033 & 0.9954 & 0.0046 \\
     \hline
+     Promedio & 0.98067 & 0.01933 & 0.99265 & 0.00735 \\
+    \hline
     \end{tabular}
     \captionof{table}{Porcentaje de cada tipo de paquete en cada corrida.}
-    \label{table:proporcion_broad_uni}
+    \label{table:proporcion_unicast_y_broadcast}
 \end{table}
 
-Como puede verse en \ref{sub:proporcion_unicast_y_broadcast}, en todas las redes hubo una fuerte preponderancia de tráfico Unicast respecto a Broadcast \textbf{(fixme: agregar el porcentaje de Uni vs Broad, haciendo promedio entre todas las redes en todos los experimentos que pongamos en el informe)}. Este resultado se mantiene en todas las redes y en ambos momentos del día en los que ocurrieron los experimentos. Si bien esperabamos encontrar una disminución del porcentaje de tráfico Unicast durante la noche, lo mismo ocurrió solo en las redes 1 y 2, mientras que en las redes 3 y 4 subió. La única diferencia notable entre los experimentos diurnos y nocturnos fue la duración de los mismos: durante el día las capturas no tomaron más de 45 minutos (en algunos casos mucho menos), mientras que las nocturnas necesitaron varias horas para llegar a las 30.000 tramas capturadas.
+Como puede verse en \ref{table:proporcion_unicast_y_broadcast}, en todas las redes hubo una fuerte preponderancia de tráfico Unicast respecto a Broadcast \textbf{(fixme: agregar el porcentaje de Uni vs Broad, haciendo promedio entre todas las redes en todos los experimentos que pongamos en el informe)}. Este resultado se mantiene en todas las redes y en ambos momentos del día en los que ocurrieron los experimentos. Si bien esperabamos encontrar una disminución del porcentaje de tráfico Unicast durante la noche, lo mismo ocurrió solo en las redes 1 y 2, mientras que en las redes 3 y 4 subió. La única diferencia notable entre los experimentos diurnos y nocturnos fue la duración de los mismos: durante el día las capturas no tomaron más de 45 minutos (en algunos casos mucho menos), mientras que las nocturnas necesitaron varias horas para llegar a las 30.000 tramas capturadas.
 
 Por otro lado, los resultados (fixme: referencia al gráfico o tabla que mejor lo muestre) muestran un fuerte predominio del protocolo 2048, este es el protocolo IPv4 que utiliza UDP y TCP, su función es transportar datos, por eso es esperable que sea el protocolo con más ocurrencias y cuyo símbolo tenga la probabilidad más alta en todo horario, especialmente en aquellos donde hay un uso más activo de la red. 
 (Fixme: se puede explicar algo del resto de los protocolos encontrados).
