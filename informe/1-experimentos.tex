@@ -1,20 +1,34 @@
 \section{Métodos y condiciones de los experimentos}
 
-fixme: máximo 400 palabras
+\subsection{Explicación del código}
 
-fixme: Explicación del código.
+Como se mencionó, el código utiliza la biblioteca \textit{Scapy} para capturar paquetes de la red (a la que está conectada la computadora en la que se corre el script) con el objetivo de caracterizarla como una fuente de información de memoria nula, desde ahora S1. 
 
-Como se mencionó, el código utiliza la biblioteca \textit{Scapy} para capturar paquetes de la red (a la que está conectada la computadora en la que se corre el script) con el objetivo de caracterizarla como una fuente de información de memoria nula, desde ahora S1.
+La función \textit{sniff}, toma los mismos paquetes que la NIC default.  Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast, unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
 
-Capturamos paquetes usando la función sniff de Scapy, toma los mismos de la NIC default. Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast, unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
+Este proceso se repitió hasta capturar 30.000 paquetes en dos horarios diferentes (15hs y 00hs) con las cuatro redes disponibles. La motivación de elegir dos momentos del día para realizar los experimentos es encontrar alguna tendencia en los datos con la cual poder elaborar alguna hipótesis, siendo que el tráfico de la red debería ser menor, o al menos diferente, por la noche.
 
+El output del script sigue el siguiente formato:
 
-El mismo capturará 30.000 paquetes de ethernet (fixme: esto es así según lo que leí de la documentación de haslayer), clasificándolos según su direccionamiento (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo que utiliza protocolo. De esta manera un símbolo de esta fuente de información S1, estará determinado por la tupla \textit{direccionamiento, protocolo}. El script cuenta la cantidad de apariciones de cada símbolo, para posteriormente asignarle la probabilidad a cada uno (entendida como la inversa de la cantidad de apariciones del símbolo fixme: no se si queda claro). Posteriormente se calcula la información que aporta cada símbolo y la entropía de la fuente. 
-fixme: describir el output del código.
+\begin{codesnippet}                                        
+\begin{verbatim}                                           
+                                                           
+('UNICAST', 2048) : 0.99980, 0.00029
+.
+.
+.
+H(S) = 0.00275
+                                                           
+\end{verbatim}                                             
+\end{codesnippet}
+
+Cada tupla representa un símbolo, la misma denota si se trata de un paquete (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo de capa superior al que corresponde el paquete capturado. Luego de la tupla se imprime la probabilidad de cada símbolo, seguida de la información que aporta cada uno. La entropía de la fuente (\textit{H(S)}) se muestra al final de la salida.
 
 fixme: Descripción de cada una de las 4 redes
 
 Cada uno de los integrantes del grupo realizó corridas del script en los momentos que se describió en la introducción.
+
+\subsection{Explicación de las redes}
 
 En la tabla \ref{table:caracteristicas_redes} se detalla la red de cada uno de los integrantes. Todas estas estan conectadas via WI-FI.
 
