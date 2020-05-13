@@ -166,3 +166,44 @@ realizadas a las 00:00hs.
     \caption{Red 1: Joaquín Romera (00:00 Hs) Entropia: 0.10100}
     \label{table:1}
 \end{table}
+
+En la tabla \ref{table:desc_protocolos} se describen todos los protocolos encontrados en las redes analizadas, indicando si están destinados a control o transporte de datos.
+
+\begin{table}[h!]
+    %\centering
+\begin{tabular}{| l | c | c | c |}
+  \hline  
+  Número & Protocolo & Transporte/Control & Función \\
+  \hline			
+  2048 & Internet Protocol version 4 & Transporte & Dar soporte  a la \\
+       & (IPv4) &   &  capa de transporte       \\
+       &        &   &                           \\
+  \hline
+  2054 & Address Resolution Protocol & Control  & Descubrir la dirección  \\
+       & (ARP) &    &  de la capa de enlace asociada      \\
+       &        &   &  a una dirección de red             \\
+  \hline
+  33024 & Shortest Path Bridging & Control & Es un spanning tree protocols \\
+       & (IEEE 802.1aq) &    & (STP)        \\
+       &        &   &                           \\
+  \hline
+  34525 & Internet Protocol Version 6 & Transporte & Misma que IPv4 \\
+       & (IPv6) &   &         \\
+       &        &   &                           \\
+  \hline
+  34958 & Extensible Authentication Protocol & Control & Proveer mecanismo de \\
+       & over LAN &     &  autenticación a dispositivos        \\
+       & (EAPOL - IEEE 802.1X)       &   & en la LAN o WLAN     \\
+  \hline
+  35020 & Link Layer Discovery Protocol & Control & Manejar y monitorear \\
+       & (LLDP) &  & redes          \\
+       &        &   &                           \\
+  \hline
+  35130 & IEEE 1905.1 & Control & Definir una capa de  \\
+       &  &   &  abstracción para multiples  \\
+       &        &   &  tecnologías de redes de hogar         \\
+  \hline  
+\end{tabular}
+\caption{Descripción de cada protocolo visto en las redes analizadas.}
+\label{table:desc_protocolos} 
+\end{table}
