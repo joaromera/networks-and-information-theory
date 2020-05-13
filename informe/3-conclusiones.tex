@@ -7,30 +7,10 @@ A pesar de la diferencia en el tiempo que requirieron los experimentos, no pudim
 
 De las cuatro redes estudiadas se destaca que la red 2, de menor cantidad de hosts, fue la que menor entropía registró en todos los experimentos. Si bien las muestras no son lo suficientemente grandes como para sacar conclusiones, podríamos hipotetizar que mientras menor sea la red en cantidad de hosts, menor sea la entropía que alcance.
 
-Por otro lado, con este trabajo podemos observar que la cantidad de tráfico Broadcast es 
-insignificante respecto a Unicast, el único caso en el que la probabilidad de los paquetes de broadcast superó el (fixme: agregar cota superior de broadcast inmediatamente menor a 20\% -es decir el otro record de broadcast más alto sin contar este en el que alcanzó el 20\%) es en el que habia un solo host en la red en un horario de nula actividad el, allí el porocentaje de trafico broadcast llego al 20\%. (fixme: se puede agregar una interpretación de esto).
+En ningún de estos casos la entropía alcanzada se acercó a la máxima teórica. La diferencia en el horario para cada experimento tampoco arroja resultados consistentes, las redes 1 y 2 aumentaron la entropía alcanzada por la noche, mientras que la 3 y 4 la disminuyeron. La que más se acercó fue la red 1 durante la noche, superando apenas un tercio de la máxima teórica, luego la red 4 durante el día llegando a un cuarto de su respectiva teórica máxima.
 
-Fixme: estos bullets quizás se pueden agregar (pero no en forma de bullet, sino con desarrollo) a la conclusión:
--en todas las muestras ganó 2048. IPv4.
--en horarios de mayor actividad siempre estuvo arriba del 90\% de los paquetes totales
--según lo que estuvimos viendo 2048 se envía cuando el usuario usa intenet, el resto se mandan esporádicamente
--eso es otro aspecto a mencionar, durante la noche hay  menor actividad y los experimentos llevaron considerablemnte más tiempo
--también me parece que mientras más tiempo duró el experimento mayor es la entropía. (parece ser inversamete proporconal al tiempo fixme: usar esto si tenemos lo datos y los gráficos que lo muestren tiempo)
--mientras más tiempo tardamos en llegar a esas tramas aparece una proporción mayor de los otros protocolos -> Esto es porque en un tiempo largo, aparecen mas cosas de menor probabilidad.
+Por otro lado, pudimos observar que en la mayoría de los casos la cantidad de tráfico Broadcast es insignificante respecto a Unicast, rara vez superando el 2\%. Únicamente en la red 4 el porcentaje de Broadcast se acerco al 10\%, pero se dispone de pocas muestras y la topología de la red es similar a las 1 y 2, con resultados diferentes. Por esto no podemos extraer más conclusiones que la preponderancia del tráfico Unicast en las redes hogareñas. Particularmente el protocolo que tuvo mayor incidencia en los datos fue el 2048 (IPv4), teniendo más del 90\% del total.
 
-En ningún caso la entropía alcanzada se acercó a la máxima teórica. La diferencia en el horario para cada experimento tampoco arroja resultados consistentes, las redes 1 y 2 aumentaron la entropía alcanzada por la noche, mientras que la 3 y 4 la disminuyeron.
-
-La que más se acercó fue la red 1 durante la noche, superando apenas un tercio de la máxima teórica, luego la red 4 durante el día llegando a un cuarto de su respectiva teórica máxima. (fixme: estaría bueno poner estas tablas en resultados y en conclusiones simplemente hacer referencia a las mismas).
-
-fixme: acá va la tabla que está en el goolge docs, debajo de "estaTabla":
-
-
-Un resultado interesante fue la aparición de algunos paquetes inesperados, como por ejemplo Unicast 35130 en la red 3 (exclusivamente), el 33024, que sólo apareció en las redes 3 y red 4.
+Un resultado interesante fue la aparición de algunos paquetes inesperados, como por ejemplo Unicast 35130 en la red 3 (exclusivamente), y el 33024, que sólo apareció en las redes 3 y red 4.
 
 Según lo que pudimos encontrar, el paquete Unicast 35130 (fixme: intentar explicar que hace y si no lo encontramos, hipotetizar sobre por que no lo encontramos: solo encontré data en http://standards-oui.ieee.org/ethertype/eth.txt. Ni lo encuentro como un posible valor en el código de scapy (https://github.com/secdev/scapy/blob/master/scapy/libs/ethertypes.py en hexa 893A). ). Por otro lado, el paquete 33024 (fixme: explicar paquete https://en.wikipedia.org/wiki/IEEE_802.1Q)
-
-(Fixme: ver si se responde a esta pregunta en algún lugar del informe: ¿En alguna red la entropía de la fuente alcanza la entropía máxima teórica?)
-
-
-
-%\section{Bibliografía}
