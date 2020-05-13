@@ -1,7 +1,75 @@
 \section{Resultados de los experimentos}
 
-máximo 600 palabras
 
+La siguiente tabla reune los resultados los experimentos. (fixme: referencia a tabla)
+
+TABLAS CON LOS RESULTADOS (si está en el informe borrar hasta “HASTAACÁ”)
+
+Porcentaje de tráfico Broadcast/Unicast sobre el tráfico total (Fixme: pasar a tabla en latex)
+15 hs
+Red 1: Unicast 99.527%
+Red 2: Unicast 100%
+Red 3: Unicast 99.773%
+Red 4: Unicast 92.967%
+
+00hs
+Red 1: Unicast 97.59%
+Red 2: Unicast 99.976%
+Red 3: Unicast 99.953%
+Red 4: Unicast 99.54%
+
+HASTAACÁ
+
+Como puede verse en la misma (fixme: referencia a taba), en todas las redes hubo una fuerte preponderancia de tráfico Unicast respecto a Broadcast (fixme: agregar el porcentaje de Uni vs Broad, haciendo promedio entre todas las redes en todos los experimentos que pongamos en el informe). Este resultado se mantiene en todas las redes y en ambos momentos del día en los que ocurrieron los experimentos. Si bien esperabamos encontrar una disminución del porcentaje de tráfico Unicast durante la noche, lo mismo ocurrió solo en las redes 1 y 2, mientras que en las redes 3 y 4 subió. La única diferencia notable entre los experimentos diurnos y nocturnos fue la duración de los mismos: durante el día las capturas no tomaron más de 45 minutos (en algunos casos mucho menos), mientras que las nocturnas necesitaron varias horas para llegar a las 30.000 tramas capturadas.
+
+Por otro lado, los resultados (fixme: referencia al gráfico o tabla que mejor lo muestre) muestran un fuerte predominio del protocolo 2048, este es el protocolo IPv4 que utiliza UDP y TCP, su función es transportar datos, por eso es esperable que sea el protocolo con más ocurrencias y cuyo símbolo tenga la probabilidad más alta en todo horario, especialmente en aquellos donde hay un uso más activo de la red. 
+(Fixme: se puede explicar algo del resto de los protocoles encontrados).
+
+La entropía de las redes analizadas aumenta cuanto más equiprobables sean los símbolos de la fuente, como se dijo y se puede ver en los resultados (fixme: hacer referencia a la tabla que corresponda) la probabilidad del protocolo 2048 es ampliamente superior al resto, el margen de disparidad disminuye (aunque menos de fixme: agregar propornción en ordenes de magnitud en la que cambia) respecto al resto de los protocolos cuando la red tiene un uso menos intensivo, por lo que la entropía disminuye, por lo que podría pensarse que hay una correlacón entre la intensidad del uso de la red (fixme: si tenemos los tiempos de todos los experimentos se puede medir la intensidad como la inversa del tiempo que tarda en conseguirse los 30000 paquetes) .
+
+Cantidad de información de cada símbolo comparado con la entropía de la red (fixme: hacer alguna interpretación corta Y COMPARAR LA ENTROPÍA DE DIA VS NOCHE)
+FIXME: ACA INCLUIR PLOT COMPARANDO ENTROPIA DIA VS NOCHE PARA CADA RED.
+
+<fixme: meter un scatterplot X: cant hosts Y: Entropía y explicar algo de esta relación, en la conclsuión se menciona que la red 2 es la que menos entropía tiene, no estaría mal volver a mencionarlo acá>
+
+
+La siguiente tabla muenstra la función de cada uno de los protocolos encontrados. fixmme: hacer referencia a tabla. En la misma se puede ver cuales son de control y cuáles transportan datos del usuario.
+
+unicast 2048 Internet Protocol version 4 (IPv4)
+unicast 34525   Internet Protocol version 6 (IPv6)
+unicast 2054 Address Resolution Protocol (ARP)
+unicast 34958 IEEE Std 802.1X - Port-based network access control
+unicast 33024 Customer VLAN Tag Type (C-Tag, formerly called the Q-Tag) (initially Wellfleet)
+Unicast 35020 Link Layer Discovery Protocol (LLDP)
+Unicast 35130 IEEE 1905.1
+
+
+broadcast 2048, 2054
+
+
+
+
+
+Protocolos de control: 2054 ARP, 34958 IEEE Std 802.1X, 35020 Link Layer Discovery Protocol (LLDP), 33024 Customer VLAN Tag Type
+
+Datos: 2048 IPv4 e 34525 IPv6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fixme: lo siguiente no lo borro porque creo que son tablas útiles (borrar cuando alguien sepa que no van).
+****************************
 Porcentaje de tráfico Broadcast/Unicast sobre el tráfico total.
 Porcentaje de aparición de cada protocolo encontrado.
 Entropía de cada red analizada.
