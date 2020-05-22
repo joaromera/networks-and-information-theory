@@ -49,14 +49,14 @@ realizadas a las 15:00hs:
      \hline
     Destino & Protocolo & Probabilidad & Información \\
     \hline
-    unicast     &     2048      &     0.98883         &   0.01620          \\
-    unicast     &     34525      &     0.00590          &     7.40507         \\
-    broadcast     &    2054       &    0.00187          &   9.06532          \\
-    unicast     &     35130      &     0.00140          &   9.48036          \\
-    unicast      &     35020      &     0.00137          &   9.51512          \\
-    broadcast      &  2048         &     0.00040         &   11.28771          \\
-    unicast      &       33024    &    0.00013          &    12.87267         \\
-    unicast      &     2054      &      0.00010        &     13.28771        \\
+    UNICAST     &     2048      &     0.98883         &   0.01620          \\
+    UNICAST     &     34525      &     0.00590          &     7.40507         \\
+    BROADCAST     &    2054       &    0.00187          &   9.06532          \\
+    UNICAST     &     35130      &     0.00140          &   9.48036          \\
+    UNICAST      &     35020      &     0.00137          &   9.51512          \\
+    BROADCAST      &  2048         &     0.00040         &   11.28771          \\
+    UNICAST      &       33024    &    0.00013          &    12.87267         \\
+    UNICAST      &     2054      &      0.00010        &     13.28771        \\
     \hline
     \end{tabular}
     \captionof{table}{Red 3: Joaquín Perez Centeno (15:00 Hs) Entropia: 0.11047}
@@ -166,7 +166,7 @@ realizadas a las 00:00hs:
 \subsection{Proporcion \textsc{Unicast} y \textsc{Broadcast}}
 \label{sub:proporcion_unicast_y_broadcast}
 
-En la tabla \ref{table:proporcion_unicast_y_broadcast} se muestra el porcentaje de tráfico Broadcast/Unicast sobre el tráfico total.
+En el cuadro \ref{table:proporcion_unicast_y_broadcast} se muestra el porcentaje de tráfico \textit{Broadcast}/\textit{Unicast} sobre el tráfico total.
 
 \begin{table}[h!]
     \centering
@@ -187,7 +187,7 @@ En la tabla \ref{table:proporcion_unicast_y_broadcast} se muestra el porcentaje 
     \label{table:proporcion_unicast_y_broadcast}
 \end{table}
 
-Como puede verse en la tabla \ref{table:proporcion_unicast_y_broadcast}, en
+Como puede verse en el cuadro \ref{table:proporcion_unicast_y_broadcast}, en
 todas las redes hubo una fuerte preponderancia de tráfico \textit{Unicast}
 respecto a \textit{Broadcast}. Este resultado se mantiene en todas las redes y
 en ambos momentos del día en los que ocurrieron los experimentos. Si bien se
@@ -200,8 +200,8 @@ necesitaron varias horas para llegar a las 30.000 tramas capturadas.
 
 Por otro lado, los resultados expresados en las secciones
 \ref{sub:experimentos_1500} y \ref{sub:experimentos_0000} muestran un fuerte
-predominio del protocolo 2048, este es el protocolo \textsc{IPv4} para el cual
-era esperable que sea el protocolo con más ocurrencias y cuyo símbolo tenga la
+predominio del protocolo 2048, el mismo corresponde a \textsc{IPv4}, el cual
+era esperable que sea el de más ocurrencias y cuyo símbolo tenga la
 probabilidad más alta en todo horario, especialmente en aquellos donde hay un
 uso más activo de la red.
 
@@ -216,7 +216,7 @@ experimentos.
 
 \subsection{Descripción de protocolos}
 
-En la tabla \ref{table:desc_protocolos} se muestran las funciones de los protocolos encontrados. En la misma se puede ver cuales son de control y cuáles transportan datos del usuario.
+En el cuadro \ref{table:desc_protocolos} se muestran las funciones de los protocolos encontrados. En la misma se puede ver cuales son de control y cuáles transportan datos del usuario.
 
 \begin{table}[h!]
     %\centering
@@ -257,6 +257,6 @@ En la tabla \ref{table:desc_protocolos} se muestran las funciones de los protoco
 \label{table:desc_protocolos} 
 \end{table}
 
-Un resultado interesante fue la aparición de algunos paquetes inesperados, como por ejemplo Unicast 35130 en la red 3 (exclusivamente), y el 33024, que sólo apareció en las redes 3 y red 4.
-El paquete Unicast 35130 define una capa de abstracción común para tecnologías hogareñas de origen heterogeneo descriptas en los siguientes protocolos IEEE 1901, IEEE 802.11, IEEE 802.3 and MoCA 1.1.
+Un resultado interesante fue la aparición de algunos paquetes inesperados, como por ejemplo \textit{Unicast} 35130 en la red 3 (exclusivamente), y el 33024, que sólo apareció en las redes 3 y red 4.
+El paquete \textit{Unicast} 35130 define una capa de abstracción común para tecnologías hogareñas de origen heterogeneo descriptas en los siguientes protocolos IEEE 1901, IEEE 802.11, IEEE 802.3 and MoCA 1.1.
 El 33024 es un protocolo para administración de Virtual Lans en redes Ethernet IEEE 802.3.

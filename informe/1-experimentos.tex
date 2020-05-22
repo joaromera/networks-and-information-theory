@@ -4,7 +4,7 @@
 
 Como se mencionó, el código utiliza la biblioteca \textit{Scapy} para capturar paquetes de la red (a la que está conectada la computadora en la que se corre el script) con el objetivo de caracterizarla como una fuente de información de memoria nula, desde ahora S1. 
 
-La función \textit{sniff}, toma los mismos paquetes que la NIC default.  Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (broadcast, unicast) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
+La función \textit{sniff}, toma los mismos paquetes que la NIC default.  Por cada paquete capturado se llama un callback que acumula estadísticas de los paquetes recibidos y los categoriza según dirección (\textit{Broadcast}, \textit{Unicast}) y protocolo. Para cada una de estas tuplas y con las estadísticas recolectadas al momento de cada callback se calcula la probabilidad y la información de cada una. Finalmente con esta información calculamos la entropía de la fuente.
 
 Este proceso se repitió hasta capturar 30.000 paquetes en dos horarios diferentes (15hs y 00hs) con las cuatro redes disponibles. La motivación de elegir dos momentos del día para realizar los experimentos es encontrar alguna tendencia en los datos con la cual poder elaborar alguna hipótesis, siendo que el tráfico de la red debería ser menor, o al menos diferente, por la noche.
 
@@ -22,13 +22,13 @@ H(S) = 0.00275
 \end{verbatim}                                             
 \end{codesnippet}
 
-Cada tupla representa un símbolo, la misma denota si se trata de un paquete (\textit{BROADCAST} o \textit{UNICAST}) y el protocolo de capa superior al que corresponde el paquete capturado. Luego de la tupla se imprime la probabilidad de cada símbolo, seguida de la información que aporta cada uno. La entropía de la fuente (\textit{H(S)}) se muestra al final de la salida.
+Cada tupla representa un símbolo, la misma denota si se trata de un paquete (\textit{Broadcast} o \textit{Unicast}) y el protocolo de capa superior al que corresponde el paquete capturado. Luego de la tupla se imprime la probabilidad de cada símbolo, seguida de la información que aporta cada uno. La entropía de la fuente (\textit{H(S)}) se muestra al final de la salida.
 
-Cada uno de los integrantes del grupo realizó corridas del script en los momentos que se describió en la introducción.
+Cada uno de los integrantes del grupo realizó corridas del script en los dos momentos del día previamente señalados.
 
 \subsection{Explicación de las redes}
 
-En la tabla \ref{table:caracteristicas_redes} se detalla la red de cada uno de los integrantes. Todas estas estan conectadas via WI-FI.
+En el cuadro \ref{table:caracteristicas_redes} se detalla la red de cada uno de los integrantes. Todas estas estan conectadas via WI-FI.
 
 \begin{table}[h!]
     \centering
