@@ -30,7 +30,7 @@ Cantidad de saltos RTT positivos: 13
 
 Cantidad de outliers: 3
 
-United States - Dallas - www.waseda.jp -104.16.38.132 
+United States - Dallas - www.waseda.jp - 104.16.38.132 
 
 TTL IP              RTT             RTT salto       Outlier o negativo
   1 104.16.38.132        228.982290      228.982290          1
