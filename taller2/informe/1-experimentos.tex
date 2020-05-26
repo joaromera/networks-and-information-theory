@@ -1,3 +1,52 @@
 \section{Métodos y condiciones de los experimentos}
 
-TODO
+\subsection{Explicación del código}
+
+Como se mencionó, se implementó \textit{traceroute}. Para estó se extendió el código provisto por la cátedra que realiza la técnica de TTLs incrementales de la siguiente manera:
+
+\begin{itemize}
+\item Modificar el rango de TTLs a 1-30 porque es el default que usan otras implementaciones de \textit{traceroute} y se vió que se llegó a todas las universidades con este rango.
+\item Mandar 50 paquetes para cada TTL para así despues obtener la media de los RTT consiguiendo métricas más confiables. También se hace esto para, en caso de haber más de una ruta al destino, identificar el nodo más utilizado.
+\item Calcular los RTT entre salto restando los valores de RTT de saltos sucesivos. Los valores negativos son ignorados.
+\item Se detectan los outliers con el método de Cimbala.
+\item Se imprime en formato de tabla como se muestra en \ref{fig:output}.
+\end{itemize}
+
+\begin{codesnippet}                                        
+\begin{verbatim}                                                                                                  
+TTL IP              RTT             RTT salto       Outlier o negativo
+  1 192.168.0.1          117.089748      117.089748          1
+  6 181.96.120.69         71.017580      -46.072168          1
+  8 181.96.120.63         76.697432        5.679852          0
+  9 200.49.69.157         73.554044       -3.143388          1
+ 10 131.100.186.97        73.818316        0.264273          0
+ 14 157.92.47.53          69.760504       -4.057813          1
+ 16 157.92.32.18          71.003332        1.242828          0
+
+Cantidad de saltos RTT positivos: 4
+
+Cantidad de outliers: 1                                                     
+\end{verbatim}   
+\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}   
+\label{fig:output}                                      
+\end{codesnippet}
+
+\subsection{Características de las pruebas}
+
+Cada alumno utilizo la herramienta implementada con los siguientes sitios web:
+
+\begin{itemize}
+\item \url{www.tu-berlin.de} con host situado en Berlín (Alemania)
+\item \url{www.waseda.jp} con host situado en Dallas (EEUU)
+\item \url{www.exactas.uba.ar} con host situado en CABA (Argentina)
+\item \url{www.uio.no} con host situado en Oslo (Noruega)
+\end{itemize}
+
+Con el fin de obtener distintas salidas cada alumno corrió el script en un horario distinto. Estos son:
+
+\begin{itemize}
+\item[1] Sábado a la 1 PM.
+\item[2] TODO
+\item[3] TODO
+\item[4] TODO
+\end{itemize}
