@@ -1,4 +1,32 @@
 \section{Resultados de los experimentos}
 
+\subsection{TU Berlin}
 
-TODO
+El host de la Technische Universität Berlin es www.tu-berlin.de
+
+
+\begin{codesnippet}
+    \begin{verbatim}
+TTL IP              RTT             RTT salto       Outlier o negativo
+  1 192.168.0.1           12.524138       12.524138          0
+  6 181.96.120.69         37.382096       24.857958          0
+  8 181.96.120.63         38.295614        0.913518          0
+  9 190.216.88.33         58.547193       20.251579          0
+ 10 67.17.94.249         169.194187      110.646994          1
+ 12 4.69.142.209         283.095530      113.901343          1
+ 13 195.122.181.62       312.227178       29.131648          0
+ 14 188.1.144.58         362.458020       50.230842          1
+ 15 188.1.235.118        365.694586        3.236566          0
+ 16 130.149.126.78       332.631753      -33.062833          1
+ 17 130.149.7.201        354.637073       22.005320          0
+ 18 130.149.7.201        697.860956      343.223883          1
+ 19 130.149.7.201        387.589455     -310.271502          1
+\end{verbatim}
+\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
+\label{fig:output}
+\end{codesnippet}
+
+Dentro de Argentina las ips llegaron hasta la 190.216.88.33. En este tramo los tiempos de delay se mantienen cercanos entre sí.
+El primer salto lo vemos con la ip 67.17.94.249. Esta ip se ubica dentro de Estados Unidos, las próximas ips también están en EEUU: 4.69.142.209 y 195.122.181.62.
+Los tiempos suben pero se encuentran en el rango de los 300-400 ms una vez que sucede el salto interoceánico hacia Europa, a partir de la ip 188.1.144.58.
+Respondieron 13 de los 19 nodos 68,42\%. Según el método de Cimbala los cables submarinos podrían haber sido 67.17.94.249 (entre Argentina y EEUU) y el 188.1.144.58 (entre Estados Unidos y Alemania).
