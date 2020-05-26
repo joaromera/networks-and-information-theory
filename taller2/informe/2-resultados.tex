@@ -30,3 +30,72 @@ Dentro de Argentina las ips llegaron hasta la 190.216.88.33. En este tramo los t
 El primer salto lo vemos con la ip 67.17.94.249. Esta ip se ubica dentro de Estados Unidos, las próximas ips también están en EEUU: 4.69.142.209 y 195.122.181.62.
 Los tiempos suben pero se encuentran en el rango de los 300-400 ms una vez que sucede el salto interoceánico hacia Europa, a partir de la ip 188.1.144.58.
 Respondieron 13 de los 19 nodos 68,42\%. Según el método de Cimbala los cables submarinos podrían haber sido 67.17.94.249 (entre Argentina y EEUU) y el 188.1.144.58 (entre Estados Unidos y Alemania).
+
+\subsection{Universidad de Ciencia y Tecnología de Oman}
+
+Con host en www.nu.edu.om, la Universidad de Ciencia y Tecnología de Oman se encuentra en Muscat, Oman, en la península arábiga, al occidente de Asia. A continuación estos fueron los tiempos registrados durante el traceroute:
+
+\begin{codesnippet}
+    \begin{verbatim}
+TTL IP              RTT             RTT salto       Outlier o negativo
+  1 192.168.0.1           12.560573       12.560573          0
+  6 181.96.120.69         32.290440       19.729867          0
+  8 181.89.2.125          32.738047        0.447607          0
+  9 190.216.88.33         59.194783       26.456737          0
+ 10 67.17.94.249         163.833876      104.639092          0
+ 12 4.69.210.62          293.512807      129.678931          0
+ 13 195.122.181.190      319.292054       25.779247          0
+ 15 62.75.3.174          412.566829       93.274775          0
+ 16 82.178.159.6         488.297505       75.730677          0
+ 17 5.37.58.213          484.294157       -4.003348          1
+ 18 134.0.200.70         462.750559      -21.543598          1
+
+Cantidad de saltos RTT positivos: 9
+
+Cantidad de outliers: 0
+\end{verbatim}
+\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
+\label{fig:output}
+\end{codesnippet}
+
+Esta ruta presenta los mismos saltos iniciales hasta EEUU que la ruta previa. Llama la atención el desvío hacia California para volver a Dallas antes de hacer el salto hacia Europa, donde recae en Grecia para llegar a Oman. Otro dato curioso es que el método de Cimbala no detectó outliers.
+
+\subsection{Norway - Oslo - www.uio.no - 129.240.118.130}
+
+
+\begin{codesnippet}
+    \begin{verbatim}
+TTL IP              RTT             RTT salto       Outlier o negativo
+  1 129.240.118.130      249.198258      249.198258          1
+  2 129.240.118.130      230.263948      -18.934309          1
+  4 129.240.118.130      195.032835      -35.231113          1
+  6 181.96.120.69        111.418798      -83.614037          1
+  7 181.96.120.69        478.892326      367.473528          1
+  8 181.89.2.125         116.725239     -362.167087          1
+ 10 67.17.99.233         249.275798      132.550559          1
+ 12 4.69.207.29          198.870659      -50.405139          1
+ 13 213.248.84.80        250.132317       51.261658          0
+ 14 62.115.120.176       250.017172       -0.115145          1
+ 15 62.115.143.121       244.544927       -5.472244          1
+ 16 213.248.85.174       410.669770      166.124843          1
+ 17 109.105.97.142       443.390125       32.720355          0
+ 18 109.105.97.65        433.815522       -9.574603          1
+ 19 109.105.97.50        428.418777       -5.396745          1
+ 20 109.105.97.56        423.805060       -4.613717          1
+ 21 109.105.97.133       414.118917       -9.686142          1
+ 22 109.105.102.67       445.133203       31.014285          0
+ 23 128.39.230.18        451.262739        6.129536          0
+ 24 128.39.65.18         451.991706        0.728967          0
+ 25 129.240.100.69       438.489095      -13.502612          1
+ 26 129.240.100.66       434.527073       -3.962022          1
+ 27 129.240.25.162       434.232510       -0.294563          1
+ 28 129.240.118.130      453.266022       19.033511          0
+ 29 129.240.118.130      365.932286      -87.333736          1
+
+Cantidad de saltos RTT positivos: 10
+
+Cantidad de outliers: 4
+\end{verbatim}
+\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
+\label{fig:output}
+\end{codesnippet}
