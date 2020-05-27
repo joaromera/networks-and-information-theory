@@ -4,10 +4,9 @@
 
 El host de la Technische Universität Berlin es www.tu-berlin.de
 
-
 \begin{codesnippet}
-    \begin{verbatim}
-TTL IP              RTT             RTT salto       Outlier o negativo
+\begin{verbatim}
+TTL IP                   RTT             RTT salto       Outlier o negativo
   1 192.168.0.1           12.524138       12.524138          0
   6 181.96.120.69         37.382096       24.857958          0
   8 181.96.120.63         38.295614        0.913518          0
@@ -22,8 +21,6 @@ TTL IP              RTT             RTT salto       Outlier o negativo
  18 130.149.7.201        697.860956      343.223883          1
  19 130.149.7.201        387.589455     -310.271502          1
 \end{verbatim}
-\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
-\label{fig:output}
 \end{codesnippet}
 
 Dentro de Argentina las ips llegaron hasta la 190.216.88.33. En este tramo los tiempos de delay se mantienen cercanos entre sí.
@@ -36,26 +33,24 @@ Respondieron 13 de los 19 nodos 68,42\%. Según el método de Cimbala los cables
 Con host en www.nu.edu.om, la Universidad de Ciencia y Tecnología de Oman se encuentra en Muscat, Oman, en la península arábiga, al occidente de Asia. A continuación estos fueron los tiempos registrados durante el traceroute:
 
 \begin{codesnippet}
-    \begin{verbatim}
-TTL IP              RTT             RTT salto       Outlier o negativo
-  1 192.168.0.1           12.560573       12.560573          0
-  6 181.96.120.69         32.290440       19.729867          0
-  8 181.89.2.125          32.738047        0.447607          0
-  9 190.216.88.33         59.194783       26.456737          0
- 10 67.17.94.249         163.833876      104.639092          0
- 12 4.69.210.62          293.512807      129.678931          0
- 13 195.122.181.190      319.292054       25.779247          0
- 15 62.75.3.174          412.566829       93.274775          0
- 16 82.178.159.6         488.297505       75.730677          0
- 17 5.37.58.213          484.294157       -4.003348          1
- 18 134.0.200.70         462.750559      -21.543598          1
+\begin{verbatim}
+TTL IP                 RTT             RTT salto       Outlier o negativo
+  1 192.168.0.1        12.560573       12.560573          0
+  6 181.96.120.69      32.290440       19.729867          0
+  8 181.89.2.125       32.738047       0.447607           0
+  9 190.216.88.33      59.194783       26.456737          0
+ 10 67.17.94.249       163.833876      104.639092         0
+ 12 4.69.210.62        293.512807      129.678931         0
+ 13 195.122.181.190    319.292054      25.779247          0
+ 15 62.75.3.174        412.566829      93.274775          0
+ 16 82.178.159.6       488.297505      75.730677          0
+ 17 5.37.58.213        484.294157      -4.003348          1
+ 18 134.0.200.70       462.750559      -21.543598         1
 
 Cantidad de saltos RTT positivos: 9
 
 Cantidad de outliers: 0
 \end{verbatim}
-\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
-\label{fig:output}
 \end{codesnippet}
 
 Esta ruta presenta los mismos saltos iniciales hasta EEUU que la ruta previa. Llama la atención el desvío hacia California para volver a Dallas antes de hacer el salto hacia Europa, donde recae en Grecia para llegar a Oman. Otro dato curioso es que el método de Cimbala no detectó outliers.
@@ -66,14 +61,14 @@ Los resultados del traceroute de la Universidad de Oslo, en Noruega, son los sig
 
 \begin{codesnippet}
     \begin{verbatim}
-TTL IP              RTT             RTT salto       Outlier o negativo
-1 192.168.1.1           43.158112       43.158112          1
-2 181.88.172.15         60.790395       17.632283          0
-3 181.88.169.84         52.491941       -8.298453          1
-5 181.96.120.63         58.968106        6.476165          0
-6 190.216.88.33         55.229664       -3.738442          1
-7 67.17.99.233         297.179484      241.949821          1
-9 4.69.207.33          346.348180       49.168695          1
+TTL IP                   RTT             RTT salto       Outlier o negativo
+1 192.168.1.1            43.158112       43.158112          1
+2 181.88.172.15          60.790395       17.632283          0
+3 181.88.169.84          52.491941       -8.298453          1
+5 181.96.120.63          58.968106        6.476165          0
+6 190.216.88.33          55.229664       -3.738442          1
+7 67.17.99.233          297.179484      241.949821          1
+9 4.69.207.33           346.348180       49.168695          1
 10 213.248.84.80        335.634136      -10.714044          1
 11 62.115.119.230       363.302803       27.668667          0
 12 80.91.248.157        371.916800        8.613997          0
@@ -93,21 +88,18 @@ Cantidad de saltos RTT positivos: 14
 
 Cantidad de outliers: 4
 \end{verbatim}
-\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
-\label{fig:output}
 \end{codesnippet}
 
 El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU con ip 67.17.99.233. Cimbala lo marca como un outlier y efectivamente debe pertenecer a un salto interoceánico. Luego hay par de saltos dentro de EEUU: Virginia, California, antes de llegar a Inglaterra.
 Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier.
-
 
 \subsection{Universidad de Buenos Aires, FCEyN}
 
 Por último nos dirigimos hacia la Facultad de Ciencias Exactas y Naturales, de la Universidad de Buenos Aires. Estos son las métricas obtenidas:
 
 \begin{codesnippet}
-  \begin{verbatim}
-TTL IP              RTT             RTT salto       Outlier o negativo
+\begin{verbatim}
+TTL IP                    RTT             RTT salto       Outlier o negativo
   1 192.168.0.1          123.123407      123.123407          1
   6 181.96.120.69         97.155519      -25.967889          1
   8 181.96.120.63         87.048044      -10.107474          1
@@ -120,8 +112,6 @@ Cantidad de saltos RTT positivos: 3
 
 Cantidad de outliers: 1
 \end{verbatim}
-\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
-\label{fig:output}
 \end{codesnippet}
 
 Tras localizar las direcciones IP de los nodos que ubicamos, llama la atención la ubicación del correspondiente a la dirección 131.100.186.97, en Paraguay. Los tiempo se mantienen relativamente estables en todos los nodos, incluso para el salto fuera de Argentina. No obtuvimos outliers y efectivamente toda la ruta fue dentro del continente.
