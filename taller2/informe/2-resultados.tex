@@ -101,6 +101,27 @@ El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU co
 Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier.
 
 
+\subsection{Universidad de Buenos Aires, FCEyN}
 
+Por último nos dirigimos hacia la Facultad de Ciencias Exactas y Naturales, de la Universidad de Buenos Aires. Estos son las métricas obtenidas:
 
+\begin{codesnippet}
+  \begin{verbatim}
+TTL IP              RTT             RTT salto       Outlier o negativo
+  1 192.168.0.1          123.123407      123.123407          1
+  6 181.96.120.69         97.155519      -25.967889          1
+  8 181.96.120.63         87.048044      -10.107474          1
+  9 200.49.69.157         80.490503       -6.557541          1
+ 10 131.100.186.97        81.974669        1.484165          0
+ 14 157.92.47.53          93.981446       12.006778          0
+ 16 157.92.32.18          82.148285      -11.833161          1
 
+Cantidad de saltos RTT positivos: 3
+
+Cantidad de outliers: 1
+\end{verbatim}
+\captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
+\label{fig:output}
+\end{codesnippet}
+
+Tras localizar las direcciones IP de los nodos que ubicamos, llama la atención la ubicación del correspondiente a la dirección 131.100.186.97, en Paraguay. Los tiempo se mantienen relativamente estables en todos los nodos, incluso para el salto fuera de Argentina. No obtuvimos outliers y efectivamente toda la ruta fue dentro del continente.
