@@ -9,7 +9,7 @@ Como se mencionó, se implementó \textit{traceroute}. Para estó se extendió e
   \item Mandar 50 paquetes para cada TTL para así despues obtener la media de los RTT consiguiendo métricas más confiables. También se hace esto para, en caso de haber más de una ruta al destino, identificar el nodo más utilizado.
   \item Calcular los RTT entre salto restando los valores de RTT de saltos sucesivos. Los valores negativos son ignorados.
   \item Se detectan los outliers con el método de Cimbala.
-  \item Se imprime en formato de tabla como se muestra en \ref{fig:output}.
+  \item Se imprime en formato de tabla como se muestra en la figura \ref{fig:output}.
 \end{itemize}
 
 \begin{codesnippet}
