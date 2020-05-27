@@ -1,11 +1,20 @@
 \section{Conclusiones}
 
-Notas
 
-Saltos transatlánticos detectados: las universidades de Berlin y Oslo.
-No se detectaron en el caso de Oman y Buenos Aires.
-Hubo varios falsos positivos, posiblemente por tratarse de nodos de mucho tráfico, alta congestión.
-También falsos negativos, como en el caso de la universidad de Oman, donde hubieramos esperado encontrar saltos transatlánticos.
-Tracerouting y el método de Cimbala no son 100\% confiables para encontrar estos saltos, hace falta un análisis supervisado.
+% No-detección de saltos transatlanticos
+Solo fueron detectados saltos transatlanticos para las universidades de Berlin
+y Oslo. No fueron detectados en el caso de Oman y Buenos Aires. Se obtuvieron
+falsos negativos, donde hubieramos esperado encontrar saltos transatlánticos.
+% Falsos positivos:
+A su vez, hubo varios falsos positivos, posiblemente por tratarse de nodos de
+mucho tráfico, alta congestión.
+% Conclusión:
+\textit{Tracerouting} y el método de Cimbala no son infalibles para encontrar
+estos saltos, hace falta un análisis supervisado.
 
-En todos los casos hubo nodos que no respondieron los echo-reply o los time-exceeded. Seguramente es porque están configurados para ignorar estos mensajes, por motivos de performance o seguridad.
+
+% Nodos que no contestan ICMP
+En todos los experimentos fueron detectados nodos que no responden paquetes con
+\textsc{ICMP}. Seguramente es porque están configurados para ignorar estos
+mensajes, por motivos de \textit{performance} o seguridad. La metodología
+empleada no sirve para obtener información acerca de ellos.
