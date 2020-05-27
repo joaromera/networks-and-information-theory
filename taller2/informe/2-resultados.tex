@@ -29,7 +29,7 @@ Cantidad de outliers: 4
 Dentro de Argentina las ips llegaron hasta la 190.216.88.33. En este tramo los tiempos de delay se mantienen cercanos entre sí.
 El primer salto lo vemos con la ip 67.17.94.249. Esta ip se ubica dentro de Estados Unidos, las próximas ips también están en EEUU: 4.69.142.209 y 195.122.181.62.
 Los tiempos suben pero se encuentran en el rango de los 300-400 ms una vez que sucede el salto interoceánico hacia Europa, a partir de la ip 188.1.144.58.
-Respondieron 13 de los 19 nodos 68,42\%. Según el método de Cimbala los cables submarinos podrían haber sido 67.17.94.249 (entre Argentina y EEUU) y el 188.1.144.58 (entre Estados Unidos y Alemania).
+Respondieron 13 de los 19 nodos 68,42\%. Según el método de Cimbala los cables submarinos deberían haber sido 67.17.94.249 (entre Argentina y EEUU) y el 188.1.144.58 (entre Estados Unidos y Alemania).
 
 \begin{figure}[h]
   \centering
@@ -107,7 +107,7 @@ Cantidad de outliers: 4
 \end{verbatim}
 \end{codesnippet}
 
-El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU con ip 67.17.99.233. Cimbala lo marca como un outlier y efectivamente debe pertenecer a un salto interoceánico. Luego hay par de saltos dentro de EEUU: Virginia, California, antes de llegar a Inglaterra.
+El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU con ip 67.17.99.233. Cimbala lo marca como un outlier y efectivamente debe incluir algún interoceánico. Luego hay par de saltos dentro de EEUU: Virginia, California, antes de llegar a Inglaterra.
 Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier. Unicamente dos nodos no respondieron obteniendo un 91\% de respuestas.
 
 \begin{figure}[h]
