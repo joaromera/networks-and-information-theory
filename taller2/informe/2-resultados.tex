@@ -22,7 +22,6 @@ TTL IP                   RTT             RTT salto       Outlier o negativo
  19 130.149.7.201        387.589455     -310.271502          1
 
 Cantidad de saltos RTT positivos: 11
-
 Cantidad de outliers: 4
 \end{verbatim}
 \end{codesnippet}
@@ -60,12 +59,11 @@ TTL IP                 RTT             RTT salto       Outlier o negativo
  18 134.0.200.70       462.750559      -21.543598         1
 
 Cantidad de saltos RTT positivos: 9
-
 Cantidad de outliers: 0
 \end{verbatim}
 \end{codesnippet}
 
-Esta ruta presenta los mismos saltos iniciales hasta EEUU que la ruta previa. Llama la atención el desvío hacia California para volver a Dallas antes de hacer el salto hacia Europa, donde recae en Grecia para llegar a Oman. Otro dato curioso es que el método de Cimbala no detectó outliers.
+Esta ruta presenta los mismos saltos iniciales hasta EEUU que la ruta previa. Llama la atención el desvío hacia California para volver a Dallas antes de hacer el salto hacia Europa, donde recae en Grecia para llegar a Oman. Otro dato curioso es que el método de Cimbala no detectó outliers. 7 de los 18 nodos no respondieron, lo que da un 61.11\% de respuestas exitosas.
 
 \begin{figure}[h]
   \centering
@@ -105,13 +103,12 @@ TTL IP                   RTT             RTT salto       Outlier o negativo
 23 129.240.118.130      492.330074       14.625301          0
 
 Cantidad de saltos RTT positivos: 14
-
 Cantidad de outliers: 4
 \end{verbatim}
 \end{codesnippet}
 
 El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU con ip 67.17.99.233. Cimbala lo marca como un outlier y efectivamente debe pertenecer a un salto interoceánico. Luego hay par de saltos dentro de EEUU: Virginia, California, antes de llegar a Inglaterra.
-Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier.
+Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier. Unicamente dos nodos no respondieron obteniendo un 91\% de respuestas.
 
 \begin{figure}[h]
   \centering
@@ -137,9 +134,8 @@ TTL IP                    RTT             RTT salto       Outlier o negativo
  16 157.92.32.18          82.148285      -11.833161          1
 
 Cantidad de saltos RTT positivos: 3
-
 Cantidad de outliers: 1
 \end{verbatim}
 \end{codesnippet}
 
-Tras localizar las direcciones IP de los nodos que ubicamos, llama la atención la ubicación del correspondiente a la dirección 131.100.186.97, en Paraguay. Los tiempo se mantienen relativamente estables en todos los nodos, incluso para el salto fuera de Argentina. No obtuvimos outliers y efectivamente toda la ruta fue dentro del continente.
+Tras localizar las direcciones IP de los nodos que ubicamos, llama la atención la ubicación del correspondiente a la dirección 131.100.186.97, en Paraguay. Los tiempo se mantienen relativamente estables en todos los nodos, incluso para el salto fuera de Argentina. No obtuvimos outliers y efectivamente toda la ruta fue dentro del continente. Las respuestas obtenidas corresponden a un 43.75\%.
