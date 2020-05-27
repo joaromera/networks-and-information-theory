@@ -1,6 +1,6 @@
 \section{Resultados de los experimentos}
 
-\subsection{TU Berlin}
+\subsection{Technische Universität Berlin}
 
 El host de la Technische Universität Berlin es www.tu-berlin.de
 
@@ -32,6 +32,14 @@ El primer salto lo vemos con la ip 67.17.94.249. Esta ip se ubica dentro de Esta
 Los tiempos suben pero se encuentran en el rango de los 300-400 ms una vez que sucede el salto interoceánico hacia Europa, a partir de la ip 188.1.144.58.
 Respondieron 13 de los 19 nodos 68,42\%. Según el método de Cimbala los cables submarinos podrían haber sido 67.17.94.249 (entre Argentina y EEUU) y el 188.1.144.58 (entre Estados Unidos y Alemania).
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{tu-berlin.png}
+  \caption{Traceroute: TU-Berlin}
+  \label{fig:berlin}
+\end{figure}
+
+\newpage
 \subsection{Universidad de Ciencia y Tecnología de Oman}
 
 Con host en www.nu.edu.om, la Universidad de Ciencia y Tecnología de Oman se encuentra en Muscat, Oman, en la península arábiga, al occidente de Asia. A continuación estos fueron los tiempos registrados durante el traceroute:
@@ -59,7 +67,15 @@ Cantidad de outliers: 0
 
 Esta ruta presenta los mismos saltos iniciales hasta EEUU que la ruta previa. Llama la atención el desvío hacia California para volver a Dallas antes de hacer el salto hacia Europa, donde recae en Grecia para llegar a Oman. Otro dato curioso es que el método de Cimbala no detectó outliers.
 
-\subsection{Norway - Oslo - www.uio.no - 129.240.118.130}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{oman.png}
+  \caption{Traceroute: www.nu.edu.om}
+  \label{fig:oman}
+\end{figure}
+
+\newpage
+\subsection{Universidad de Oslo}
 
 Los resultados del traceroute de la Universidad de Oslo, en Noruega, son los siguientes:
 
@@ -97,6 +113,14 @@ Cantidad de outliers: 4
 El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU con ip 67.17.99.233. Cimbala lo marca como un outlier y efectivamente debe pertenecer a un salto interoceánico. Luego hay par de saltos dentro de EEUU: Virginia, California, antes de llegar a Inglaterra.
 Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{norway.png}
+  \caption{Traceroute: www.uio.no}
+  \label{fig:oman}
+\end{figure}
+
+\newpage
 \subsection{Universidad de Buenos Aires, FCEyN}
 
 Por último nos dirigimos hacia la Facultad de Ciencias Exactas y Naturales, de la Universidad de Buenos Aires. Estos son las métricas obtenidas:
@@ -119,3 +143,10 @@ Cantidad de outliers: 1
 \end{codesnippet}
 
 Tras localizar las direcciones IP de los nodos que ubicamos, llama la atención la ubicación del correspondiente a la dirección 131.100.186.97, en Paraguay. Los tiempo se mantienen relativamente estables en todos los nodos, incluso para el salto fuera de Argentina. No obtuvimos outliers y efectivamente toda la ruta fue dentro del continente.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{norway.png}
+  \caption{Traceroute: www.uio.no}
+  \label{fig:oman}
+\end{figure}
