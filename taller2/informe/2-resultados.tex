@@ -62,40 +62,45 @@ Esta ruta presenta los mismos saltos iniciales hasta EEUU que la ruta previa. Ll
 
 \subsection{Norway - Oslo - www.uio.no - 129.240.118.130}
 
+Los resultados del traceroute de la Universidad de Oslo, en Noruega, son los siguientes:
 
 \begin{codesnippet}
     \begin{verbatim}
 TTL IP              RTT             RTT salto       Outlier o negativo
-  1 129.240.118.130      249.198258      249.198258          1
-  2 129.240.118.130      230.263948      -18.934309          1
-  4 129.240.118.130      195.032835      -35.231113          1
-  6 181.96.120.69        111.418798      -83.614037          1
-  7 181.96.120.69        478.892326      367.473528          1
-  8 181.89.2.125         116.725239     -362.167087          1
- 10 67.17.99.233         249.275798      132.550559          1
- 12 4.69.207.29          198.870659      -50.405139          1
- 13 213.248.84.80        250.132317       51.261658          0
- 14 62.115.120.176       250.017172       -0.115145          1
- 15 62.115.143.121       244.544927       -5.472244          1
- 16 213.248.85.174       410.669770      166.124843          1
- 17 109.105.97.142       443.390125       32.720355          0
- 18 109.105.97.65        433.815522       -9.574603          1
- 19 109.105.97.50        428.418777       -5.396745          1
- 20 109.105.97.56        423.805060       -4.613717          1
- 21 109.105.97.133       414.118917       -9.686142          1
- 22 109.105.102.67       445.133203       31.014285          0
- 23 128.39.230.18        451.262739        6.129536          0
- 24 128.39.65.18         451.991706        0.728967          0
- 25 129.240.100.69       438.489095      -13.502612          1
- 26 129.240.100.66       434.527073       -3.962022          1
- 27 129.240.25.162       434.232510       -0.294563          1
- 28 129.240.118.130      453.266022       19.033511          0
- 29 129.240.118.130      365.932286      -87.333736          1
+1 192.168.1.1           43.158112       43.158112          1
+2 181.88.172.15         60.790395       17.632283          0
+3 181.88.169.84         52.491941       -8.298453          1
+5 181.96.120.63         58.968106        6.476165          0
+6 190.216.88.33         55.229664       -3.738442          1
+7 67.17.99.233         297.179484      241.949821          1
+9 4.69.207.33          346.348180       49.168695          1
+10 213.248.84.80        335.634136      -10.714044          1
+11 62.115.119.230       363.302803       27.668667          0
+12 80.91.248.157        371.916800        8.613997          0
+13 213.248.85.174       455.756232       83.839433          1
+14 109.105.97.140       435.823846      -19.932386          1
+15 109.105.97.126       456.400024       20.576178          0
+16 109.105.102.67       491.082668       34.682644          0
+17 128.39.230.18        478.868084      -12.214584          1
+18 128.39.65.18         500.868043       21.999959          0
+19 129.240.100.69       528.428482       27.560438          0
+20 129.240.100.66       484.626974      -43.801507          1
+21 129.240.25.162       491.957708        7.330734          0
+22 129.240.118.130      477.704773      -14.252935          1
+23 129.240.118.130      492.330074       14.625301          0
 
-Cantidad de saltos RTT positivos: 10
+Cantidad de saltos RTT positivos: 14
 
 Cantidad de outliers: 4
 \end{verbatim}
 \captionof{figure}{Ejemplo de sálida del script implementado. Notar que los mensajes que no son respondidos no se imprimen.}
 \label{fig:output}
 \end{codesnippet}
+
+El primer gran salto en los tiempos de respuesta RTT se da en Louisiana, EEUU con ip 67.17.99.233. Cimbala lo marca como un outlier y efectivamente debe pertenecer a un salto interoceánico. Luego hay par de saltos dentro de EEUU: Virginia, California, antes de llegar a Inglaterra.
+Este último salto, con destino 213.248.85.174, lleva un tiempo de 455ms, más alto que todos los anteriores, al mismo tiempo el método Cimbala también lo marca como un outlier.
+
+
+
+
+
