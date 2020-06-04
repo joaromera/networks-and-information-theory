@@ -8,7 +8,7 @@ ip = sys.argv[1]
 
 for i in ports:
     p = IP(dst=ip)/TCP(dport=i, flags='S')
-    print(i,)
+    print(i, end =" ")
 
     resp = sr1(p, verbose=False, timeout=0.2)
     if resp is None:
