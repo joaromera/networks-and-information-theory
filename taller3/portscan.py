@@ -65,4 +65,6 @@ def tcp_scan(ip, dst_port, dst_timeout):
 print("{:5s} {:30s} {:30s}".format("Port", "UDP", "TCP"))
 for  port in ports:
     dst_timeout=0.2 #fixme: el timeout se usa para volver a retransmitir el mensaje si no tengo respuesta, se puede experimentar modificando el timeout a ver cántos UDP se consiguen. En la consigna usaba 0.2.  
-    print("{:5d} {:30s} {:30s}".format(port, udp_scan(ip, port, dst_timeout), tcp_scan(ip, port, dst_timeout)))
+    udp = str(udp_scan(ip, port, dst_timeout))
+    tcp = str(tcp_scan(ip, port, dst_timeout))
+    print("{:5d} {:30s} {:30s}".format(port, udp, tcp))
