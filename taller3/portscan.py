@@ -8,12 +8,12 @@
 
 
 import sys
-import logging
-logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
  
 
-numberOfPorts = 100
+numberOfPorts = 1025
+
+ports = range(1, numberOfPorts)
 
 ip = sys.argv[1]
 
@@ -62,9 +62,7 @@ def tcp_scan(ip, dst_port, dst_timeout):
         elif tcp_layer.flags == 0x14:
             return("cerrado", tcp_layer.flags)      #fixme, ver que se devuelvan las flags
 
-for  port in range(1, numberOfPorts):
+print("{:5s} {:30s} {:30s}".format("Port", "UDP", "TCP"))
+for  port in ports:
     dst_timeout=0.2 #fixme: el timeout se usa para volver a retransmitir el mensaje si no tengo respuesta, se puede experimentar modificando el timeout a ver cántos UDP se consiguen. En la consigna usaba 0.2.  
-    print(port, end =" ")   
-    print("TCP", tcp_scan(ip, port, dst_timeout))
-    print(port, end =" ")   
-    print("UDP",udp_scan(ip, port, dst_timeout))
+    print("{:5d} {:30s} {:30s}".format(port, udp_scan(ip, port, dst_timeout), tcp_scan(ip, port, dst_timeout)))
