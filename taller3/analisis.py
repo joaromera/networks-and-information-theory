@@ -68,8 +68,8 @@ def plot_puertos_abiertos_segun_timeout(port_scans: pd.DataFrame) -> None:
     cant_puertos_abiertos["udp_abierto_filtrado"].plot(
         legend="Puertos UDP abiertos|filtrados"
     )
-    cant_puertos_abiertos["tcp_abierto"].plot(legend="Puertos TCP abiertos")
-    plt.legend()
+    #  cant_puertos_abiertos["tcp_abierto"].plot(legend="Puertos TCP abiertos")
+    #  plt.legend()
 
 
 if __name__ == "__main__":
