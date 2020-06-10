@@ -3,6 +3,8 @@
 import sys
 from pathlib import Path
 
+import matplotlib.pyplot as plt
+import seaborn as sns
 import pandas as pd
 
 
@@ -55,7 +57,18 @@ def contar_abiertos_y_cerrados_para_cada_timeout(
     return estados.groupby("timeout").sum()
 
 
+def plot_puertos_abiertos_segun_timeout(port_scans: pd.DataFrame) -> None:
+    cant_puertos_abiertos = contar_abiertos_y_cerrados_para_cada_timeout(port_scans)
+    cant_puertos_abiertos["udp_abierto_filtrado"].plot(
+        legend="Puertos UDP abiertos|filtrados"
+    )
+    cant_puertos_abiertos["tcp_abierto"].plot(legend="Puertos TCP abiertos")
+    plt.legend()
+
+
 if __name__ == "__main__":
+
+    sns.set(style="white")
 
     # Abre el archivo especificado en los args.
     if len(sys.argv) < 2:
@@ -67,3 +80,10 @@ if __name__ == "__main__":
     # Imprime conteo de estados de puerto para cada timeout.
     print("Puertos Abiertos/Cerrados segun timeout elegido.")
     print(contar_abiertos_y_cerrados_para_cada_timeout(port_scans))
+
+    # Genera el plot con el experimento de variar timeout.
+    print("Mostrando plot con cant. puertos abiertos segun timeout elegido.")
+    plot_puertos_abiertos_segun_timeout(port_scans)
+    path_to_plot = Path(filepath.name + ".png")
+    print(f"Se va a guardar en: {str(path_to_plot)}")
+    plt.savefig(path_to_plot)
