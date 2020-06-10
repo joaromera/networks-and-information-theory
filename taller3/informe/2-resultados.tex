@@ -4,11 +4,25 @@
 
 El host de la Universidad Nacional Del Chaco Austral es \textit{www.uncaus.edu.ar/}.
 
-Los resultados son los siguientes.
+Los resultados son los siguientes:
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+        \hline
+        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} \\ \hline
+        \textbf{0.5}     & 455                  & 569                             & 3                    & 1014                 \\ \hline
+        \textbf{1}       & 598                  & 426                             & 3                    & 1015                 \\ \hline
+        \textbf{2.5}     & 785                  & 239                             & 3                    & 1013                 \\ \hline
+        \textbf{5}       & 879                  & 145                             & 3                    & 1014                 \\ \hline
+    \end{tabular}
+\end{table}
 
 fimxe: insertar resultados para cada una de la universidades y responder:
 ¿Cuántos puertos abiertos aparecen? ¿A que servicios/protocolos (nivel de aplicación) corresponden?
 ¿Cuántos puertos filtrados tenían los sitios web que se probaron?
 ¿Existen otros puertos bien conocidos que puedan estar abiertos en los hosts que se probaron?
+
+
 
 \newpage
