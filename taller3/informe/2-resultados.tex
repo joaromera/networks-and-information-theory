@@ -38,6 +38,32 @@ En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
 puertos clasificados como \textit{abiertos o filtrados} al estirar el timeout
 del experimento.
 
+\subsection{Facultad de ciencias Exactas y Naturales}%
+\label{sub:facultad_de_ciencias_exactas_y_naturales}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|llllll|}
+        \hline
+        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} & \textbf{TCP Filtrado} \\
+        \hline
+        \textbf{0.5}     & 761.0                & 263.0                           & 2.0                  & 2.0                  & 1020.0                \\
+        \textbf{1.0}     & 1001.0               & 23.0                            & 2.0                  & 2.0                  & 1020.0                \\
+        \textbf{2.5}     & 1012.0               & 12.0                            & 2.0                  & 2.0                  & 1020.0                \\
+        \textbf{5.0}     & 1010.0               & 14.0                            & 2.0                  & 2.0                  & 1020.0                \\
+        \hline
+    \end{tabular}
+    \caption{Estado de los puertos para la \textsc{FCEyN}, fijando distintos \textit{timeouts}.}
+    \label{tabla:fceyn}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./imagenes/fceyn.png}
+    \caption{Cantidad de puertos UDP clasificados como cerrados al variar el \textit{timeout} al escanear la \textsc{FCEyN}.}
+    \label{fig:timeout_fceyn}
+\end{figure}
+
 \subsection{Universidad Nacional Del Chaco Austral}
 \label{sub:universidad_nacional_del_chaco}
 
