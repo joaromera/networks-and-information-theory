@@ -34,6 +34,11 @@ def es_tcp_cerrado(port_scans: pd.DataFrame) -> pd.DataFrame:
     return port_scans["tcp"].apply(contiene_cerrado)
 
 
+def es_tcp_filtrado(port_scans: pd.DataFrame) -> pd.DataFrame:
+    contiene_filtrado = lambda s: "filtrado" in s
+    return port_scans["tcp"].apply(contiene_filtrado)
+
+
 def contar_abiertos_y_cerrados_para_cada_timeout(
     port_scans: pd.DataFrame,
 ) -> pd.DataFrame:
@@ -51,6 +56,7 @@ def contar_abiertos_y_cerrados_para_cada_timeout(
             "udp_abierto_filtrado": es_udp_abierto_o_filtrado(port_scans),
             "tcp_abierto": es_tcp_abierto(port_scans),
             "tcp_cerrado": es_tcp_cerrado(port_scans),
+            "tcp_filtrado": es_tcp_filtrado(port_scans),
         }
     )
 
