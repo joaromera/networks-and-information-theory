@@ -20,8 +20,10 @@ Los resultados son los siguientes:
 
 % ¿Cuántos puertos abiertos aparecen? ¿A que servicios/protocolos (nivel de aplicación) corresponden?
 
-No se encontraron puertos UDP para los cuales se pudiese determinar con certeza que estuvieran abiertos. Si consideramos aquellos cuyo estado puede estar filtrado y los resultados de todas las pruebas con distintos podemos contabilizar 845 puertos con estado \textit{abierto o filtrado}.
+Lo primero que podemos notar es que para UDP la detección de puertos cerrados aumenta a medida que se incrementa el tiempo de timeout. Dar más tiempo de espera a una respuesta del puerto ayuda a disminuir los falsos positivos para el estado indeterminado de \textit{Abierto | Filtrado}.
 
-En TCP se encontraron abiertos los puertos 22, 80 y 443. En estos casos el estado registrado fue \textit{abierto} con \textit{Flag 18 (SA)}. El puerto 443 apareció como cerrado para UDP mientras que los 22 y 80 no se pudo determinar si estaba abierto o filtrado.
+No se encontraron puertos UDP para los cuales se pudiese determinar con certeza que estuvieran abiertos. Si consideramos aquellos cuyo estado puede estar filtrado y los resultados de todas las pruebas con distintos podemos contabilizar 845 puertos con estado \textit{abierto o filtrado}. Sin embargo, observando los estados para el mayor tiempo de timeout, este número se reduce a 145.
+
+En TCP se encontraron abiertos los puertos 22, 80 y 443 -independientemente del tiempo de timeout-. En estos casos el estado registrado fue \textit{abierto} con \textit{Flag 18 (SA)}. Para el protocolo UDP el puerto 443 apareció como cerrado, mientras que los 22 y 80 no se pudo determinar si estaba abierto o filtrado.
 
 \newpage
