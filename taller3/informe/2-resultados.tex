@@ -19,7 +19,12 @@
     \label{tabla:unc}
 \end{table}
 
-\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./imagenes/unc.png}
+    \caption{Cantidad de puertos UDP clasificados como cerrados al variar el \textit{timeout} al escanear la UNC.}
+    \label{fig:timeout_unc}
+\end{figure}
 
 La \textsc{URL} para la universidad nacional de Córdoba ( \textsc{UNC} ) es
 \texttt{www.unc.edu.ar}, y resuelve a la dirección \textsc{IPv4} \texttt{200.49.130.44}.
@@ -28,6 +33,10 @@ la tabla \ref{tabla:unc}.
 
 En \textsc{TCP} se encontraron abiertos los puertos 53 y 111, que corresponden
 a \textsc{DNS} y \textsc{Sun RPC} respectivamente.
+
+En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
+puertos clasificados como \textit{abiertos o filtrados} al estirar el timeout
+del experimento.
 
 \subsection{Universidad Nacional Del Chaco Austral}
 \label{sub:universidad_nacional_del_chaco}
