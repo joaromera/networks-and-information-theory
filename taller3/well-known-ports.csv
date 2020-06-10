@@ -1,0 +1,317 @@
+Port,TCP,UDP,IANA status[1],Description,SCTP
+0,Reserved,Reserved,Official,,
+,N/A,N/A,Unofficial,"In programming APIs (not in communication between hosts), requests a 
+system-allocated (dynamic) port[5]",
+1,Yes,Assigned,Official,"TCP Port Service Multiplexer (TCPMUX). Historic. Both TCP and UDP have been 
+assigned to TCPMUX by IANA,[1] but by design only TCP is specified.[6]",
+5,Assigned,Assigned,Official,"Remote Job Entry[7] was historically using socket 5 in its old socket form, 
+while MIB PIM has identified it as TCP/5[8] and IANA has assigned both TCP 
+and UDP 5 to it.",
+7,Yes,Yes,Official,Echo Protocol[9][10],
+9,Yes,Yes,Official,Discard Protocol[11],Yes [12]
+,No,Yes,Unofficial,Wake-on-LAN[13],
+11,Yes,Yes,Official,Active Users (systat service)[14][15],
+13,Yes,Yes,Official,Daytime Protocol[16],
+15,Yes,No,Unofficial,Previously netstat service[1][14],
+17,Yes,Yes,Official,Quote of the Day (QOTD)[17],
+18,Yes,Yes,Official,Message Send Protocol[18][19],
+19,Yes,Yes,Official,Character Generator Protocol (CHARGEN)[20],
+20,Yes,Assigned,Official,File Transfer Protocol (FTP) data transfer[10],Yes [12]
+21,Yes,Assigned,Official,File Transfer Protocol (FTP) control (command)[10][12][21][22],Yes[12]
+22,Yes,Assigned,Official,"Secure Shell (SSH),[10] secure logins, file transfers (scp, sftp) and port 
+forwarding",Yes [12]
+23,Yes,Assigned,Official,Telnet protocol—unencrypted text communications[10][23],
+25,Yes,Assigned,Official,"Simple Mail Transfer Protocol (SMTP),[10][24] used for email routing 
+between mail servers",
+37,Yes,Yes,Official,Time Protocol[25],
+42,Assigned,Yes,Official,Host Name Server Protocol[26],
+43,Yes,Assigned,Official,WHOIS protocol[27][28][29],
+47,Reserved,Reserved,Official,,
+49,Yes,Yes,Official,"TACACS Login Host protocol.[30] TACACS+, still in draft which is an 
+improved but distinct version of TACACS, only uses TCP 49.[31]",
+51,Reserved,Reserved,Official,"Historically used for Interface Message Processor logical address 
+management,[32] entry has been removed by IANA on 2013-05-25",
+52,Assigned,Assigned,Official,"Xerox Network Systems (XNS) Time Protocol. Despite this port being assigned 
+by IANA, the service is meant to work on SPP (ancestor of IPX/SPX), instead 
+of TCP/IP.[33]",
+53,Yes,Yes,Official,Domain Name System (DNS)[34][10],
+54,Assigned,Assigned,Official,"Xerox Network Systems (XNS) Clearinghouse (Name Server). Despite this port 
+being assigned by IANA, the service is meant to work on SPP (ancestor of 
+IPX/SPX), instead of TCP/IP.[33]",
+56,Assigned,Assigned,Official,"Xerox Network Systems (XNS) Authentication Protocol. Despite this port 
+being assigned by IANA, the service is meant to work on SPP (ancestor of 
+IPX/SPX), instead of TCP/IP.[33]",
+58,Assigned,Assigned,Official,"Xerox Network Systems (XNS) Mail. Despite this port being assigned by IANA, 
+the service is meant to work on SPP (ancestor of IPX/SPX), instead of 
+TCP/IP.[33]",
+61,Reserved,Reserved,Official,"Historically assigned to the NIFTP-Based Mail protocol,[35] but was never 
+documented in the related IEN.[36] The port number entry was removed from 
+IANA's registry on 2017-05-18.[1]",
+67,Assigned,Yes,Official,"Bootstrap Protocol (BOOTP) server;[10] also used by Dynamic Host 
+Configuration Protocol (DHCP)",
+68,Assigned,Yes,Official,"Bootstrap Protocol (BOOTP) client;[10] also used by Dynamic Host 
+Configuration Protocol (DHCP)",
+69,Assigned,Yes,Official,Trivial File Transfer Protocol (TFTP)[10][37][38][39],
+70,Yes,Assigned,Official,Gopher protocol[40],
+71–74,Yes,Yes,Official,NETRJS protocol[41][42][43],
+79,Yes,Assigned,Official,Finger protocol[10][44][45],
+80,Yes,Assigned,Official,Hypertext Transfer Protocol (HTTP)[10][46][47][48],Yes [12]
+,No,Yes,Unofficial,"QUIC, a transport protocol over UDP (still in draft as of April 2020[update]), 
+using stream multiplexing, encryption by default with TLS, and currently 
+supporting HTTP/2.[49] QUIC has been renamed to HTTP/3, which is currently 
+an Internet Draft.",
+81,Yes,,Unofficial,TorPark onion routing[*verification needed*],
+82,,Yes,Unofficial,TorPark control[*verification needed*],
+83,Yes,Assigned,Official,"MIT ML Device, networking file system [50]",
+88,Yes,Assigned,Official,Kerberos[10][51][52] authentication system,
+90,Yes,Yes,Unofficial,PointCast (dotcom)[1][*third-party source needed*],
+95,Yes,Assigned,Official,"SUPDUP, terminal-independent remote login [53]",
+101,Yes,Assigned,Official,NIC host name[54],
+102,Yes,Assigned,Official,ISO Transport Service Access Point (TSAP) Class 0 protocol;[55][56],
+104,Yes,Yes,Official,Digital Imaging and Communications in Medicine (DICOM; also port 11112),
+105,Yes,Yes,Official,CCSO Nameserver[57],
+107,Yes,Yes,Official,Remote User Telnet Service (RTelnet)[58],
+108,Yes,Yes,Official,IBM Systems Network Architecture (SNA) gateway access server,
+109,Yes,Assigned,Official,"Post Office Protocol, version 2 (POP2)[59]",
+110,Yes,Assigned,Official,"Post Office Protocol, version 3 (POP3)[10][60][61]",
+111,Yes,Yes,Official,"Open Network Computing Remote Procedure Call (*ONC RPC*, sometimes referred 
+to as *Sun RPC*)",
+113,Yes,No,Official,"Ident, authentication service/identification protocol,[10][62] used by IRC 
+servers to identify users",
+,Yes,Assigned,Official,"Authentication Service (auth), the predecessor to *identification protocol*. 
+Used to determine a user's identity of a particular TCP connection.[63]",
+115,Yes,Assigned,Official,Simple File Transfer Protocol[10][64],
+117,Yes,Yes,Official,UUCP Mapping Project (path service)[*citation needed*],
+118,Yes,Yes,Official,Structured Query Language (SQL) Services[*jargon*],
+119,Yes,Assigned,Official,"Network News Transfer Protocol (NNTP),[10] retrieval of newsgroup messages
+[65][66]",
+123,Assigned,Yes,Official,"Network Time Protocol (NTP), used for time synchronization[10]",
+126,Yes,Yes,Official,"Formerly Unisys Unitary Login, renamed by Unisys to NXEdit. Used by Unisys 
+Programmer's Workbench for Clearpath MCP, an IDE for Unisys MCP software 
+development",
+135,Yes,Yes,Official,DCE endpoint resolution,
+,Yes,Yes,Official,"Microsoft EPMAP (End Point Mapper), also known as DCE/RPC Locator service,
+[67] used to remotely manage services including DHCP server, DNS server and 
+WINS. Also used by DCOM",
+137,Yes,Yes,Official,"NetBIOS Name Service, used for name registration and resolution[68][69]",
+138,Assigned,Yes,Official,NetBIOS Datagram Service[10][68][69],
+139,Yes,Assigned,Official,NetBIOS Session Service[68][69],
+143,Yes,Assigned,Official,"Internet Message Access Protocol (IMAP),[10] management of electronic mail 
+messages on a server[70]",
+152,Yes,Yes,Official,Background File Transfer Program (BFTP)[71][*importance?*],
+153,Yes,Yes,Official,"Simple Gateway Monitoring Protocol (SGMP), a protocol for remote inspection 
+and alteration of gateway management information[72]",
+156,Yes,Yes,Official,Structured Query Language (SQL) Service[*jargon*],
+158,Yes,Yes,Official,"Distributed Mail System Protocol (*DMSP*, sometimes referred to as *Pcmail*)
+[73][*importance?*]",
+161,Assigned,Yes,Official,Simple Network Management Protocol (SNMP)[74][*citation needed*][10],
+162,Yes,Yes,Official,"Simple Network Management Protocol Trap (SNMPTRAP)[74][75][*citation needed*
+]",
+170,Yes,Yes,Official,Network PostScript print server,
+177,Yes,Yes,Official,"X Display Manager Control Protocol (XDMCP), used for remote logins to an X 
+Display Manager server[76][*self-published source*]",
+179,Yes,Assigned,Official,"Border Gateway Protocol (BGP),[77] used to exchange routing and 
+reachability information among autonomous systems (AS) on the Internet",Yes [12]
+194,Yes,Yes,Official,Internet Relay Chat (IRC)[78],
+199,Yes,Yes,Official,SNMP Unix Multiplexer (SMUX)[79],
+201,Yes,Yes,Official,AppleTalk Routing Maintenance,
+209,Yes,Assigned,Official,Quick Mail Transfer Protocol[80][*self-published source*],
+210,Yes,Yes,Official,ANSI Z39.50,
+213,Yes,Yes,Official,Internetwork Packet Exchange (IPX),
+218,Yes,Yes,Official,Message posting protocol (MPP),
+220,Yes,Yes,Official,"Internet Message Access Protocol (IMAP), version 3",
+225–241,Reserved,Reserved,Official,,
+249–255,Reserved,Reserved,Official,,
+259,Yes,Yes,Official,Efficient Short Remote Operations (ESRO),
+262,Yes,Yes,Official,Arcisdms,
+264,Yes,Yes,Official,Border Gateway Multicast Protocol (BGMP),
+280,Yes,Yes,Official,http-mgmt,
+300,Yes,,Unofficial,ThinLinc Web Access,
+308,Yes,,Official,Novastor Online Backup,
+311,Yes,Assigned,Official,Mac OS X Server Admin[10] (officially AppleShare IP Web administration[1]),
+318,Yes,Yes,Official,PKIX Time Stamp Protocol (TSP),
+319,,Yes,Official,Precision Time Protocol (PTP) event messages,
+320,,Yes,Official,Precision Time Protocol (PTP) general messages,
+350,Yes,Yes,Official,Mapping of Airline Traffic over Internet Protocol (MATIP) type A,
+351,Yes,Yes,Official,MATIP type B,
+356,Yes,Yes,Official,cloanto-net-1 (used by Cloanto Amiga Explorer and VMs),
+366,Yes,Yes,Official,On-Demand Mail Relay (ODMR),
+369,Yes,Yes,Official,Rpc2portmap,
+370,Yes,Yes,Official,"codaauth2, Coda authentication server",
+,,Yes,Official,"securecast1, outgoing packets to NAI's SecureCast servers[81]As of 2000
+[update]",
+371,Yes,Yes,Official,ClearCase albd,
+383,Yes,No,Official,HP data alarm manager,
+384,Yes,Yes,Official,A Remote Network Server System,
+387,Yes,Yes,Official,AURP (AppleTalk Update-based Routing Protocol)[82],
+388,Yes,Assigned,Official,"Unidata LDM near real-time data distribution protocol[83][*self-published 
+source*][84][*self-published source*]",
+389,Yes,Assigned,Official,Lightweight Directory Access Protocol (LDAP)[10],
+399,Yes,Yes,Official,Digital Equipment Corporation DECnet+ (Phase V) over TCP/IP (RFC1859),
+401,Yes,Yes,Official,Uninterruptible power supply (UPS),
+427,Yes,Yes,Official,Service Location Protocol (SLP)[10],
+433,Yes,Yes,Official,"NNSP, part of Network News Transfer Protocol",
+434,Yes,Yes,Official,Mobile IP Agent (RFC 5944),
+443,Yes,Assigned,Official,Hypertext Transfer Protocol over TLS/SSL (HTTPS)[10],Yes [12]
+,No,Yes,Unofficial,"Quick UDP Internet Connections (QUIC), a transport protocol over UDP (still 
+in draft as of July 2018[update]), using stream multiplexing, encryption by 
+default with TLS, and currently supporting HTTP/2.[49]",
+444,Yes,Yes,Official,"Simple Network Paging Protocol (SNPP), RFC 1568",
+445,Yes,Yes,Official,"Microsoft-DS (Directory Services) Active Directory,[85] Windows shares",
+,Yes,Assigned,Official,Microsoft-DS (Directory Services) SMB[10] file sharing,
+464,Yes,Yes,Official,Kerberos Change/Set password,
+465,Yes,No,Official,URL Rendezvous Directory for SSM (Cisco protocol)[*importance?*],
+,Yes,No,Official,Authenticated SMTP[10] over TLS/SSL (SMTPS)[86],
+475,Yes,Yes,Official,"tcpnethaspsrv, Aladdin Knowledge Systems Hasp services",
+491,Yes,,Unofficial,GO-Global remote access and application publishing software,
+497,Yes,Yes,Official,Retrospect,
+500,Assigned,Yes,Official,"Internet Security Association and Key Management Protocol (ISAKMP) / Internet 
+Key Exchange (IKE)[10]",
+502,Yes,Yes,Official,Modbus Protocol,
+504,Yes,Yes,Official,"Citadel, multiservice protocol for dedicated clients for the Citadel 
+groupware system",
+510,Yes,Yes,Official,"FirstClass Protocol (FCP), used by FirstClass client/server groupware system",
+512,Yes,,Official,"Rexec, Remote Process Execution",
+,,Yes,Official,"comsat, together with biff",
+513,Yes,,Official,rlogin,
+,,Yes,Official,Who[87],
+514,Yes,,Unofficial,"Remote Shell, used to execute non-interactive commands on a remote system 
+(Remote Shell, rsh, remsh)",
+,No,Yes,Official,"Syslog,[10] used for system logging",
+515,Yes,Assigned,Official,"Line Printer Daemon (LPD),[10] print service",
+517,,Yes,Official,Talk,
+518,,Yes,Official,NTalk,
+520,Yes,,Official,"efs, extended file name server",
+,,Yes,Official,Routing Information Protocol (RIP),
+521,,Yes,Official,Routing Information Protocol Next Generation (RIPng),
+524,Yes,Yes,Official,"NetWare Core Protocol (NCP) is used for a variety things such as access to 
+primary NetWare server resources, Time Synchronization, etc.",
+525,,Yes,Official,"Timed, Timeserver",
+530,Yes,Yes,Official,Remote procedure call (RPC),
+532,Yes,Assigned,Official,netnews[10],
+533,,Yes,Official,"netwall, For Emergency Broadcasts",
+540,Yes,,Official,Unix-to-Unix Copy Protocol (UUCP),
+542,Yes,Yes,Official,commerce (Commerce Applications),
+543,Yes,,Official,"klogin, Kerberos login",
+544,Yes,,Official,"kshell, Kerberos Remote shell",
+546,Yes,Yes,Official,DHCPv6 client,
+547,Yes,Yes,Official,DHCPv6 server,
+548,Yes,Assigned,Official,Apple Filing Protocol (AFP) over TCP[10],
+550,Yes,Yes,Official,"new-rwho, new-who[87]",
+554,Yes,Yes,Official,Real Time Streaming Protocol (RTSP)[10],
+556,Yes,,Official,"Remotefs, RFS, rfs_server",
+560,,Yes,Official,"rmonitor, Remote Monitor",
+561,,Yes,Official,monitor,
+563,Yes,Yes,Official,NNTP over TLS/SSL (NNTPS),
+564,Yes,,Unofficial,9P (Plan 9),
+585,Port 993,?,Unofficial,"Legacy use of Internet Message Access Protocol over TLS/SSL (IMAPS), now in 
+use at port 993.[88]",
+587,Yes,Assigned,Official,email message submission[10][89] (SMTP),
+591,Yes,,Official,"FileMaker 6.0 (and later) Web Sharing (HTTP Alternate, also see port 80)",
+593,Yes,Yes,Official,"HTTP RPC Ep Map, Remote procedure call over Hypertext Transfer Protocol, 
+often used by Distributed Component Object Model services and Microsoft 
+Exchange Server",
+601,Yes,,Official,Reliable Syslog Service — used for system logging,
+604,Yes,,Official,"TUNNEL profile,[90] a protocol for BEEP peers to form an application layer 
+tunnel",
+623,,Yes,Official,"ASF Remote Management and Control Protocol (ASF-RMCP) & IPMI Remote 
+Management Protocol",
+625,Yes,No,Unofficial,Open Directory Proxy (ODProxy)[10],
+631,Yes,Yes,Official,Internet Printing Protocol (IPP)[10],
+,Yes,Yes,Unofficial,Common Unix Printing System (CUPS) administration console (extension to IPP),
+635,Yes,Yes,Official,RLZ DBase,
+636,Yes,Assigned,Official,Lightweight Directory Access Protocol over TLS/SSL (LDAPS)[10],
+639,Yes,Yes,Official,"MSDP, Multicast Source Discovery Protocol",
+641,Yes,Yes,Official,"SupportSoft Nexus Remote Command (control/listening), a proxy gateway 
+connecting remote control traffic",
+643,Yes,Yes,Official,SANity,
+646,Yes,Yes,Official,"Label Distribution Protocol (LDP), a routing protocol used in MPLS networks",
+647,Yes,,Official,DHCP Failover protocol[91],
+648,Yes,,Official,Registry Registrar Protocol (RRP)[92],
+651,Yes,Yes,Official,IEEE-MMS,
+653,Yes,Yes,Official,"SupportSoft Nexus Remote Command (data), a proxy gateway connecting remote 
+control traffic",
+654,Yes,,Official,Media Management System (MMS) Media Management Protocol (MMP)[93],
+655,Yes,Yes,Official,Tinc VPN daemon,
+657,Yes,Yes,Official,"IBM RMC (Remote monitoring and Control) protocol, used by System p5 AIX 
+Integrated Virtualization Manager (IVM)[94] and Hardware Management Console 
+to connect managed logical partitions (LPAR) to enable dynamic partition 
+reconfiguration",
+660,Yes,Assigned,Official,"Mac OS X Server administration,[1] version 10.4 and earlier[10]",
+666,Yes,Yes,Official,"Doom, first online first-person shooter",
+,Yes,,Unofficial,"airserv-ng, aircrack-ng's server for remote-controlling wireless devices",
+674,Yes,,Official,Application Configuration Access Protocol (ACAP),
+688,Yes,Yes,Official,REALM-RUSD (ApplianceWare Server Appliance Management Protocol),
+690,Yes,Yes,Official,Velneo Application Transfer Protocol (VATP),
+691,Yes,,Official,MS Exchange Routing,
+694,Yes,Yes,Official,Linux-HA high-availability heartbeat,
+695,Yes,,Official,IEEE Media Management System over SSL (IEEE-MMS-SSL)[95],
+698,,Yes,Official,Optimized Link State Routing (OLSR),
+700,Yes,,Official,"Extensible Provisioning Protocol (EPP), a protocol for communication 
+between domain name registries and registrars (RFC 5734)",
+701,Yes,,Official,"Link Management Protocol (LMP),[96] a protocol that runs between a pair of 
+nodes and is used to manage traffic engineering (TE) links",
+702,Yes,,Official,"IRIS[97][98] (Internet Registry Information Service) over BEEP (Blocks 
+Extensible Exchange Protocol)[99] (RFC 3983)",
+706,Yes,,Official,Secure Internet Live Conferencing (SILC),
+711,Yes,,Official,"Cisco Tag Distribution Protocol[100][101][102]—being replaced by the MPLS Label 
+Distribution Protocol[103]",
+712,Yes,,Official,"Topology Broadcast based on Reverse-Path Forwarding routing protocol 
+(TBRPF; RFC 3684)",
+749,Yes,Yes,Official,Kerberos (protocol) administration[10],
+750,,Yes,Official,"kerberos-iv, Kerberos version IV",
+751,Yes,Yes,Unofficial,"kerberos_master, Kerberos authentication",
+752,,Yes,Unofficial,"passwd_server, Kerberos password (kpasswd) server",
+753,Yes,Yes,Official,Reverse Routing Header (RRH)[104],
+,,Yes,Unofficial,"userreg_server, Kerberos userreg server",
+754,Yes,Yes,Official,tell send,
+,Yes,,Unofficial,"krb5_prop, Kerberos v5 slave propagation",
+760,Yes,Yes,Unofficial,"krbupdate [kreg], Kerberos registration",
+782,Yes,,Unofficial,Conserver serial-console management server,
+783,Yes,,Unofficial,SpamAssassin spamd daemon,
+800,Yes,Yes,Official,mdbs-daemon,
+802,Yes,Yes,Official,MODBUS/TCP Security[105],
+808,Yes,,Unofficial,Microsoft Net.TCP Port Sharing Service,
+829,Yes,Assigned,Official,Certificate Management Protocol[106],
+830,Yes,Yes,Official,NETCONF over SSH,
+831,Yes,Yes,Official,NETCONF over BEEP,
+832,Yes,Yes,Official,NETCONF for SOAP over HTTPS,
+833,Yes,Yes,Official,NETCONF for SOAP over BEEP,
+843,Yes,,Unofficial,Adobe Flash[107],
+847,Yes,,Official,DHCP Failover protocol,
+848,Yes,Yes,Official,Group Domain Of Interpretation (GDOI) protocol,
+853,Yes,Yes,Official,DNS over TLS (RFC 7858),
+860,Yes,,Official,iSCSI (RFC 3720),
+861,Yes,Yes,Official,OWAMP control (RFC 4656),
+862,Yes,Yes,Official,TWAMP control (RFC 5357),
+873,Yes,,Official,rsync file synchronization protocol,
+888,Yes,,Unofficial,"cddbp, CD DataBase (CDDB) protocol (CDDBP)",
+,Yes,,Unofficial,IBM Endpoint Manager Remote Control,
+897,Yes,Yes,Unofficial,Brocade SMI-S RPC,
+898,Yes,Yes,Unofficial,Brocade SMI-S RPC SSL,
+902,Yes,Yes,Unofficial,VMware ESXi[108][109],
+903,Yes,,Unofficial,VMware ESXi[108][109],
+953,Yes,Reserved,Official,BIND remote name daemon control (RNDC)[110][111],
+981,Yes,,Unofficial,"Remote HTTPS management for firewall devices running embedded Check Point 
+VPN-1 software[112]",
+987,Yes,,Unofficial,"Microsoft Remote Web Workplace, a feature of Windows Small Business Server
+[113]",
+989,Yes,Yes,Official,"FTPS Protocol (data), FTP over TLS/SSL",
+990,Yes,Yes,Official,"FTPS Protocol (control), FTP over TLS/SSL",
+991,Yes,Yes,Official,Netnews Administration System (NAS)[114],
+992,Yes,Yes,Official,Telnet protocol over TLS/SSL,
+993,Yes,Assigned,Official,Internet Message Access Protocol over TLS/SSL (IMAPS)[10],
+994,Reserved,Reserved,Official,,
+,Maybe,Maybe,Unofficial,"Internet Relay Chat over TLS/SSL (IRCS). Previously assigned, but not used 
+in common practice.",
+995,Yes,Yes,Official,Post Office Protocol 3 over TLS/SSL (POP3S)[10],
+1010,Yes,,Unofficial,ThinLinc web-based administration interface[115][*self-published source?*],
+1011–1020,Reserved,Reserved,Official,,
+1023,Reserved,Reserved,Official,[1],
+,Yes,Yes,Unofficial,"z/OS Network File System (NFS) (potentially ports 991–1023) 
+
+[78]
+
+[79]
+
+[116][*self-published source*]",

@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+# Tabla con data de los puertos bien conocidos para hacer uno de los reportes.
+well_known_ports = pd.read_csv("well-known-ports.csv")
+
 
 def es_udp_cerrado(port_scans: pd.DataFrame) -> pd.Series:
     """
@@ -63,6 +66,11 @@ def contar_abiertos_y_cerrados_para_cada_timeout(
     return estados.groupby("timeout").sum()
 
 
+def puertos_tcp_abiertos(port_scans) -> pd.DataFrame:
+    open_tcp_ports = port_scans[es_tcp_abierto(port_scans)]["port"].unique()
+    return open_tcp_ports
+
+
 def plot_puertos_abiertos_segun_timeout(port_scans: pd.DataFrame) -> None:
     cant_puertos_abiertos = contar_abiertos_y_cerrados_para_cada_timeout(port_scans)
     cant_puertos_abiertos["udp_abierto_filtrado"].plot(
@@ -93,3 +101,6 @@ if __name__ == "__main__":
     path_to_plot = Path(filepath.name + ".png")
     print(f"Se va a guardar en: {str(path_to_plot)}")
     plt.savefig(path_to_plot)
+
+    print("puertos TCP abiertos")
+    print(puertos_tcp_abiertos(port_scans))
