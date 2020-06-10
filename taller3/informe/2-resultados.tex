@@ -26,19 +26,27 @@ Los resultados son los siguientes:
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{|l|l|l|l|l|}
+    \begin{tabular}{|llllll|}
         \hline
-        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} \\ \hline
-        \textbf{0.5}     & 455                  & 569                             & 3                    & 1014                 \\ \hline
-        \textbf{1}       & 598                  & 426                             & 3                    & 1015                 \\ \hline
-        \textbf{2.5}     & 785                  & 239                             & 3                    & 1013                 \\ \hline
-        \textbf{5}       & 879                  & 145                             & 3                    & 1014                 \\ \hline
+        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} & \textbf{TCP Filtrado} \\ \hline
+        \textbf{0.5}     & 455                  & 569                             & 3                    & 1014                 & 7                     \\
+        \textbf{1}       & 598                  & 426                             & 3                    & 1015                 & 6                     \\
+        \textbf{2.5}     & 785                  & 239                             & 3                    & 1013                 & 8                     \\
+        \textbf{5}       & 879                  & 145                             & 3                    & 1014                 & 7                     \\ \hline
     \end{tabular}
 \end{table}
 
 % ¿Cuántos puertos abiertos aparecen? ¿A que servicios/protocolos (nivel de aplicación) corresponden?
 
 Lo primero que podemos notar es que para UDP la detección de puertos cerrados aumenta a medida que se incrementa el tiempo de timeout. Dar más tiempo de espera a una respuesta del puerto ayuda a disminuir los falsos positivos para el estado indeterminado de \textit{Abierto | Filtrado}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./imagenes/uncaus.png}
+    % \caption{}
+    % \label{fig:timeoutUncaus}
+\end{figure}
+
 
 No se encontraron puertos UDP para los cuales se pudiese determinar con certeza que estuvieran abiertos. Si consideramos aquellos cuyo estado puede estar filtrado y los resultados de todas las pruebas con distintos timeouts podemos contabilizar 845 puertos con estado \textit{abierto o filtrado}. Sin embargo, observando los estados para el mayor tiempo de timeout, este número se reduce a 145.
 
