@@ -2,20 +2,21 @@
 
 \subsection{Explicación del código}
 
-Como se mencionó, se utilizó la herramienta \textit{nmap}, con la mísma se implementó un script que dado el \textit{ip}  de un servidor, envía paquetes TCP y UDP sus primeros 1024 puertos, con el objetivo de identificar el estado de los mismos. 
+Como se mencionó, se utilizó la herramienta \textit{nmap}, con la misma se implementó un script que dado el \textit{ip} de un servidor, envía paquetes TCP y UDP sus primeros 1024 puertos, con el objetivo de identificar el estado de los mismos.
 
-Los estados posibles de los puertos para los paquetes TCP son \textit{abierto}, \textit{cerrado} y \textit{filtrado} mientras que para UDP a esos tres estados se le agrega el estado \textit{abierto|filtrado} (no se puede determinar cual de los dos es). El estado de un puerto se caracteriza por el mensaje (o falta del mismo) que el servidor envía al usuario. 
+Los estados posibles de los puertos para los paquetes TCP son \textit{abierto}, \textit{cerrado} y \textit{filtrado} mientras que para UDP a esos tres estados se le agrega el estado \textit{abierto|filtrado} (no se puede determinar cuál de los dos es). El estado de un puerto se caracteriza por el mensaje (o falta del mismo) que el servidor envía al usuario en su respuesta.
 
-Por último cada paquete enviado tiene un \textit{timeout} que determina el tiempo que puede pasar un paquete en cada servidor, si este valor llega a cero, el paquete deja de transmitirse. Se experimetnó variando el valor del timeout con el objetivo de evaluar los cambios en las respuestas a los paquetes. 
+Por último cada paquete enviado tiene un \textit{timeout} que determina el tiempo que puede pasar un paquete en cada servidor, si este valor llega a cero, el paquete deja de transmitirse. Se experimentó variando el valor del timeout con el objetivo de evaluar los cambios en las respuestas a los paquetes.
+
 \subsection{Características de las pruebas}
 
 Cada integrante del grupo utilizo la herramienta implementada con los siguientes sitios web:
 
 \begin{itemize}
-  \item \url{www.unc.edu.ar}.
+  \item \url{www.uncaus.edu.ar}.
   \item \url{www.unrn.edu.ar}.
   \item \url{www.unrn.edu.ar}.
   \item \url{www.exactas.uba.ar}  
 \end{itemize}
 
-Los resultados de las corridas se detallan en la sección resultados.
+Los resultados de las corridas se detallan en la sección correspondiente.
