@@ -11,10 +11,20 @@ Se realizó un escaneo de puertos obteniendo los resultados que pueden verse en
 la tabla \ref{tabla:unc}.
 
 En \textsc{TCP} se encontraron abiertos los puertos 53 y 111, que corresponden
-a \textsc{DNS} y \textsc{Sun RPC} respectivamente. Ambas respuestas con 
-\textit{Flag 18 (SA)}.
+a \textsc{DNS} y \textsc{Sun RPC} respectivamente -con \textit{Flag 18 (SA)}-.
+Los siguientes puertos fueron registrados como filtrados:
 
-No se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto. 
+\begin{table}[h]
+    \begin{tabular}{ll}
+        \textbf{Puerto TCP filtrado} & \textbf{Descripción} \\
+        \textbf{135} & DCE endpoint o Microsoft End Point Mapper \\
+        \textbf{137} & NetBios Name Service \\
+        \textbf{138} & NetBios Datagram Service \\
+        \textbf{139} & NetBios Session Service \\
+        \textbf{445} & Microsoft Active Directory \\
+        \textbf{904} & NA \\
+    \end{tabular}
+\end{table}
 
 \begin{table}[h]
     \centering
@@ -33,11 +43,12 @@ No se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto.
 \end{table}
 
 En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
-puertos clasificados como \textit{abiertos o filtrados} al estirar el timeout
+puertos UDP clasificados como \textit{abiertos o filtrados} al estirar el timeout
 del experimento. Este resultado se verifica en el resto de los experimentos y
  posiblemente halle su explicación en los falsos negativos que pueden 
 ocasionarse por tener una ventana muy pequeña que no permita esperar una 
-respuesta del servidor.
+respuesta del servidor. A pesar de no poder clasificar todos los puertos como 
+cerrados no se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto.
 
 \begin{figure}[h]
     \centering
