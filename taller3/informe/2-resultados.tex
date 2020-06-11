@@ -102,10 +102,12 @@ punto de quiebre.
 \newpage
 
 % **************************************************************************
-\subsection{Universidad Nacional de Rio Negro}%
+\subsection{Universidad Nacional de Río Negro}%
 \label{sub:universidad_nacional_de_rio_negro}
 % **************************************************************************
 
+La Universidad Nacional de Río Negro tiene host en \texttt{www.unc.edu.ar}. 
+Su dirección \textsc{IPv4} es \texttt{200.51.204.177}. El escaneo de puertos devolvió los siguientes resultados:
 
 \begin{table}[h]
     \centering
@@ -130,7 +132,7 @@ respectivamente.
 Resulta evidente que el host implementa un \textit{firewall}, ya que todo
 puerto UDP permanece abierto o filtrado y todos los puertos TCP fueron
 filtrados, hasta para el timeout mas bajo. LLama la atención el puerto 113, que
-corresponde al protocolo \textsc{IDENT}. Es el único puerto TCP que se halló
+corresponde al protocolo \textsc{IDENT} es el único puerto TCP que se halló
 cerrado para este host.
 
 \newpage
@@ -175,9 +177,12 @@ No se encontraron puertos UDP para los cuales se pudiese determinar con certeza 
 
 En TCP se encontraron abiertos los puertos 22, 80 y 443 -independientemente del tiempo de timeout. En estos casos el estado registrado fue \textit{abierto} con \textit{Flag 18 (SA)}. Para el protocolo UDP el puerto 443 apareció como cerrado, mientras que los 22 y 80 no se pudo determinar si estaba abierto o filtrado. Estos son los puertos típicos para SSL, HTTP y HTTPS (en orden).
 
+\newpage
+
 Los puertos TCP clasificados como filtrados son los siguientes:
 
-\begin{table}[h]
+\begin{table}[H]
+    \centering
     \begin{tabular}{ll}
         \textbf{Puerto TCP filtrado} & \textbf{Descripción} \\
         \textbf{135} & DCE endpoint o Microsoft End Point Mapper \\
