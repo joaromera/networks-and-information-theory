@@ -90,6 +90,38 @@ cerrados no se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto
 \newpage
 
 % **************************************************************************
+\subsection{Universidad Nacional de Rio Negro}%
+\label{sub:universidad_nacional_de_rio_negro}
+% **************************************************************************
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|llllll|}
+        \hline
+        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} & \textbf{TCP Filtrado} \\
+        \hline
+        \textbf{0.5}     & 0.0                  & 1024.0                          & 3.0                  & 1.0                  & 1020.0                \\
+        \textbf{1.0}     & 0.0                  & 1024.0                          & 3.0                  & 1.0                  & 1020.0                \\
+        \textbf{2.5}     & 0.0                  & 1024.0                          & 3.0                  & 1.0                  & 1020.0                \\
+        \textbf{5.0}     & 0.0                  & 1024.0                          & 3.0                  & 1.0                  & 1020.0                \\
+        \hline
+    \end{tabular}
+    \caption{Estado de los puertos para la \textsc{UNRN}, fijando distintos \textit{timeouts}.}
+    \label{tabla:fceyn}
+\end{table}
+
+Para la \textsc{UNRN}, se encontraron abiertos los puertos TCP 21, 80, y 443.
+Que corresponden a \textsc{TCP}, \textsc{HTTP} y \textsc{HTTPS}
+respectivamente.
+
+Resulta evidente que el host implementa un \textit{firewall}, ya que todo
+puerto UDP permanece abierto o filtrado y todos los puertos TCP fueron
+filtrados, hasta para el timeout mas bajo. LLama la atención el puerto 113, que
+corresponde al protocolo \textsc{IDENT}. Es el único puerto TCP que se halló
+cerrado para este host.
+
+% **************************************************************************
 \subsection{Universidad Nacional Del Chaco Austral}
 \label{sub:universidad_nacional_del_chaco}
 % **************************************************************************
