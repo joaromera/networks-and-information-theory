@@ -173,6 +173,22 @@ No se encontraron puertos UDP para los cuales se pudiese determinar con certeza 
 
 En TCP se encontraron abiertos los puertos 22, 80 y 443 -independientemente del tiempo de timeout. En estos casos el estado registrado fue \textit{abierto} con \textit{Flag 18 (SA)}. Para el protocolo UDP el puerto 443 apareció como cerrado, mientras que los 22 y 80 no se pudo determinar si estaba abierto o filtrado. Estos son los puertos típicos para SSL, HTTP y HTTPS (en orden).
 
+Los puertos TCP clasificados como filtrados son los siguientes:
+
+\begin{table}[h]
+    \begin{tabular}{ll}
+        \textbf{Puerto TCP filtrado} & \textbf{Descripción} \\
+        \textbf{135} & DCE endpoint o Microsoft End Point Mapper \\
+        \textbf{137} & NetBios Name Service \\
+        \textbf{138} & NetBios Datagram Service \\
+        \textbf{179} & Border Gateway Protocol \\
+        \textbf{234} & NetBios Session Service \\
+        \textbf{445} & Microsoft Active Directory \\
+        \textbf{628} & VMware Server Alternate \\
+        \textbf{772} & VMware Server Alternate \\
+    \end{tabular}
+\end{table}
+
 Para todos los otros puertos TCP se determinó que su estado era \textit{Cerrado} con \textit{Flag 20 (RA)}.
 
 \newpage
