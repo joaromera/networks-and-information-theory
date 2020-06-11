@@ -38,6 +38,8 @@ En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
 puertos clasificados como \textit{abiertos o filtrados} al estirar el timeout
 del experimento.
 
+\newpage
+
 \subsection{Facultad de ciencias Exactas y Naturales}%
 \label{sub:facultad_de_ciencias_exactas_y_naturales}
 
@@ -64,6 +66,8 @@ del experimento.
     \label{fig:timeout_fceyn}
 \end{figure}
 
+\newpage
+
 \subsection{Universidad Nacional Del Chaco Austral}
 \label{sub:universidad_nacional_del_chaco}
 
@@ -75,12 +79,16 @@ Los resultados son los siguientes:
     \centering
     \begin{tabular}{|llllll|}
         \hline
-        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} & \textbf{TCP Filtrado} \\ \hline
+        \textbf{Timeout} & \textbf{UDP Cerrado} & \textbf{UDP Abierto | Filtrado} & \textbf{TCP Abierto} & \textbf{TCP Cerrado} & \textbf{TCP Filtrado} \\
+        \hline
         \textbf{0.5}     & 455                  & 569                             & 3                    & 1014                 & 7                     \\
         \textbf{1}       & 598                  & 426                             & 3                    & 1015                 & 6                     \\
         \textbf{2.5}     & 785                  & 239                             & 3                    & 1013                 & 8                     \\
-        \textbf{5}       & 879                  & 145                             & 3                    & 1014                 & 7                     \\ \hline
+        \textbf{5}       & 879                  & 145                             & 3                    & 1014                 & 7                     \\
+        \hline
     \end{tabular}
+    \caption{Estado de los puertos para la \textsc{UNCAUS} fijando distintos \textit{timeouts}.}
+    \label{tabla:uncaus}
 \end{table}
 
 % ¿Cuántos puertos abiertos aparecen? ¿A que servicios/protocolos (nivel de aplicación) corresponden?
@@ -90,10 +98,9 @@ Lo primero que podemos notar es que para UDP la detección de puertos cerrados a
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{./imagenes/uncaus.png}
-    % \caption{}
-    % \label{fig:timeoutUncaus}
+    \caption{Cantidad de puertos UDP clasificados como cerrados al variar el \textit{timeout} al escanear la \textsc{UNCAUS}.}
+    \label{fig:timeout_uncaus}
 \end{figure}
-
 
 No se encontraron puertos UDP para los cuales se pudiese determinar con certeza que estuvieran abiertos. Si consideramos aquellos cuyo estado puede estar filtrado y los resultados de todas las pruebas con distintos timeouts podemos contabilizar 845 puertos con estado \textit{abierto o filtrado}. Sin embargo, observando los estados para el mayor tiempo de timeout, este número se reduce a 145.
 
