@@ -5,6 +5,17 @@
 \label{sub:universidad_nacional_de_cordoba}
 % **************************************************************************
 
+La \textsc{URL} para la universidad nacional de Córdoba ( \textsc{UNC} ) es
+\texttt{www.unc.edu.ar}, y resuelve a la dirección \textsc{IPv4} \texttt{200.49.130.44}.
+Se realizó un escaneo de puertos obteniendo los resultados que pueden verse en
+la tabla \ref{tabla:unc}.
+
+En \textsc{TCP} se encontraron abiertos los puertos 53 y 111, que corresponden
+a \textsc{DNS} y \textsc{Sun RPC} respectivamente. Ambas respuestas con 
+\textit{Flag 18 (SA)}.
+
+No se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto. 
+
 \begin{table}[h]
     \centering
     \begin{tabular}{|llllll|}
@@ -21,24 +32,19 @@
     \label{tabla:unc}
 \end{table}
 
+En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
+puertos clasificados como \textit{abiertos o filtrados} al estirar el timeout
+del experimento. Este resultado se verifica en el resto de los experimentos y
+ posiblemente halle su explicación en los falsos negativos que pueden 
+ocasionarse por tener una ventana muy pequeña que no permita esperar una 
+respuesta del servidor.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{./imagenes/unc.png}
     \caption{Cantidad de puertos UDP clasificados como cerrados al variar el \textit{timeout} al escanear la UNC.}
     \label{fig:timeout_unc}
 \end{figure}
-
-La \textsc{URL} para la universidad nacional de Córdoba ( \textsc{UNC} ) es
-\texttt{www.unc.edu.ar}, y resuelve a la dirección \textsc{IPv4} \texttt{200.49.130.44}.
-Se realizó un escaneo de puertos obteniendo los resultados que pueden verse en
-la tabla \ref{tabla:unc}.
-
-En \textsc{TCP} se encontraron abiertos los puertos 53 y 111, que corresponden
-a \textsc{DNS} y \textsc{Sun RPC} respectivamente.
-
-En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
-puertos clasificados como \textit{abiertos o filtrados} al estirar el timeout
-del experimento.
 
 \newpage
 
