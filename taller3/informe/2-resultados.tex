@@ -60,9 +60,13 @@ cerrados no se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto
 \newpage
 
 % **************************************************************************
-\subsection{Facultad de ciencias Exactas y Naturales}%
+\subsection{Facultad de Ciencias Exactas y Naturales}%
 \label{sub:facultad_de_ciencias_exactas_y_naturales}
 % **************************************************************************
+
+La página de la Facultad de Ciencias Exactas y Naturales con host \texttt{exactas.uba.ar} resuelve
+a la dirección \textsc{IPv4} \texttt{157.92.32.18}. El experimento del escaneo de puertos para esta
+dirección arrojó los siguientes resultados:
 
 \begin{table}[h]
     \centering
@@ -80,12 +84,20 @@ cerrados no se encontraron puertos UDP cuyo estado pueda confirmarse ser abierto
     \label{tabla:fceyn}
 \end{table}
 
+Los puertos TCP abiertos (con Flag 18 SA) fueron el 80 (HTTP) y el 443 (HTTPS). 
+Unicamente los puertos 554 (RTSP) y 1024 (sin uso oficial) se encontraron cerrados (con Flag 20 RA), 
+mientras que el resto de los puertos fueron clasificados como filtrados.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{./imagenes/fceyn.png}
     \caption{Cantidad de puertos UDP clasificados como cerrados al variar el \textit{timeout} al escanear la \textsc{FCEyN}.}
     \label{fig:timeout_fceyn}
 \end{figure}
+
+A diferencia de los otros experimentos, la caída en la cantidad de puertos UDP abiertos/filtrados es notablemente 
+abrupta. Posiblemente por la cercanía geográfica aumentar el timeout no tenga incidencia mayor a partir de este 
+punto de quiebre.
 
 \newpage
 
