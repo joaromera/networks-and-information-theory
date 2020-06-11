@@ -1,1 +1,15 @@
 \section{Conclusiones}
+
+\begin{itemize}
+    \item Para los casos en los que los puertos presentan un alto numero de
+        puertos filtrados, tales como la \textsc{FCEyN} y la \textsc{UNRN}, se
+        hace evidente el uso de firewall.
+    \item No se puede afirmar o descartar la presencia de un firewall en los
+        casos de la \textsc{Universidad de Córdoba} y \textsc{Universidad
+        Nacional del Chaco Austral}.
+    \item Se dificulta identificar puertos \textsc{UDP} cerrados, pues, para
+        \textit{timeouts} bajos se clasifican erroneamente como puertos
+        abiertos o filtrados. Incluso para un timeout alto, no hay forma de
+        saber si un puerto clasificado como \texttt{abierto|filtrado}
+        corresponde a un puerto cerrado para el cual se perdió el paquete.
+\end{itemize}
