@@ -7,7 +7,7 @@
 
 Para la \textsc{Universidad Nacional de Córdoba} ( \textsc{UNC} ), se cometió
 el error de escanear el servidor DNS que resuelve \texttt{unc.edu.ar} en vez de
-escanear la IP resuelta por el. De todos modos, los resutados son interesantes
+escanear la IP resuelta por él. De todos modos, los resultados son interesantes
 ya que se observan puertos distintos a los otros casos.
 
 En \textsc{TCP} se encontraron abiertos los puertos 53 y 111, que corresponden
@@ -42,7 +42,7 @@ Los siguientes puertos fueron registrados como filtrados:
     \label{tabla:unc}
 \end{table}
 
-En la figura \ref{fig:timeout_unc} puede verse una reducción drastica de los
+En la figura \ref{fig:timeout_unc} puede verse una reducción drástica de los
 puertos UDP clasificados como \textit{abiertos o filtrados} al estirar el timeout
 del experimento. Este resultado se verifica en el resto de los experimentos y
  posiblemente halle su explicación en los falsos negativos que pueden 
@@ -126,12 +126,12 @@ Su dirección \textsc{IPv4} es \texttt{200.51.204.177}. El escaneo de puertos de
 \end{table}
 
 Para la \textsc{UNRN}, se encontraron abiertos los puertos TCP 21, 80, y 443.
-Que corresponden a \textsc{TCP}, \textsc{HTTP} y \textsc{HTTPS}
+Estos corresponden a \textsc{TCP}, \textsc{HTTP} y \textsc{HTTPS}
 respectivamente.
 
 Resulta evidente que el host implementa un \textit{firewall}, ya que todo
 puerto UDP permanece abierto o filtrado y todos los puertos TCP fueron
-filtrados, hasta para el timeout mas bajo. LLama la atención el puerto 113, que
+filtrados, hasta para el timeout más bajo. LLama la atención el puerto 113, que
 corresponde al protocolo \textsc{IDENT} es el único puerto TCP que se halló
 cerrado para este host.
 
