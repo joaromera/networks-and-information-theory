@@ -6,6 +6,8 @@ types = {
     1:"A",
     2:"NS",
     5:"CNAME",
+    6:"SOA",
+    15:"MX",
     28:"AAAA"
 }
 
@@ -22,7 +24,17 @@ def print_dns_register(resource_record:scapy.layers.dns.DNSRR):
     time_to_live = resource_record.ttl
     register_class = translate_class(resource_record.rclass)
     register_type = translate_type(resource_record.type)
-    value = str(resource_record.rdata)
+    value = ""
+    # MX entries use exchange attribute for value
+    # SOA entries use mname attribute for value
+    # Other entries use rdata attribute for value
+    try:
+        value = str(resource_record.rdata)
+    except AttributeError:
+        try:
+            value = str(resource_record.exchange)
+        except AttributeError:
+            value = str(resource_record.mname)
     print("{:30s} {:10d} {:5s} {:5s} {:30s}".format(
         domain_name, time_to_live, register_class, register_type, value))
 
