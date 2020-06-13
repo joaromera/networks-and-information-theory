@@ -1,0 +1,172 @@
+QUESTION TO: 198.41.0.4
+AUTHORITY SECTION:
+b'de.'                             172800 IN    NS    b's.de.net.'                  
+b'de.'                             172800 IN    NS    b'n.de.net.'                  
+b'de.'                             172800 IN    NS    b'a.nic.de.'                  
+b'de.'                             172800 IN    NS    b'f.nic.de.'                  
+b'de.'                             172800 IN    NS    b'l.de.net.'                  
+b'de.'                             172800 IN    NS    b'z.nic.de.'                  
+ADDITIONAL SECTION:
+b's.de.net.'                       172800 IN    A     195.243.137.26                
+b's.de.net.'                       172800 IN    AAAA  2003:8:14::53                 
+b'n.de.net.'                       172800 IN    A     194.146.107.6                 
+b'n.de.net.'                       172800 IN    AAAA  2001:67c:1011:1::53           
+b'a.nic.de.'                       172800 IN    A     194.0.0.53                    
+b'a.nic.de.'                       172800 IN    AAAA  2001:678:2::53                
+b'f.nic.de.'                       172800 IN    A     81.91.164.5                   
+b'f.nic.de.'                       172800 IN    AAAA  2a02:568:0:2::53              
+b'l.de.net.'                       172800 IN    A     77.67.63.105                  
+b'l.de.net.'                       172800 IN    AAAA  2001:668:1f:11::105           
+b'z.nic.de.'                       172800 IN    A     194.246.96.1                  
+b'z.nic.de.'                       172800 IN    AAAA  2a02:568:fe02::de             
+
+QUESTION TO: 194.246.96.1
+AUTHORITY SECTION:
+b'tu-berlin.de.'                    86400 IN    NS    b'ns.tu-berlin.de.'           
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-2.dfn.de.'              
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-3.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns.tu-berlin.de.'                 86400 IN    A     130.149.7.7                   
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dns-3.dfn.de.'                    86400 IN    A     193.174.75.58                 
+b'ns.tu-berlin.de.'                 86400 IN    AAAA  2001:638:809:7::7             
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+b'dns-3.dfn.de.'                    86400 IN    AAAA  2001:638:d:b103::1            
+
+QUESTION TO: 193.174.75.58
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 193.174.75.54
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 130.149.7.7
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 77.67.63.105
+AUTHORITY SECTION:
+b'tu-berlin.de.'                    86400 IN    NS    b'ns.tu-berlin.de.'           
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-2.dfn.de.'              
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-3.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns.tu-berlin.de.'                 86400 IN    A     130.149.7.7                   
+b'ns.tu-berlin.de.'                 86400 IN    AAAA  2001:638:809:7::7             
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+b'dns-3.dfn.de.'                    86400 IN    A     193.174.75.58                 
+b'dns-3.dfn.de.'                    86400 IN    AAAA  2001:638:d:b103::1            
+
+QUESTION TO: 193.174.75.58
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 193.174.75.54
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 130.149.7.7
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 81.91.164.5
+AUTHORITY SECTION:
+b'tu-berlin.de.'                    86400 IN    NS    b'ns.tu-berlin.de.'           
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-2.dfn.de.'              
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-3.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns.tu-berlin.de.'                 86400 IN    A     130.149.7.7                   
+b'ns.tu-berlin.de.'                 86400 IN    AAAA  2001:638:809:7::7             
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+b'dns-3.dfn.de.'                    86400 IN    A     193.174.75.58                 
+b'dns-3.dfn.de.'                    86400 IN    AAAA  2001:638:d:b103::1            
+
+QUESTION TO: 193.174.75.58
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 193.174.75.54
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 130.149.7.7
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 194.0.0.53
+AUTHORITY SECTION:
+b'tu-berlin.de.'                    86400 IN    NS    b'ns.tu-berlin.de.'           
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-3.dfn.de.'              
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-2.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns.tu-berlin.de.'                 86400 IN    A     130.149.7.7                   
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dns-3.dfn.de.'                    86400 IN    A     193.174.75.58                 
+b'ns.tu-berlin.de.'                 86400 IN    AAAA  2001:638:809:7::7             
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+b'dns-3.dfn.de.'                    86400 IN    AAAA  2001:638:d:b103::1            
+
+QUESTION TO: 193.174.75.58
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 193.174.75.54
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 130.149.7.7
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 194.146.107.6
+AUTHORITY SECTION:
+b'tu-berlin.de.'                    86400 IN    NS    b'ns.tu-berlin.de.'           
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-2.dfn.de.'              
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-3.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns.tu-berlin.de.'                 86400 IN    A     130.149.7.7                   
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dns-3.dfn.de.'                    86400 IN    A     193.174.75.58                 
+b'ns.tu-berlin.de.'                 86400 IN    AAAA  2001:638:809:7::7             
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+b'dns-3.dfn.de.'                    86400 IN    AAAA  2001:638:d:b103::1            
+
+QUESTION TO: 193.174.75.58
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 193.174.75.54
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 130.149.7.7
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 195.243.137.26
+AUTHORITY SECTION:
+b'tu-berlin.de.'                    86400 IN    NS    b'ns.tu-berlin.de.'           
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-2.dfn.de.'              
+b'tu-berlin.de.'                    86400 IN    NS    b'dns-3.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns.tu-berlin.de.'                 86400 IN    A     130.149.7.7                   
+b'ns.tu-berlin.de.'                 86400 IN    AAAA  2001:638:809:7::7             
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+b'dns-3.dfn.de.'                    86400 IN    A     193.174.75.58                 
+b'dns-3.dfn.de.'                    86400 IN    AAAA  2001:638:d:b103::1            
+
+QUESTION TO: 193.174.75.58
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 193.174.75.54
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+
+QUESTION TO: 130.149.7.7
+AUTHORITY SECTION:
+b'tu-berlin.de.'                      900 IN    SOA   b'ns.tu-berlin.de.'           
+

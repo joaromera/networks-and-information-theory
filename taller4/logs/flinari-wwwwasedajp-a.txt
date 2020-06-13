@@ -1,0 +1,39 @@
+QUESTION TO: 198.41.0.4
+AUTHORITY SECTION:
+b'jp.'                             172800 IN    NS    b'a.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'b.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'c.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'd.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'e.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'f.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'g.dns.jp.'                  
+b'jp.'                             172800 IN    NS    b'h.dns.jp.'                  
+ADDITIONAL SECTION:
+b'a.dns.jp.'                       172800 IN    A     203.119.1.1                   
+b'b.dns.jp.'                       172800 IN    A     202.12.30.131                 
+b'c.dns.jp.'                       172800 IN    A     156.154.100.5                 
+b'd.dns.jp.'                       172800 IN    A     210.138.175.244               
+b'e.dns.jp.'                       172800 IN    A     192.50.43.53                  
+b'f.dns.jp.'                       172800 IN    A     150.100.6.8                   
+b'g.dns.jp.'                       172800 IN    A     203.119.40.1                  
+b'h.dns.jp.'                       172800 IN    A     65.22.40.25                   
+b'a.dns.jp.'                       172800 IN    AAAA  2001:dc4::1                   
+b'b.dns.jp.'                       172800 IN    AAAA  2001:dc2::1                   
+b'c.dns.jp.'                       172800 IN    AAAA  2001:502:ad09::5              
+b'd.dns.jp.'                       172800 IN    AAAA  2001:240::53                  
+b'e.dns.jp.'                       172800 IN    AAAA  2001:200:c000::35             
+b'f.dns.jp.'                       172800 IN    AAAA  2001:2f8:0:100::153           
+b'h.dns.jp.'                       172800 IN    AAAA  2a01:8840:1ba::25             
+
+QUESTION TO: 65.22.40.25
+AUTHORITY SECTION:
+b'waseda.jp.'                       86400 IN    NS    b'ns.cfi.waseda.ac.jp.'       
+b'waseda.jp.'                       86400 IN    NS    b'dns-x.sinet.ad.jp.'         
+b'waseda.jp.'                       86400 IN    NS    b'ns2.cfi.waseda.ac.jp.'      
+ADDITIONAL SECTION:
+b'ns.cfi.waseda.ac.jp.'             86400 IN    A     133.9.1.3                     
+b'ns2.cfi.waseda.ac.jp.'            86400 IN    A     133.9.1.4                     
+
+QUESTION TO: 133.9.1.4
+ANSWER SECTION:
+b'www.waseda.jp.'                     300 IN    CNAME b'www.waseda.jp.cdn.cloudflare.net.'

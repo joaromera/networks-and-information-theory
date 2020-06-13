@@ -1,0 +1,177 @@
+QUESTION TO: 192.33.4.12
+AUTHORITY SECTION:
+b'no.'                             172800 IN    NS    b'not.norid.no.'              
+b'no.'                             172800 IN    NS    b'x.nic.no.'                  
+b'no.'                             172800 IN    NS    b'z.nic.no.'                  
+b'no.'                             172800 IN    NS    b'i.nic.no.'                  
+b'no.'                             172800 IN    NS    b'y.nic.no.'                  
+b'no.'                             172800 IN    NS    b'njet.norid.no.'             
+ADDITIONAL SECTION:
+b'i.nic.no.'                       172800 IN    A     194.146.106.6                 
+b'x.nic.no.'                       172800 IN    A     128.39.8.40                   
+b'y.nic.no.'                       172800 IN    A     193.75.4.22                   
+b'z.nic.no.'                       172800 IN    A     158.38.8.133                  
+b'not.norid.no.'                   172800 IN    A     156.154.100.12                
+b'njet.norid.no.'                  172800 IN    A     156.154.101.12                
+b'i.nic.no.'                       172800 IN    AAAA  2001:67c:1010:1::53           
+b'x.nic.no.'                       172800 IN    AAAA  2001:700:0:412f::40           
+b'y.nic.no.'                       172800 IN    AAAA  2001:8c0:8200:1::2            
+b'z.nic.no.'                       172800 IN    AAAA  2001:700:0:52d:158:38:8:133   
+b'not.norid.no.'                   172800 IN    AAAA  2001:502:ad09::12             
+
+QUESTION TO: 156.154.101.12
+AUTHORITY SECTION:
+b'uio.no.'                           7200 IN    NS    b'server.nordu.net.'          
+b'uio.no.'                           7200 IN    NS    b'ns1.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'nn.uninett.no.'             
+b'uio.no.'                           7200 IN    NS    b'ns2.uio.no.'                
+ADDITIONAL SECTION:
+b'nn.uninett.no.'                    7200 IN    A     158.38.0.181                  
+b'ns1.uio.no.'                       7200 IN    A     129.240.2.6                   
+b'ns2.uio.no.'                       7200 IN    A     129.240.2.42                  
+b'nn.uninett.no.'                    7200 IN    AAAA  2001:700:0:503::aa:5302       
+b'ns1.uio.no.'                       7200 IN    AAAA  2001:700:100:2::6             
+b'ns2.uio.no.'                       7200 IN    AAAA  2001:700:100:425::42          
+
+QUESTION TO: 129.240.2.42
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.6
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 158.38.0.181
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 156.154.100.12
+AUTHORITY SECTION:
+b'uio.no.'                           7200 IN    NS    b'ns2.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'server.nordu.net.'          
+b'uio.no.'                           7200 IN    NS    b'ns1.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'nn.uninett.no.'             
+ADDITIONAL SECTION:
+b'nn.uninett.no.'                    7200 IN    A     158.38.0.181                  
+b'ns1.uio.no.'                       7200 IN    A     129.240.2.6                   
+b'ns2.uio.no.'                       7200 IN    A     129.240.2.42                  
+b'nn.uninett.no.'                    7200 IN    AAAA  2001:700:0:503::aa:5302       
+b'ns1.uio.no.'                       7200 IN    AAAA  2001:700:100:2::6             
+b'ns2.uio.no.'                       7200 IN    AAAA  2001:700:100:425::42          
+
+QUESTION TO: 129.240.2.42
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.6
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 158.38.0.181
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 158.38.8.133
+AUTHORITY SECTION:
+b'uio.no.'                           7200 IN    NS    b'ns2.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'ns1.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'nn.uninett.no.'             
+b'uio.no.'                           7200 IN    NS    b'server.nordu.net.'          
+ADDITIONAL SECTION:
+b'nn.uninett.no.'                    7200 IN    A     158.38.0.181                  
+b'ns1.uio.no.'                       7200 IN    A     129.240.2.6                   
+b'ns2.uio.no.'                       7200 IN    A     129.240.2.42                  
+b'nn.uninett.no.'                    7200 IN    AAAA  2001:700:0:503::aa:5302       
+b'ns1.uio.no.'                       7200 IN    AAAA  2001:700:100:2::6             
+b'ns2.uio.no.'                       7200 IN    AAAA  2001:700:100:425::42          
+
+QUESTION TO: 129.240.2.42
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.6
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 158.38.0.181
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 193.75.4.22
+AUTHORITY SECTION:
+b'uio.no.'                           7200 IN    NS    b'server.nordu.net.'          
+b'uio.no.'                           7200 IN    NS    b'ns2.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'ns1.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'nn.uninett.no.'             
+ADDITIONAL SECTION:
+b'ns2.uio.no.'                       7200 IN    AAAA  2001:700:100:425::42          
+b'ns2.uio.no.'                       7200 IN    A     129.240.2.42                  
+b'ns1.uio.no.'                       7200 IN    AAAA  2001:700:100:2::6             
+b'ns1.uio.no.'                       7200 IN    A     129.240.2.6                   
+b'nn.uninett.no.'                    7200 IN    AAAA  2001:700:0:503::aa:5302       
+b'nn.uninett.no.'                    7200 IN    A     158.38.0.181                  
+
+QUESTION TO: 158.38.0.181
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.6
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.42
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 128.39.8.40
+AUTHORITY SECTION:
+b'uio.no.'                           7200 IN    NS    b'ns1.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'server.nordu.net.'          
+b'uio.no.'                           7200 IN    NS    b'nn.uninett.no.'             
+b'uio.no.'                           7200 IN    NS    b'ns2.uio.no.'                
+ADDITIONAL SECTION:
+b'ns2.uio.no.'                       7200 IN    A     129.240.2.42                  
+b'ns1.uio.no.'                       7200 IN    A     129.240.2.6                   
+b'nn.uninett.no.'                    7200 IN    A     158.38.0.181                  
+b'ns2.uio.no.'                       7200 IN    AAAA  2001:700:100:425::42          
+b'ns1.uio.no.'                       7200 IN    AAAA  2001:700:100:2::6             
+b'nn.uninett.no.'                    7200 IN    AAAA  2001:700:0:503::aa:5302       
+
+QUESTION TO: 158.38.0.181
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.6
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.42
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 194.146.106.6
+AUTHORITY SECTION:
+b'uio.no.'                           7200 IN    NS    b'nn.uninett.no.'             
+b'uio.no.'                           7200 IN    NS    b'ns2.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'ns1.uio.no.'                
+b'uio.no.'                           7200 IN    NS    b'server.nordu.net.'          
+ADDITIONAL SECTION:
+b'ns2.uio.no.'                       7200 IN    A     129.240.2.42                  
+b'ns1.uio.no.'                       7200 IN    A     129.240.2.6                   
+b'nn.uninett.no.'                    7200 IN    A     158.38.0.181                  
+b'ns2.uio.no.'                       7200 IN    AAAA  2001:700:100:425::42          
+b'ns1.uio.no.'                       7200 IN    AAAA  2001:700:100:2::6             
+b'nn.uninett.no.'                    7200 IN    AAAA  2001:700:0:503::aa:5302       
+
+QUESTION TO: 158.38.0.181
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.6
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+
+QUESTION TO: 129.240.2.42
+AUTHORITY SECTION:
+b'uio.no.'                          43200 IN    SOA   b'ns1.uio.no.'                
+

@@ -23,7 +23,8 @@ while server_ips:
         print_section("ADDITIONAL", answer[DNS].ar)
         if answer[DNS].ancount: # I finish when i get an answer
             break
-        for reg in answer[DNS].ar.iterpayloads(): # Add servers ipv4 to continue searching
-            if reg.type == 1:
-                server_ips.append(reg.rdata)
+        if answer[DNS].arcount:
+            for reg in answer[DNS].ar.iterpayloads(): # Add servers ipv4 to continue searching
+                if reg.type == 1:
+                    server_ips.append(reg.rdata)
     print()
