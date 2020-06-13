@@ -2,14 +2,16 @@ import sys
 
 from functions import *
 
+arguments_amount = len(sys.argv)
 
-if len(sys.argv) <= 1:
-    print("Modo de uso: sudo python3 dns.py <dirección destino>")
+if arguments_amount <= 1:
+    print("Modo de uso: sudo python3 dns.py DOMAIN [SERVER_IP]")
     exit()
 
 qname = sys.argv[1]
+starting_ip = "198.41.0.4" if arguments_amount == 2 else sys.argv[2] # use a.root-server.net as default
 server_ips = []
-server_ips.append("199.9.14.201") # b.root-servers.net ip
+server_ips.append(starting_ip)
 
 while server_ips:
     server_ip = server_ips.pop()
