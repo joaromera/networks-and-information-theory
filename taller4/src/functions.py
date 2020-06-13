@@ -1,3 +1,5 @@
+from scapy.all import *
+
 classes = {
     1:"IN"
 }
@@ -10,6 +12,9 @@ types = {
     15:"MX",
     28:"AAAA"
 }
+
+def send_dns_querry(packet):
+    return sr1(packet , verbose=0, timeout=10)
 
 def translate_class(resource_record_class:int) -> str:
     """Get human readable string from class number (which comes from a ShortEnumField)"""
