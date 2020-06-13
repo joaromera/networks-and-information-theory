@@ -13,8 +13,14 @@ types = {
     28:"AAAA"
 }
 
-def send_dns_querry(packet):
-    return sr1(packet , verbose=0, timeout=10)
+def send_dns_mx_querry(ip:str, qname:str):
+    return send_dns_querry(ip, qname, "MX")
+
+def send_dns_querry(ip:str, qname:str, qtype:str):
+    dns = DNS(rd=1,qd=DNSQR(qname=qname, qtype=qtype))
+    udp = UDP(sport=RandShort(), dport=53)
+    ip = IP(dst=ip)
+    return sr1(ip / udp / dns , verbose=0, timeout=10)
 
 def translate_class(resource_record_class:int) -> str:
     """Get human readable string from class number (which comes from a ShortEnumField)"""
