@@ -1,0 +1,497 @@
+QUESTION TO: 199.9.14.201
+AUTHORITY SECTION:
+b'ar.'                             172800 IN    NS    b'd.dns.ar.'                  
+b'ar.'                             172800 IN    NS    b'c.dns.ar.'                  
+b'ar.'                             172800 IN    NS    b'f.dns.ar.'                  
+b'ar.'                             172800 IN    NS    b'b.dns.ar.'                  
+b'ar.'                             172800 IN    NS    b'e.dns.ar.'                  
+b'ar.'                             172800 IN    NS    b'a.dns.ar.'                  
+b'ar.'                             172800 IN    NS    b'ar.cctld.authdns.ripe.net.' 
+ADDITIONAL SECTION:
+b'a.dns.ar.'                       172800 IN    A     200.108.145.50                
+b'b.dns.ar.'                       172800 IN    A     200.108.147.50                
+b'c.dns.ar.'                       172800 IN    A     200.108.148.50                
+b'd.dns.ar.'                       172800 IN    A     192.140.126.50                
+b'e.dns.ar.'                       172800 IN    A     170.238.66.50                 
+b'f.dns.ar.'                       172800 IN    A     130.59.31.20                  
+b'ar.cctld.authdns.ripe.net.'      172800 IN    A     193.0.9.59                    
+b'a.dns.ar.'                       172800 IN    AAAA  2801:140::10                  
+b'b.dns.ar.'                       172800 IN    AAAA  2801:140:11::50               
+b'c.dns.ar.'                       172800 IN    AAAA  2801:140:10::10               
+b'd.dns.ar.'                       172800 IN    AAAA  2801:140:dddd::50             
+b'e.dns.ar.'                       172800 IN    AAAA  2801:140:eeee::50             
+b'f.dns.ar.'                       172800 IN    AAAA  2001:620:0:ff::20             
+b'ar.cctld.authdns.ripe.net.'      172800 IN    AAAA  2001:67c:e0::59               
+
+QUESTION TO: 193.0.9.59
+AUTHORITY SECTION:
+b'edu.ar.'                          86400 IN    NS    b'noc.uncu.edu.ar.'           
+b'edu.ar.'                          86400 IN    NS    b'a.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'b.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'unlp.unlp.edu.ar.'          
+b'edu.ar.'                          86400 IN    NS    b'ns2.switch.ch.'             
+b'edu.ar.'                          86400 IN    NS    b'ns1.uba.ar.'                
+ADDITIONAL SECTION:
+b'unlp.unlp.edu.ar.'                86400 IN    A     163.10.0.67                   
+b'ns1.uba.ar.'                      86400 IN    A     157.92.1.1                    
+b'noc.uncu.edu.ar.'                 86400 IN    A     170.210.2.97                  
+b'b.riu.edu.ar.'                    86400 IN    A     170.210.180.50                
+b'a.riu.edu.ar.'                    86400 IN    A     170.210.5.56                  
+b'unlp.unlp.edu.ar.'                86400 IN    AAAA  2800:340:0:64::67             
+b'ns1.uba.ar.'                      86400 IN    AAAA  2001:1318:100c:1::1           
+b'noc.uncu.edu.ar.'                 86400 IN    AAAA  2800:110:2800:296:21a:4aff:fe77:7122
+b'b.riu.edu.ar.'                    86400 IN    AAAA  2800:110:10::50               
+b'a.riu.edu.ar.'                    86400 IN    AAAA  2800:110:5::56                
+
+QUESTION TO: 170.210.5.56
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.180.50
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 157.92.1.1
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 163.10.0.67
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 130.59.31.20
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.238.66.50
+AUTHORITY SECTION:
+b'edu.ar.'                          86400 IN    NS    b'noc.uncu.edu.ar.'           
+b'edu.ar.'                          86400 IN    NS    b'ns1.uba.ar.'                
+b'edu.ar.'                          86400 IN    NS    b'ns2.switch.ch.'             
+b'edu.ar.'                          86400 IN    NS    b'a.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'b.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'unlp.unlp.edu.ar.'          
+ADDITIONAL SECTION:
+b'a.riu.edu.ar.'                    86400 IN    A     170.210.5.56                  
+b'b.riu.edu.ar.'                    86400 IN    A     170.210.180.50                
+b'noc.uncu.edu.ar.'                 86400 IN    A     170.210.2.97                  
+b'ns1.uba.ar.'                      86400 IN    A     157.92.1.1                    
+b'unlp.unlp.edu.ar.'                86400 IN    A     163.10.0.67                   
+b'a.riu.edu.ar.'                    86400 IN    AAAA  2800:110:5::56                
+b'b.riu.edu.ar.'                    86400 IN    AAAA  2800:110:10::50               
+b'noc.uncu.edu.ar.'                 86400 IN    AAAA  2800:110:2800:296:21a:4aff:fe77:7122
+b'ns1.uba.ar.'                      86400 IN    AAAA  2001:1318:100c:1::1           
+b'unlp.unlp.edu.ar.'                86400 IN    AAAA  2800:340:0:64::67             
+
+QUESTION TO: 163.10.0.67
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 157.92.1.1
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.180.50
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.5.56
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 192.140.126.50
+AUTHORITY SECTION:
+b'edu.ar.'                          86400 IN    NS    b'b.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'ns2.switch.ch.'             
+b'edu.ar.'                          86400 IN    NS    b'a.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'unlp.unlp.edu.ar.'          
+b'edu.ar.'                          86400 IN    NS    b'noc.uncu.edu.ar.'           
+b'edu.ar.'                          86400 IN    NS    b'ns1.uba.ar.'                
+ADDITIONAL SECTION:
+b'a.riu.edu.ar.'                    86400 IN    A     170.210.5.56                  
+b'b.riu.edu.ar.'                    86400 IN    A     170.210.180.50                
+b'noc.uncu.edu.ar.'                 86400 IN    A     170.210.2.97                  
+b'ns1.uba.ar.'                      86400 IN    A     157.92.1.1                    
+b'unlp.unlp.edu.ar.'                86400 IN    A     163.10.0.67                   
+b'a.riu.edu.ar.'                    86400 IN    AAAA  2800:110:5::56                
+b'b.riu.edu.ar.'                    86400 IN    AAAA  2800:110:10::50               
+b'noc.uncu.edu.ar.'                 86400 IN    AAAA  2800:110:2800:296:21a:4aff:fe77:7122
+b'ns1.uba.ar.'                      86400 IN    AAAA  2001:1318:100c:1::1           
+b'unlp.unlp.edu.ar.'                86400 IN    AAAA  2800:340:0:64::67             
+
+QUESTION TO: 163.10.0.67
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 157.92.1.1
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.180.50
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.5.56
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.108.148.50
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.108.147.50
+AUTHORITY SECTION:
+b'edu.ar.'                          86400 IN    NS    b'ns2.switch.ch.'             
+b'edu.ar.'                          86400 IN    NS    b'noc.uncu.edu.ar.'           
+b'edu.ar.'                          86400 IN    NS    b'ns1.uba.ar.'                
+b'edu.ar.'                          86400 IN    NS    b'a.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'unlp.unlp.edu.ar.'          
+b'edu.ar.'                          86400 IN    NS    b'b.riu.edu.ar.'              
+ADDITIONAL SECTION:
+b'a.riu.edu.ar.'                    86400 IN    A     170.210.5.56                  
+b'b.riu.edu.ar.'                    86400 IN    A     170.210.180.50                
+b'noc.uncu.edu.ar.'                 86400 IN    A     170.210.2.97                  
+b'ns1.uba.ar.'                      86400 IN    A     157.92.1.1                    
+b'unlp.unlp.edu.ar.'                86400 IN    A     163.10.0.67                   
+b'a.riu.edu.ar.'                    86400 IN    AAAA  2800:110:5::56                
+b'b.riu.edu.ar.'                    86400 IN    AAAA  2800:110:10::50               
+b'noc.uncu.edu.ar.'                 86400 IN    AAAA  2800:110:2800:296:21a:4aff:fe77:7122
+b'ns1.uba.ar.'                      86400 IN    AAAA  2001:1318:100c:1::1           
+b'unlp.unlp.edu.ar.'                86400 IN    AAAA  2800:340:0:64::67             
+
+QUESTION TO: 163.10.0.67
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 157.92.1.1
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.180.50
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.5.56
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.108.145.50
+AUTHORITY SECTION:
+b'edu.ar.'                          86400 IN    NS    b'ns1.uba.ar.'                
+b'edu.ar.'                          86400 IN    NS    b'b.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'ns2.switch.ch.'             
+b'edu.ar.'                          86400 IN    NS    b'a.riu.edu.ar.'              
+b'edu.ar.'                          86400 IN    NS    b'unlp.unlp.edu.ar.'          
+b'edu.ar.'                          86400 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'a.riu.edu.ar.'                    86400 IN    A     170.210.5.56                  
+b'b.riu.edu.ar.'                    86400 IN    A     170.210.180.50                
+b'noc.uncu.edu.ar.'                 86400 IN    A     170.210.2.97                  
+b'ns1.uba.ar.'                      86400 IN    A     157.92.1.1                    
+b'unlp.unlp.edu.ar.'                86400 IN    A     163.10.0.67                   
+b'a.riu.edu.ar.'                    86400 IN    AAAA  2800:110:5::56                
+b'b.riu.edu.ar.'                    86400 IN    AAAA  2800:110:10::50               
+b'noc.uncu.edu.ar.'                 86400 IN    AAAA  2800:110:2800:296:21a:4aff:fe77:7122
+b'ns1.uba.ar.'                      86400 IN    AAAA  2001:1318:100c:1::1           
+b'unlp.unlp.edu.ar.'                86400 IN    AAAA  2800:340:0:64::67             
+
+QUESTION TO: 163.10.0.67
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 157.92.1.1
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.180.50
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.5.56
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'raiz.uncu.edu.ar.'          
+b'uncuyo.edu.ar.'                    3600 IN    NS    b'noc.uncu.edu.ar.'           
+ADDITIONAL SECTION:
+b'noc.uncu.edu.ar.'                  3600 IN    A     170.210.2.97                  
+b'raiz.uncu.edu.ar.'                 3600 IN    A     200.9.147.34                  
+
+QUESTION TO: 200.9.147.34
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
+QUESTION TO: 170.210.2.97
+AUTHORITY SECTION:
+b'uncuyo.edu.ar.'                   86400 IN    SOA   b'raiz.uncuyo.edu.ar.'        
+
