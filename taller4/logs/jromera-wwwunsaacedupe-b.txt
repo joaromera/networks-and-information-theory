@@ -1,0 +1,60 @@
+QUESTION TO: 199.9.14.201
+AUTHORITY SECTION:
+b'pe.'                             172800 IN    NS    b'quipu.rcp.net.pe.'          
+b'pe.'                             172800 IN    NS    b'pe1.dnsnode.net.'           
+b'pe.'                             172800 IN    NS    b'pch.rcp.pe.'                
+ADDITIONAL SECTION:
+b'pch.rcp.pe.'                     172800 IN    A     204.61.216.85                 
+b'pe1.dnsnode.net.'                172800 IN    A     194.146.106.82                
+b'quipu.rcp.net.pe.'               172800 IN    A     200.1.176.4                   
+b'pch.rcp.pe.'                     172800 IN    AAAA  2001:500:14:6085:ad::1        
+b'pe1.dnsnode.net.'                172800 IN    AAAA  2001:67c:1010:20::53          
+
+QUESTION TO: 200.1.176.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    3600 IN    NS    b'ns1.unsaac.edu.pe.'         
+b'unsaac.edu.pe.'                    3600 IN    NS    b'inka.unsaac.edu.pe.'        
+ADDITIONAL SECTION:
+b'ns1.unsaac.edu.pe.'                3600 IN    A     200.48.82.4                   
+b'inka.unsaac.edu.pe.'               3600 IN    A     200.48.82.4                   
+
+QUESTION TO: 200.48.82.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    1800 IN    SOA   b'inka.unsaac.edu.pe.'        
+
+QUESTION TO: 200.48.82.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    1800 IN    SOA   b'inka.unsaac.edu.pe.'        
+
+QUESTION TO: 194.146.106.82
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    3600 IN    NS    b'ns1.unsaac.edu.pe.'         
+b'unsaac.edu.pe.'                    3600 IN    NS    b'inka.unsaac.edu.pe.'        
+ADDITIONAL SECTION:
+b'inka.unsaac.edu.pe.'               3600 IN    A     200.48.82.4                   
+b'ns1.unsaac.edu.pe.'                3600 IN    A     200.48.82.4                   
+
+QUESTION TO: 200.48.82.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    1800 IN    SOA   b'inka.unsaac.edu.pe.'        
+
+QUESTION TO: 200.48.82.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    1800 IN    SOA   b'inka.unsaac.edu.pe.'        
+
+QUESTION TO: 204.61.216.85
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    3600 IN    NS    b'inka.unsaac.edu.pe.'        
+b'unsaac.edu.pe.'                    3600 IN    NS    b'ns1.unsaac.edu.pe.'         
+ADDITIONAL SECTION:
+b'inka.unsaac.edu.pe.'               3600 IN    A     200.48.82.4                   
+b'ns1.unsaac.edu.pe.'                3600 IN    A     200.48.82.4                   
+
+QUESTION TO: 200.48.82.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    1800 IN    SOA   b'inka.unsaac.edu.pe.'        
+
+QUESTION TO: 200.48.82.4
+AUTHORITY SECTION:
+b'unsaac.edu.pe.'                    1800 IN    SOA   b'inka.unsaac.edu.pe.'        
+

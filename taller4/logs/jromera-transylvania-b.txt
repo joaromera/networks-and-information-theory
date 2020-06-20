@@ -1,0 +1,153 @@
+QUESTION TO: 199.9.14.201
+AUTHORITY SECTION:
+b'ro.'                             172800 IN    NS    b'dns-c.rotld.ro.'            
+b'ro.'                             172800 IN    NS    b'dns-ro.denic.de.'           
+b'ro.'                             172800 IN    NS    b'primary.rotld.ro.'          
+b'ro.'                             172800 IN    NS    b'sec-dns-a.rotld.ro.'        
+b'ro.'                             172800 IN    NS    b'sec-dns-b.rotld.ro.'        
+b'ro.'                             172800 IN    NS    b'dns-at.rotld.ro.'           
+ADDITIONAL SECTION:
+b'dns-c.rotld.ro.'                 172800 IN    A     194.0.11.113                  
+b'dns-at.rotld.ro.'                172800 IN    A     78.104.145.6                  
+b'dns-ro.denic.de.'                172800 IN    A     81.91.161.99                  
+b'primary.rotld.ro.'               172800 IN    A     192.162.16.18                 
+b'sec-dns-a.rotld.ro.'             172800 IN    A     192.162.16.20                 
+b'sec-dns-b.rotld.ro.'             172800 IN    A     193.230.31.230                
+b'dns-c.rotld.ro.'                 172800 IN    AAAA  2001:678:e:113::53            
+b'dns-at.rotld.ro.'                172800 IN    AAAA  2001:628:453:bb::6            
+b'primary.rotld.ro.'               172800 IN    AAAA  2a03:5e80:0:4:192:162:16:18   
+b'sec-dns-a.rotld.ro.'             172800 IN    AAAA  2a03:5e80:0:4:192:162:16:20   
+b'sec-dns-b.rotld.ro.'             172800 IN    AAAA  2a03:5e80:0:5:193:230:31:230  
+
+QUESTION TO: 193.230.31.230
+AUTHORITY SECTION:
+b'unitbv.ro.'                       86400 IN    NS    b'ns-a.unitbv.ro.'            
+b'unitbv.ro.'                       86400 IN    NS    b'ns.unitbv.ro.'              
+b'unitbv.ro.'                       86400 IN    NS    b'ns-b.unitbv.ro.'            
+ADDITIONAL SECTION:
+b'ns.unitbv.ro.'                    86400 IN    A     193.254.230.2                 
+b'ns-a.unitbv.ro.'                  86400 IN    A     193.254.231.2                 
+b'ns-b.unitbv.ro.'                  86400 IN    A     193.254.230.199               
+
+QUESTION TO: 193.254.230.199
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.231.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.230.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 192.162.16.20
+AUTHORITY SECTION:
+b'unitbv.ro.'                       86400 IN    NS    b'ns.unitbv.ro.'              
+b'unitbv.ro.'                       86400 IN    NS    b'ns-b.unitbv.ro.'            
+b'unitbv.ro.'                       86400 IN    NS    b'ns-a.unitbv.ro.'            
+ADDITIONAL SECTION:
+b'ns.unitbv.ro.'                    86400 IN    A     193.254.230.2                 
+b'ns-a.unitbv.ro.'                  86400 IN    A     193.254.231.2                 
+b'ns-b.unitbv.ro.'                  86400 IN    A     193.254.230.199               
+
+QUESTION TO: 193.254.230.199
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.231.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.230.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 192.162.16.18
+AUTHORITY SECTION:
+b'unitbv.ro.'                       86400 IN    NS    b'ns.unitbv.ro.'              
+b'unitbv.ro.'                       86400 IN    NS    b'ns-b.unitbv.ro.'            
+b'unitbv.ro.'                       86400 IN    NS    b'ns-a.unitbv.ro.'            
+ADDITIONAL SECTION:
+b'ns.unitbv.ro.'                    86400 IN    A     193.254.230.2                 
+b'ns-a.unitbv.ro.'                  86400 IN    A     193.254.231.2                 
+b'ns-b.unitbv.ro.'                  86400 IN    A     193.254.230.199               
+
+QUESTION TO: 193.254.230.199
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.231.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.230.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 81.91.161.99
+AUTHORITY SECTION:
+b'unitbv.ro.'                       86400 IN    NS    b'ns.unitbv.ro.'              
+b'unitbv.ro.'                       86400 IN    NS    b'ns-a.unitbv.ro.'            
+b'unitbv.ro.'                       86400 IN    NS    b'ns-b.unitbv.ro.'            
+ADDITIONAL SECTION:
+b'ns-b.unitbv.ro.'                  86400 IN    A     193.254.230.199               
+b'ns-a.unitbv.ro.'                  86400 IN    A     193.254.231.2                 
+b'ns.unitbv.ro.'                    86400 IN    A     193.254.230.2                 
+
+QUESTION TO: 193.254.230.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.231.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.230.199
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 78.104.145.6
+AUTHORITY SECTION:
+b'unitbv.ro.'                       86400 IN    NS    b'ns-b.unitbv.ro.'            
+b'unitbv.ro.'                       86400 IN    NS    b'ns.unitbv.ro.'              
+b'unitbv.ro.'                       86400 IN    NS    b'ns-a.unitbv.ro.'            
+ADDITIONAL SECTION:
+b'ns-b.unitbv.ro.'                  86400 IN    A     193.254.230.199               
+b'ns-a.unitbv.ro.'                  86400 IN    A     193.254.231.2                 
+b'ns.unitbv.ro.'                    86400 IN    A     193.254.230.2                 
+
+QUESTION TO: 193.254.230.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.231.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.230.199
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 194.0.11.113
+AUTHORITY SECTION:
+b'unitbv.ro.'                       86400 IN    NS    b'ns.unitbv.ro.'              
+b'unitbv.ro.'                       86400 IN    NS    b'ns-a.unitbv.ro.'            
+b'unitbv.ro.'                       86400 IN    NS    b'ns-b.unitbv.ro.'            
+ADDITIONAL SECTION:
+b'ns.unitbv.ro.'                    86400 IN    A     193.254.230.2                 
+b'ns-a.unitbv.ro.'                  86400 IN    A     193.254.231.2                 
+b'ns-b.unitbv.ro.'                  86400 IN    A     193.254.230.199               
+
+QUESTION TO: 193.254.230.199
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.231.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+
+QUESTION TO: 193.254.230.2
+AUTHORITY SECTION:
+b'unitbv.ro.'                         300 IN    SOA   b'ns.unitbv.ro.'              
+

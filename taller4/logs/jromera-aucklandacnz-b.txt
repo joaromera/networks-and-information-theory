@@ -1,0 +1,137 @@
+QUESTION TO: 199.9.14.201
+AUTHORITY SECTION:
+b'nz.'                             172800 IN    NS    b'ns1.dns.net.nz.'            
+b'nz.'                             172800 IN    NS    b'ns5.dns.net.nz.'            
+b'nz.'                             172800 IN    NS    b'ns3.dns.net.nz.'            
+b'nz.'                             172800 IN    NS    b'ns2.dns.net.nz.'            
+b'nz.'                             172800 IN    NS    b'ns4.dns.net.nz.'            
+b'nz.'                             172800 IN    NS    b'ns6.dns.net.nz.'            
+b'nz.'                             172800 IN    NS    b'ns7.dns.net.nz.'            
+ADDITIONAL SECTION:
+b'ns1.dns.net.nz.'                 172800 IN    A     202.46.190.130                
+b'ns2.dns.net.nz.'                 172800 IN    A     202.46.187.130                
+b'ns3.dns.net.nz.'                 172800 IN    A     202.46.188.130                
+b'ns4.dns.net.nz.'                 172800 IN    A     202.46.189.130                
+b'ns5.dns.net.nz.'                 172800 IN    A     185.159.197.130               
+b'ns6.dns.net.nz.'                 172800 IN    A     185.159.198.130               
+b'ns7.dns.net.nz.'                 172800 IN    A     194.146.106.54                
+b'ns1.dns.net.nz.'                 172800 IN    AAAA  2001:dce:2000:2::130          
+b'ns2.dns.net.nz.'                 172800 IN    AAAA  2001:dce:7000:2::130          
+b'ns3.dns.net.nz.'                 172800 IN    AAAA  2001:dce:d453::53             
+b'ns4.dns.net.nz.'                 172800 IN    AAAA  2001:dce:d454::53             
+b'ns5.dns.net.nz.'                 172800 IN    AAAA  2620:10a:80aa::130            
+b'ns6.dns.net.nz.'                 172800 IN    AAAA  2620:10a:80ab::130            
+b'ns7.dns.net.nz.'                 172800 IN    AAAA  2001:67c:1010:13::53          
+
+QUESTION TO: 194.146.106.54
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 185.159.198.130
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 185.159.197.130
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 202.46.189.130
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 202.46.188.130
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 202.46.187.130
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 202.46.190.130
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns1.auckland.ac.nz.'       
+b'auckland.ac.nz.'                  86400 IN    NS    b'dns2.auckland.ac.nz.'       
+ADDITIONAL SECTION:
+b'dns1.auckland.ac.nz.'             86400 IN    A     130.216.1.2                   
+b'dns2.auckland.ac.nz.'             86400 IN    A     130.216.1.1                   
+
+QUESTION TO: 130.216.1.1
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+
+QUESTION TO: 130.216.1.2
+AUTHORITY SECTION:
+b'auckland.ac.nz.'                   1800 IN    SOA   b'grid01.auckland.ac.nz.'     
+

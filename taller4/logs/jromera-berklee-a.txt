@@ -1,0 +1,213 @@
+QUESTION TO: 198.41.0.4
+AUTHORITY SECTION:
+b'edu.'                            172800 IN    NS    b'a.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'b.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'c.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'd.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'e.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'f.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'g.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'h.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'i.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'j.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'k.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'l.edu-servers.net.'         
+b'edu.'                            172800 IN    NS    b'm.edu-servers.net.'         
+ADDITIONAL SECTION:
+b'a.edu-servers.net.'              172800 IN    A     192.5.6.30                    
+b'b.edu-servers.net.'              172800 IN    A     192.33.14.30                  
+b'c.edu-servers.net.'              172800 IN    A     192.26.92.30                  
+b'd.edu-servers.net.'              172800 IN    A     192.31.80.30                  
+b'e.edu-servers.net.'              172800 IN    A     192.12.94.30                  
+b'f.edu-servers.net.'              172800 IN    A     192.35.51.30                  
+b'g.edu-servers.net.'              172800 IN    A     192.42.93.30                  
+b'h.edu-servers.net.'              172800 IN    A     192.54.112.30                 
+b'i.edu-servers.net.'              172800 IN    A     192.43.172.30                 
+b'j.edu-servers.net.'              172800 IN    A     192.48.79.30                  
+b'k.edu-servers.net.'              172800 IN    A     192.52.178.30                 
+b'l.edu-servers.net.'              172800 IN    A     192.41.162.30                 
+b'm.edu-servers.net.'              172800 IN    A     192.55.83.30                  
+b'a.edu-servers.net.'              172800 IN    AAAA  2001:503:a83e::2:30           
+
+QUESTION TO: 192.55.83.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.41.162.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.52.178.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.48.79.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.43.172.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.54.112.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.42.93.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.35.51.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.12.94.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.31.80.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.26.92.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.33.14.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
+QUESTION TO: 192.5.6.30
+AUTHORITY SECTION:
+b'berklee.edu.'                    172800 IN    NS    b'ns2.berklee.edu.'           
+b'berklee.edu.'                    172800 IN    NS    b'ns1.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns3.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns2.p21.dynect.net.'        
+b'berklee.edu.'                    172800 IN    NS    b'ns4.p21.dynect.net.'        
+ADDITIONAL SECTION:
+b'ns2.berklee.edu.'                172800 IN    A     192.136.22.11                 
+
+QUESTION TO: 192.136.22.11
+AUTHORITY SECTION:
+b'berklee.edu.'                      1800 IN    SOA   b'ns1.p21.dynect.net.'        
+
