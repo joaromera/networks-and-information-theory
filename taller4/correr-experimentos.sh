@@ -1,9 +1,15 @@
 #! /bin/sh
-
 set -eu
 
+# USO:
+# Refefiní USERNAME. Desp, pone el listado de URLS al fondo. Si no tenes poetry
+# instalado, borrá la parte que dice `poetry run`Desp, pone el listado de URLS
+# al fondo. Si no tenes poetry instalado, borrá la parte que dice `poetry run`.
+USERNAME='nnatalia'
+
+# ----------------------------------------------------------------------------
+
 LOGS_DIR='logs'
-USERNAME='jcperez'
 
 # Genera el nombre de archivo para una url y un nameserver.
 # usage: format_filename 'www.uba.ar' 'x'
@@ -39,16 +45,5 @@ run_abc() {
 # Listado de universidades para correr el experimento:
 # ----------------------------------------------------------------------------
 
+#Ejemplo:
 run_abc www.uba.ar
-run_abc www.undef.edu.ar
-run_abc www.unab.edu.ar
-run_abc www.unaj.edu.ar
-run_abc undav.edu.ar
-run_abc www.unca.edu.ar
-run_abc www.undec.edu.ar
-run_abc www.unc.edu.ar
-run_abc www.uncuyo.edu.ar
-run_abc www.uner.edu.ar
-run_abc www.unf.edu.ar
-run_abc www.unsam.edu.ar
-run_abc www.ungs.edu.ar
