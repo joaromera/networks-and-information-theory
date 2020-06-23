@@ -1,11 +1,11 @@
 \section{Métodos y condiciones de los experimentos}
 
-Se desarrolló un script que a través de sucesivas consultas iterativas obtiene obtenga el registro MX de un dominio dado. Este script permite pasarle por parámetro con que Root Name Server comenzar las consultas. Se aprovechó la estructura de árbol formada por la jerarquía de dominios realizando una búsqueda DFS de la respuesta. Se tomaron las siguientes decisiones para cada tipo de respuesta obtenida en cada consulta DNS:
+Se desarrolló un script que a través de sucesivas consultas iterativas obtiene el registro MX de un dominio dado. Este script permite pasarle por parámetro con qué Root Name Server comenzar las consultas. Se aprovechó la estructura de árbol formada por la jerarquía de dominios realizando una búsqueda DFS de la respuesta. Se tomaron las siguientes decisiones para cada tipo de respuesta obtenida en cada consulta DNS:
 
 \begin{itemize}
-\item Si se reciben servidores DNS a los cuales seguir preguntando, se los agregá a una pila de donde se saca a quien consultar en la siguiente iteración. Si está vacía se asume que no está el registro buscado.
+\item Si se reciben servidores DNS a los cuales seguir preguntando, se los agrega a una pila de donde se saca a quién consultar en la siguiente iteración. Si está vacía se asume que no está el registro buscado.
 \item Si se recibe la respuesta a la consulta que se está haciendo se termina la ejecución. 
-\item Si se recibe el registro SOA de la zona indicando que el registro solicitado no forma parte de la base de datos de nombres de la zona, se deja de explorar esta rama del árbol y se siguen las consultas con el siguiente elemento en la pila.
+\item Si se recibe el registro SOA de la zona indicando que el registro solicitado no forma parte de la base de datos de nombres de la zona, se deja de explorar esta rama del árbol y se siguen las consultas con el siguiente elemento de la pila.
 
 \end{itemize}
 
