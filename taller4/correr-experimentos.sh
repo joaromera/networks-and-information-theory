@@ -5,7 +5,7 @@ set -eu
 # Refefiní USERNAME. Desp, pone el listado de URLS al fondo. Si no tenes poetry
 # instalado, borrá la parte que dice `poetry run`Desp, pone el listado de URLS
 # al fondo. Si no tenes poetry instalado, borrá la parte que dice `poetry run`.
-USERNAME='jromera'
+USERNAME='nnatalia'
 
 # ----------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ run_with_nameserver() {
     echo ">>> Corriendo para ${domain} - ${nameserver_name} - ${output_file}"
 
     # Yo uso `poetry`. Si no usas poetry, borrá `poetry run`.
-    sudo python3 src/dns.py "${domain}" "${nameserver}" > "${output_file}"
+    sudo poetry run python3 src/dns.py "${domain}" "${nameserver}" > "${output_file}"
 }
 
 # Corre dns.py para los nameservers root a, b y c.
@@ -46,16 +46,4 @@ run_abc() {
 # ----------------------------------------------------------------------------
 
 #Ejemplo:
-run_abc www.uni-heidelberg.de
-run_abc www.zv.uni-leipzig.de
-run_abc www.uni-rostock.de
-run_abc www.uni-greifswald.de
-run_abc www.uni-freiburg.de
-run_abc www.uni-freiburg.de
-run_abc www.uni-muenchen.de
-run_abc www.uni-tuebingen.de
-run_abc www.uni-tuebingen.de
-run_abc www.uni-halle.de
-run_abc www.uni-marburg.de
-run_abc www.uni-jena.de
-
+run_abc www.dc.uba.ar
