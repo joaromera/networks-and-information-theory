@@ -1,0 +1,190 @@
+QUESTION TO: 199.9.14.201
+AUTHORITY SECTION:
+b'de.'                             172800 IN    NS    b'z.nic.de.'                  
+b'de.'                             172800 IN    NS    b'n.de.net.'                  
+b'de.'                             172800 IN    NS    b'l.de.net.'                  
+b'de.'                             172800 IN    NS    b'f.nic.de.'                  
+b'de.'                             172800 IN    NS    b'a.nic.de.'                  
+b'de.'                             172800 IN    NS    b's.de.net.'                  
+ADDITIONAL SECTION:
+b'a.nic.de.'                       172800 IN    A     194.0.0.53                    
+b'f.nic.de.'                       172800 IN    A     81.91.164.5                   
+b'l.de.net.'                       172800 IN    A     77.67.63.105                  
+b'n.de.net.'                       172800 IN    A     194.146.107.6                 
+b's.de.net.'                       172800 IN    A     195.243.137.26                
+b'z.nic.de.'                       172800 IN    A     194.246.96.1                  
+b'a.nic.de.'                       172800 IN    AAAA  2001:678:2::53                
+b'f.nic.de.'                       172800 IN    AAAA  2a02:568:0:2::53              
+b'l.de.net.'                       172800 IN    AAAA  2001:668:1f:11::105           
+b'n.de.net.'                       172800 IN    AAAA  2001:67c:1011:1::53           
+b's.de.net.'                       172800 IN    AAAA  2003:8:14::53                 
+b'z.nic.de.'                       172800 IN    AAAA  2a02:568:fe02::de             
+
+QUESTION TO: 194.246.96.1
+AUTHORITY SECTION:
+b'uni-halle.de.'                    86400 IN    NS    b'ns1.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns2.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns3.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'deneb.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns1.uni-halle.de.'                86400 IN    A     141.48.3.3                    
+b'ns2.uni-halle.de.'                86400 IN    A     141.48.3.17                   
+b'ns3.uni-halle.de.'                86400 IN    A     141.48.3.51                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+
+QUESTION TO: 192.76.176.9
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.51
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.17
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.3
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 195.243.137.26
+AUTHORITY SECTION:
+b'uni-halle.de.'                    86400 IN    NS    b'ns1.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns2.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns3.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'deneb.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns1.uni-halle.de.'                86400 IN    A     141.48.3.3                    
+b'ns2.uni-halle.de.'                86400 IN    A     141.48.3.17                   
+b'ns3.uni-halle.de.'                86400 IN    A     141.48.3.51                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+
+QUESTION TO: 192.76.176.9
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.51
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.17
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.3
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 194.146.107.6
+AUTHORITY SECTION:
+b'uni-halle.de.'                    86400 IN    NS    b'ns1.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns2.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns3.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'deneb.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns1.uni-halle.de.'                86400 IN    A     141.48.3.3                    
+b'ns2.uni-halle.de.'                86400 IN    A     141.48.3.17                   
+b'ns3.uni-halle.de.'                86400 IN    A     141.48.3.51                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+
+QUESTION TO: 192.76.176.9
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.51
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.17
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.3
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 77.67.63.105
+AUTHORITY SECTION:
+b'uni-halle.de.'                    86400 IN    NS    b'ns1.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns2.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns3.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'deneb.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns1.uni-halle.de.'                86400 IN    A     141.48.3.3                    
+b'ns2.uni-halle.de.'                86400 IN    A     141.48.3.17                   
+b'ns3.uni-halle.de.'                86400 IN    A     141.48.3.51                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+
+QUESTION TO: 192.76.176.9
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.51
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.17
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.3
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 81.91.164.5
+AUTHORITY SECTION:
+b'uni-halle.de.'                    86400 IN    NS    b'ns1.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns2.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns3.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'deneb.dfn.de.'              
+ADDITIONAL SECTION:
+b'ns1.uni-halle.de.'                86400 IN    A     141.48.3.3                    
+b'ns2.uni-halle.de.'                86400 IN    A     141.48.3.17                   
+b'ns3.uni-halle.de.'                86400 IN    A     141.48.3.51                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+
+QUESTION TO: 192.76.176.9
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.51
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.17
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.3
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 194.0.0.53
+AUTHORITY SECTION:
+b'uni-halle.de.'                    86400 IN    NS    b'ns2.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'ns1.uni-halle.de.'          
+b'uni-halle.de.'                    86400 IN    NS    b'deneb.dfn.de.'              
+b'uni-halle.de.'                    86400 IN    NS    b'ns3.uni-halle.de.'          
+ADDITIONAL SECTION:
+b'ns1.uni-halle.de.'                86400 IN    A     141.48.3.3                    
+b'ns2.uni-halle.de.'                86400 IN    A     141.48.3.17                   
+b'ns3.uni-halle.de.'                86400 IN    A     141.48.3.51                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+
+QUESTION TO: 192.76.176.9
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.51
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.17
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+
+QUESTION TO: 141.48.3.3
+AUTHORITY SECTION:
+b'uni-halle.de.'                     3600 IN    SOA   b'ns1.uni-halle.de.'          
+

@@ -1,0 +1,43 @@
+QUESTION TO: 198.41.0.4
+AUTHORITY SECTION:
+b'de.'                             172800 IN    NS    b's.de.net.'                  
+b'de.'                             172800 IN    NS    b'n.de.net.'                  
+b'de.'                             172800 IN    NS    b'a.nic.de.'                  
+b'de.'                             172800 IN    NS    b'f.nic.de.'                  
+b'de.'                             172800 IN    NS    b'l.de.net.'                  
+b'de.'                             172800 IN    NS    b'z.nic.de.'                  
+ADDITIONAL SECTION:
+b's.de.net.'                       172800 IN    A     195.243.137.26                
+b's.de.net.'                       172800 IN    AAAA  2003:8:14::53                 
+b'n.de.net.'                       172800 IN    A     194.146.107.6                 
+b'n.de.net.'                       172800 IN    AAAA  2001:67c:1011:1::53           
+b'a.nic.de.'                       172800 IN    A     194.0.0.53                    
+b'a.nic.de.'                       172800 IN    AAAA  2001:678:2::53                
+b'f.nic.de.'                       172800 IN    A     81.91.164.5                   
+b'f.nic.de.'                       172800 IN    AAAA  2a02:568:0:2::53              
+b'l.de.net.'                       172800 IN    A     77.67.63.105                  
+b'l.de.net.'                       172800 IN    AAAA  2001:668:1f:11::105           
+b'z.nic.de.'                       172800 IN    A     194.246.96.1                  
+b'z.nic.de.'                       172800 IN    AAAA  2a02:568:fe02::de             
+
+QUESTION TO: 194.246.96.1
+AUTHORITY SECTION:
+b'uni-marburg.de.'                  86400 IN    NS    b'dnsp.uni-marburg.de.'       
+b'uni-marburg.de.'                  86400 IN    NS    b'dns-1.dfn.de.'              
+b'uni-marburg.de.'                  86400 IN    NS    b'dns-2.dfn.de.'              
+b'uni-marburg.de.'                  86400 IN    NS    b'dnss1.uni-marburg.de.'      
+b'uni-marburg.de.'                  86400 IN    NS    b'dnss2.uni-marburg.de.'      
+ADDITIONAL SECTION:
+b'dnsp.uni-marburg.de.'             86400 IN    A     137.248.1.8                   
+b'dns-1.dfn.de.'                    86400 IN    A     193.174.75.50                 
+b'dns-2.dfn.de.'                    86400 IN    A     193.174.75.54                 
+b'dnss1.uni-marburg.de.'            86400 IN    A     137.248.1.5                   
+b'dnss2.uni-marburg.de.'            86400 IN    A     137.248.21.22                 
+b'dns-1.dfn.de.'                    86400 IN    AAAA  2001:638:d:b101::1            
+b'dns-2.dfn.de.'                    86400 IN    AAAA  2001:638:d:b102::1            
+
+QUESTION TO: 137.248.21.22
+ANSWER SECTION:
+b'WWW.Uni-Marburg.DE.'              86400 IN    CNAME b'vhrz1389.HRZ.Uni-Marburg.DE.'
+AUTHORITY SECTION:
+b'Uni-Marburg.DE.'                  86400 IN    SOA   b'DNSp.Uni-Marburg.DE.'       

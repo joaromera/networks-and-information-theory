@@ -1,0 +1,59 @@
+QUESTION TO: 192.33.4.12
+AUTHORITY SECTION:
+b'de.'                             172800 IN    NS    b's.de.net.'                  
+b'de.'                             172800 IN    NS    b'a.nic.de.'                  
+b'de.'                             172800 IN    NS    b'n.de.net.'                  
+b'de.'                             172800 IN    NS    b'z.nic.de.'                  
+b'de.'                             172800 IN    NS    b'f.nic.de.'                  
+b'de.'                             172800 IN    NS    b'l.de.net.'                  
+ADDITIONAL SECTION:
+b'a.nic.de.'                       172800 IN    A     194.0.0.53                    
+b'f.nic.de.'                       172800 IN    A     81.91.164.5                   
+b'l.de.net.'                       172800 IN    A     77.67.63.105                  
+b'n.de.net.'                       172800 IN    A     194.146.107.6                 
+b's.de.net.'                       172800 IN    A     195.243.137.26                
+b'z.nic.de.'                       172800 IN    A     194.246.96.1                  
+b'a.nic.de.'                       172800 IN    AAAA  2001:678:2::53                
+b'f.nic.de.'                       172800 IN    AAAA  2a02:568:0:2::53              
+b'l.de.net.'                       172800 IN    AAAA  2001:668:1f:11::105           
+b'n.de.net.'                       172800 IN    AAAA  2001:67c:1011:1::53           
+b's.de.net.'                       172800 IN    AAAA  2003:8:14::53                 
+b'z.nic.de.'                       172800 IN    AAAA  2a02:568:fe02::de             
+
+QUESTION TO: 194.246.96.1
+AUTHORITY SECTION:
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns3.belwue.de.'            
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns3.uni-tuebingen.de.'     
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns4.uni-tuebingen.de.'     
+b'uni-tuebingen.de.'                86400 IN    NS    b'deneb.dfn.de.'              
+ADDITIONAL SECTION:
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns3.uni-tuebingen.de.'           86400 IN    A     134.2.200.3                   
+b'dns4.uni-tuebingen.de.'           86400 IN    A     134.2.200.4                   
+b'deneb.dfn.de.'                    86400 IN    A     192.76.176.9                  
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 192.76.176.9
+
+QUESTION TO: 134.2.200.4
+ANSWER SECTION:
+b'www.uni-tuebingen.de.'            86400 IN    MX    b'mx06.uni-tuebingen.de.'     
+b'www.uni-tuebingen.de.'            86400 IN    MX    b'mx05.uni-tuebingen.de.'     
+b'www.uni-tuebingen.de.'            86400 IN    MX    b'b1541.mx.srv.dfn.de.'       
+b'www.uni-tuebingen.de.'            86400 IN    MX    b'c1541.mx.srv.dfn.de.'       
+b'www.uni-tuebingen.de.'            86400 IN    MX    b'a1541.mx.srv.dfn.de.'       
+AUTHORITY SECTION:
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns3.belwue.de.'            
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns3.uni-tuebingen.de.'     
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns4.uni-tuebingen.de.'     
+b'uni-tuebingen.de.'                86400 IN    NS    b'dns1.belwue.de.'            
+ADDITIONAL SECTION:
+b'mx05.uni-tuebingen.de.'           86400 IN    A     134.2.5.215                   
+b'mx06.uni-tuebingen.de.'           86400 IN    A     134.2.5.216                   
+b'dns3.uni-tuebingen.de.'           86400 IN    A     134.2.200.3                   
+b'dns4.uni-tuebingen.de.'           86400 IN    A     134.2.200.4                   
+b'dns3.uni-tuebingen.de.'           86400 IN    AAAA  2001:7c0:300c:137::8602:c803  
+b'dns4.uni-tuebingen.de.'           86400 IN    AAAA  2001:7c0:300c:137::8602:c804  

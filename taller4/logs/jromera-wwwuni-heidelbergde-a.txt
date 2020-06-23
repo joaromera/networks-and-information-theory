@@ -1,0 +1,202 @@
+QUESTION TO: 198.41.0.4
+AUTHORITY SECTION:
+b'de.'                             172800 IN    NS    b's.de.net.'                  
+b'de.'                             172800 IN    NS    b'n.de.net.'                  
+b'de.'                             172800 IN    NS    b'a.nic.de.'                  
+b'de.'                             172800 IN    NS    b'f.nic.de.'                  
+b'de.'                             172800 IN    NS    b'l.de.net.'                  
+b'de.'                             172800 IN    NS    b'z.nic.de.'                  
+ADDITIONAL SECTION:
+b's.de.net.'                       172800 IN    A     195.243.137.26                
+b's.de.net.'                       172800 IN    AAAA  2003:8:14::53                 
+b'n.de.net.'                       172800 IN    A     194.146.107.6                 
+b'n.de.net.'                       172800 IN    AAAA  2001:67c:1011:1::53           
+b'a.nic.de.'                       172800 IN    A     194.0.0.53                    
+b'a.nic.de.'                       172800 IN    AAAA  2001:678:2::53                
+b'f.nic.de.'                       172800 IN    A     81.91.164.5                   
+b'f.nic.de.'                       172800 IN    AAAA  2a02:568:0:2::53              
+b'l.de.net.'                       172800 IN    A     77.67.63.105                  
+b'l.de.net.'                       172800 IN    AAAA  2001:668:1f:11::105           
+b'z.nic.de.'                       172800 IN    A     194.246.96.1                  
+b'z.nic.de.'                       172800 IN    AAAA  2a02:568:fe02::de             
+
+QUESTION TO: 194.246.96.1
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns.uni-heidelberg.de.'     
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns2.uni-heidelberg.de.'    
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns3.belwue.de.'            
+ADDITIONAL SECTION:
+b'dns.uni-heidelberg.de.'           86400 IN    A     129.206.100.126               
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns2.uni-heidelberg.de.'          86400 IN    A     129.206.210.127               
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 129.143.253.133
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.210.127
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.143.2.10
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.100.126
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 77.67.63.105
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns.uni-heidelberg.de.'     
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns2.uni-heidelberg.de.'    
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns3.belwue.de.'            
+ADDITIONAL SECTION:
+b'dns.uni-heidelberg.de.'           86400 IN    A     129.206.100.126               
+b'dns2.uni-heidelberg.de.'          86400 IN    A     129.206.210.127               
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 129.143.253.133
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.143.2.10
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.210.127
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.100.126
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 81.91.164.5
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns.uni-heidelberg.de.'     
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns2.uni-heidelberg.de.'    
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns3.belwue.de.'            
+ADDITIONAL SECTION:
+b'dns.uni-heidelberg.de.'           86400 IN    A     129.206.100.126               
+b'dns2.uni-heidelberg.de.'          86400 IN    A     129.206.210.127               
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 129.143.253.133
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.143.2.10
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.210.127
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.100.126
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 194.0.0.53
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns3.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns2.uni-heidelberg.de.'    
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns.uni-heidelberg.de.'     
+ADDITIONAL SECTION:
+b'dns.uni-heidelberg.de.'           86400 IN    A     129.206.100.126               
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns2.uni-heidelberg.de.'          86400 IN    A     129.206.210.127               
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 129.143.253.133
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.210.127
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.143.2.10
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.100.126
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 194.146.107.6
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns.uni-heidelberg.de.'     
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns2.uni-heidelberg.de.'    
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns3.belwue.de.'            
+ADDITIONAL SECTION:
+b'dns.uni-heidelberg.de.'           86400 IN    A     129.206.100.126               
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns2.uni-heidelberg.de.'          86400 IN    A     129.206.210.127               
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 129.143.253.133
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.210.127
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.143.2.10
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.100.126
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 195.243.137.26
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns.uni-heidelberg.de.'     
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns1.belwue.de.'            
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns2.uni-heidelberg.de.'    
+b'uni-heidelberg.de.'               86400 IN    NS    b'dns3.belwue.de.'            
+ADDITIONAL SECTION:
+b'dns.uni-heidelberg.de.'           86400 IN    A     129.206.100.126               
+b'dns2.uni-heidelberg.de.'          86400 IN    A     129.206.210.127               
+b'dns1.belwue.de.'                  86400 IN    A     129.143.2.10                  
+b'dns1.belwue.de.'                  86400 IN    AAAA  2001:7c0::53:10               
+b'dns3.belwue.de.'                  86400 IN    A     129.143.253.133               
+b'dns3.belwue.de.'                  86400 IN    AAAA  2001:7c0:0:253::133           
+
+QUESTION TO: 129.143.253.133
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.143.2.10
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.210.127
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
+QUESTION TO: 129.206.100.126
+AUTHORITY SECTION:
+b'uni-heidelberg.de.'                3600 IN    SOA   b'dns.uni-heidelberg.de.'     
+
