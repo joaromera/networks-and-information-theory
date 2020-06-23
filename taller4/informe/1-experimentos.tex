@@ -1,12 +1,12 @@
 \section{Métodos y condiciones de los experimentos}
 
-Se desarrolló un script que a través de sucesivas consultas iterativas obtiene obtenga el registro MX de un dominio dado. Se consideró que cada consulta DNS puede tener 3 tipos de respuestas:
+Se desarrolló un script que a través de sucesivas consultas iterativas obtiene obtenga el registro MX de un dominio dado. Este script permite pasarle por parámetro con que Root Name Server comenzar las consultas. Se aprovechó la estructura de árbol formada por la jerarquía de dominios realizando una búsqueda DFS de la respuesta. Se tomaron las siguientes decisiones para cada tipo de respuesta obtenida en cada consulta DNS:
 
 \begin{itemize}
-\item Se devuelve los servidores DNS a los cuales seguir preguntando.
-\item Se devuelve la respuesta a la consulta que se está haciendo.
-\item Se devuelve el registro SOA de la zona indicando que el registro solicitado no forma parte de la base de datos de nombres de la zona.
+\item Si se reciben servidores DNS a los cuales seguir preguntando, se los agregá a una pila de donde se saca a quien consultar en la siguiente iteración. Si está vacía se asume que no está el registro buscado.
+\item Si se recibe la respuesta a la consulta que se está haciendo se termina la ejecución. 
+\item Si se recibe el registro SOA de la zona indicando que el registro solicitado no forma parte de la base de datos de nombres de la zona, se deja de explorar esta rama del árbol y se siguen las consultas con el siguiente elemento en la pila.
 
 \end{itemize}
 
-Usando la herramienta desarrollada, se consultó por los servidores de mail que atienden los correos del dominio de cuatro universidades (sus nombres de dominio) en algún lugar del mundo. Además se analizó si los servidores de mail tienen nombres en el mismo dominio que el de la universidad o pertenecen a otro dominio. Además se intentó  averiguar también si dichos servidores de mail se encuentran en la misma zona geográfica. \#fixme: si se logra para las cuatro universidades, cambiar se "intentó" por se "averiguó".
+Usando la herramienta desarrollada, se consultó por los servidores de mail que atienden los correos del dominio de cuatro universidades (sus nombres de dominio) en algún lugar del mundo. Se analizó la respuesta a cada una de estas consultas y en caso de tener servidor de mail se vió si tienen nombres en el mismo dominio que el de la universidad o pertenecen a otro dominio. Además se averiguó si dichos servidores de mail se encuentran en la misma zona geográfica que la universidad.
