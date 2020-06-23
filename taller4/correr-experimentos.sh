@@ -39,6 +39,16 @@ run_abc() {
     run_with_nameserver "${domain}" "198.41.0.4"   "a" # a.root-servers.net
     run_with_nameserver "${domain}" "199.9.14.201" "b" # b.root-servers.net
     run_with_nameserver "${domain}" "192.33.4.12"  "c" # c.root-servers.net
+    run_with_nameserver "${domain}" "199.7.91.13"  "d" # d.root-servers.net
+    run_with_nameserver "${domain}" "192.203.230.10"  "e" # e.root-servers.net
+    run_with_nameserver "${domain}" "192.5.5.241"  "f" # e.root-servers.net
+    run_with_nameserver "${domain}" "192.112.36.4"  "g" # e.root-servers.net
+    run_with_nameserver "${domain}" "198.97.190.53"  "h" # e.root-servers.net
+    run_with_nameserver "${domain}" "192.36.148.17"  "i" # e.root-servers.net
+    run_with_nameserver "${domain}" "192.58.128.30"  "j" # e.root-servers.net
+    run_with_nameserver "${domain}" "193.0.14.129"  "k" # e.root-servers.net
+    run_with_nameserver "${domain}" "199.7.83.42"  "l" # e.root-servers.net
+    run_with_nameserver "${domain}" "202.12.27.33"  "m" # e.root-servers.net
 }
 
 # ----------------------------------------------------------------------------
@@ -46,4 +56,4 @@ run_abc() {
 # ----------------------------------------------------------------------------
 
 #Ejemplo:
-run_abc www.dc.uba.ar
+run_abc www.uba.ar
