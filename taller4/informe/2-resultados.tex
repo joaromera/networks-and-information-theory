@@ -16,8 +16,8 @@
 % Comentario... si hacemos el experimento con la UBA (www.uba.ar) no conseguimos ningún MX. esto puede que se el mismo caso para algunas de las tras universidades que probamos, tal vez habia que pegarle a alguna facultad o unidad academica específica dentro de cada una (...)
 
 % [1]
-Se recorrieron 3 niveles: 198.41.0.4, 130.59.31.20, 157.92.1.1.
-Los primeros dos variaron en las distintas repeticiones del experimento pero el final fue siempre el mismo 157.92.1.1.
+Se recorrieron 3 niveles para todos los root servers con los que se comenzó.
+Los primeros dos variaron en las distintas repeticiones del experimento pero el final fue siempre el mismo (ns1.uba.ar-157.92.1.1).
 
 \begin{center}
 \begin{tikzpicture}[sibling distance=10em,
@@ -49,7 +49,7 @@ No coinciden las IPs de los servidores de correo con la IPs del servidor Web. To
 % www.unaj.edu.ar
 
 % [1]
-En un caso se recorrieron tres niveles DNS hasta obtener la respuesta: 198.41.0.4, 130.59.31.20, 170.210.44.19. En otros dos se llegó a recorrer cuatro, los resultados de uno de estos dos: 199.9.14.201, 193.0.9.59, 170.210.5.56, 170.210.158.3.
+En un caso se recorrieron tres niveles DNS hasta obtener la respuesta (similar a \ref{fig:dcubaar_a_tree}). En los otros dos se llegó a recorrer cuatro. En \ref{fig:unajedu_c_tree} se muestra el árbol producido por comenzar con el root server c.
 
 \begin{center}
 \begin{tikzpicture}[sibling distance=10em,
@@ -80,7 +80,7 @@ No coinciden las IPs de los servidores de correo con la IPs del servidor Web. Am
 % www.unf.edu.ar
 
 % [1]
-En dos casos cuatro niveles de DNS fue necesario recorrer para obtener la respuesta, en otro caso fueron necesarios solo tres. % FIXME no estoy seguro de que tenga sentido poner las IPs.
+En dos casos cuatro niveles de DNS fue necesario recorrer para obtener la respuesta, en otro caso fueron necesarios solo tres. En \ref{fig:unfedu_b_tree} se muestra el árbol producido por comenzar con el root server b.
 
 \begin{center}
 \begin{tikzpicture}[sibling distance=10em,
@@ -128,7 +128,7 @@ En todas las iteraciones del experimento fueron necesarios 3 niveles de DNS para
 \end{center}
 
 % [2]
-Uno de los cuatro servidores consultados nunca respondió: 192.76.176.9.
+Uno de los cuatro servidores consultados nunca respondió. Este es deneb.dfn.de (192.76.176.9). Se obtuvo respuesta al hacer ping con este servidor por lo que no está apagado, así que se debe a otro motivo que no responda las consultas DNS que se le hace.
 
 % [3]
 Cinco fueron los nombres de servidores de mails encontrados, de los cuales dos coinciden con el dominio de la universidad (mx05.uni-tuebingen.de y mx06.uni-tuebingen.de) y los otros tres pertenecen a la Red de Investigación Alemana (German Research Network (DFN)) y son: a1541.mx.srv.dfn.de, b1541.mx.srv.dfn.de y c1541.mx.srv.dfn.de.
