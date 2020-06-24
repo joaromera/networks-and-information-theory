@@ -1,18 +1,29 @@
 \section{Resultados de los experimentos}
 
-% ¿Cuántos niveles de servidores DNS se recorrieron en las sucesivas consultas hasta obtener la información solicitada?
+% [1] ¿Cuántos niveles de servidores DNS se recorrieron en las sucesivas consultas hasta obtener la información solicitada?
 
-% ¿Todos los servidores DNS Autoritativos que aparecen en las sucesivas respuestas responden a las consultas realizadas?
+% [2] ¿Todos los servidores DNS Autoritativos que aparecen en las sucesivas respuestas responden a las consultas realizadas?
 
-% ¿Cuántos nombres de servidores de mail encontraron?, ¿Tienen nombres en el mismo dominio que la universidad?
+% [3] ¿Cuántos nombres de servidores de mail encontraron?, ¿Tienen nombres en el mismo dominio que la universidad?
 
-% ¿Cuántas direcciones IP distintas hay? ¿Estas direcciones IP corresponden a dispositivos que están prendidos? (Hint: probar con ping si responden)
+% [4] ¿Cuántas direcciones IP distintas hay? ¿Estas direcciones IP corresponden a dispositivos que están prendidos? (Hint: probar con ping si responden)
 
-% ¿Coinciden las IPs de los servidores de correo con las IPs de los servidores Web?
+% [5] ¿Coinciden las IPs de los servidores de correo con las IPs de los servidores Web?
 
 \subsection{Facultad de Ciencias Exactas y Naturales - UBA}
-% Comentario... si hacemos el experimento con la UBA (www.uba.ar) no conseguimos ningún MX. esto puede que se el mismo caso para algunas de laso tras universidades que probamos, tal vez habia que pegarle a alguna facultad o unidad academica especficia dentro de cada una (...)
 % www.dc.uba.ar
+
+% Comentario... si hacemos el experimento con la UBA (www.uba.ar) no conseguimos ningún MX. esto puede que se el mismo caso para algunas de las tras universidades que probamos, tal vez habia que pegarle a alguna facultad o unidad academica específica dentro de cada una (...)
+
+% [1]
+Se recorrieron 3 niveles: 192.33.4.12, 130.59.31.20, 157.92.1.1.
+Los primeros dos variaron en las distintas repeticiones del experimento pero el final fue siempre el mismo 157.92.1.1.
+
+% [5]
+% www.dc.uba.ar    157.92.27.128
+% mta0.fcen.uba.ar 157.92.32.130
+% mta1.fcen.uba.ar 157.92.32.131
+
 
 \subsection{Universidad Nacional Arturo Jauretche}
 % www.unaj.edu.ar
