@@ -70,7 +70,21 @@ La IP del servidor de correo y la IP del servidor web coinciden: 170.210.232.249
 % www.uni-tuebingen.de
 
 % [1]
-En todas las iteraciones del experimento fueron necesarios cuatro niveles de DNS para alcanzar la respuesta.
+En todas las iteraciones del experimento fueron necesarios 3 niveles de DNS para alcanzar la respuesta. El árbol de consultas generado comenzando desde el root server a se puede ver en \ref{fig:tubingen_a_tree}.
+
+\begin{center}
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, rounded corners,
+    draw, align=center,
+    top color=white, bottom color=blue!20}]]
+  \node {a.root-servers.net\\198.41.0.4}
+    child { node {z.nic.de\\194.246.96.1 }
+      child { node {deneb.dfn.de\\192.76.176.9} }
+      child { node {dns4.uni-tuebingen.de\\134.2.200.4} } };
+\end{tikzpicture}
+\captionof{figure}{Árbol de consultas DNS para www.uni-tuebingen.de comenzando con a.root-servers.net.}
+\label{fig:tubingen_a_tree} 
+\end{center}
 
 % [2]
 Uno de los cuatro servidores consultados nunca respondió: 192.76.176.9.
