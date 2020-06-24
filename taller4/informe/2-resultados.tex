@@ -16,8 +16,21 @@
 % Comentario... si hacemos el experimento con la UBA (www.uba.ar) no conseguimos ningún MX. esto puede que se el mismo caso para algunas de las tras universidades que probamos, tal vez habia que pegarle a alguna facultad o unidad academica específica dentro de cada una (...)
 
 % [1]
-Se recorrieron 3 niveles: 192.33.4.12, 130.59.31.20, 157.92.1.1.
+Se recorrieron 3 niveles: 198.41.0.4, 130.59.31.20, 157.92.1.1.
 Los primeros dos variaron en las distintas repeticiones del experimento pero el final fue siempre el mismo 157.92.1.1.
+
+\begin{center}
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, rounded corners,
+    draw, align=center,
+    top color=white, bottom color=blue!20}]]
+  \node {a.root-servers.net\\198.41.0.4}
+    child { node {f.dns.ar\\130.59.31.20 }
+      child { node {ns1.uba.ar\\157.92.1.1} } };
+\end{tikzpicture}
+\captionof{figure}{Árbol de consultas DNS para www.dc.uba.ar comenzando con a.root-servers.net.}
+\label{fig:dcubaar_a_tree} 
+\end{center}
 
 % [2]
 Todos respondieron a las consultas realizadas.
@@ -38,6 +51,20 @@ No coinciden las IPs de los servidores de correo con la IPs del servidor Web. To
 % [1]
 En un caso se recorrieron tres niveles DNS hasta obtener la respuesta: 198.41.0.4, 130.59.31.20, 170.210.44.19. En otros dos se llegó a recorrer cuatro, los resultados de uno de estos dos: 199.9.14.201, 193.0.9.59, 170.210.5.56, 170.210.158.3.
 
+\begin{center}
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, rounded corners,
+    draw, align=center,
+    top color=white, bottom color=blue!20}]]
+  \node {c.root-servers.net\\192.33.4.12}
+    child { node {ar.cctld.authdns.ripe.net\\193.0.9.59 }
+      child { node {a.riu.edu.ar\\170.210.5.56}
+        child { node {ns2.unaj.edu.ar\\170.210.158.3} } } };
+\end{tikzpicture}
+\captionof{figure}{Árbol de consultas DNS para www.unaj.edu.ar comenzando con c.root-servers.net.}
+\label{fig:unajedu_c_tree} 
+\end{center}
+
 % [2]
 Todos respondieron a las consultas realizadas.
 
@@ -54,6 +81,20 @@ No coinciden las IPs de los servidores de correo con la IPs del servidor Web. Am
 
 % [1]
 En dos casos cuatro niveles de DNS fue necesario recorrer para obtener la respuesta, en otro caso fueron necesarios solo tres. % FIXME no estoy seguro de que tenga sentido poner las IPs.
+
+\begin{center}
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, rounded corners,
+    draw, align=center,
+    top color=white, bottom color=blue!20}]]
+  \node {b.root-servers.net\\199.9.14.201}
+    child { node {ar.cctld.authdns.ripe.net\\193.0.9.59 }
+      child { node {a.riu.edu.ar\\170.210.5.56}
+        child { node {ns1.unf.edu.ar\\170.210.232.249} } } };
+\end{tikzpicture}
+\captionof{figure}{Árbol de consultas DNS para www.unf.edu.ar comenzando con b.root-servers.net.}
+\label{fig:unfedu_b_tree} 
+\end{center}
 
 % [2]
 Todos respondieron a las consultas realizadas.
